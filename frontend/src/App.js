@@ -1,13 +1,15 @@
 import React from 'react';
 import './App.css';
-import Home from "./components/Home";
-import { BrowserRouter as Router, Route } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import Landing from './components/Landing';
 
 function App() {
   return (
     <Router>
-      <div>
-        <Route exact path="/" component={Home} />
+      <div className='App'>
+        <Switch>
+          <Route exact path="/" component={ Landing } />
+        </Switch>
       </div>
     </Router>
   );
