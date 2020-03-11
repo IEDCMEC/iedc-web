@@ -14,28 +14,27 @@ const Navbar = () => {
 
 	return (
 		<div className='Navbar '>
-			<nav className="nav-wrapper blue accent-1 ">
-
-				<a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+			<nav className="nav-wrapper transparent accent-1">
+				<a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons grey-text text-darken-3">menu</i></a>
 				<div className="container">
 					<ul className="right hide-on-small-and-down">
-						<li><a className='black-text' href='/'>About</a></li>
-						<li><a className='black-text' href="/">Home</a></li>
-						<li><a className='black-text' href="/">Achievements</a></li>
-						<li><a className='black-text' href="/">Gallery</a></li>
-						<li><a className='black-text' href="/">Our Team</a></li>
-						<li><a className='black-text' href="/">Contact</a></li>
+						<li><a className='grey-text text-darken-3' href='/'>About</a></li>
+						<li><a className='grey-text text-darken-3' href="/">Home</a></li>
+						<li><a className='grey-text text-darken-3' href="/">Achievements</a></li>
+						<li><a className='grey-text text-darken-3' href="/">Gallery</a></li>
+						<li><a className='grey-text text-darken-3' href="/">Our Team</a></li>
+						<li><a className='grey-text text-darken-3' href="/">Contact</a></li>
 					</ul>
 				</div>
 			</nav>
 
 			<ul id="slide-out" class="sidenav">
-				<li><a className='black-text' href='/'>About</a></li>
-				<li><a className='black-text' href="/">Home</a></li>
-				<li><a className='black-text' href="/">Achievements</a></li>
-				<li><a className='black-text' href="/">Gallery</a></li>
-				<li><a className='black-text' href="/">Our Team</a></li>
-				<li><a className='black-text' href="/">Contact</a></li>
+				<li><a className='grey-text text-darken-3' href='/'>About</a></li>
+				<li><a className='grey-text text-darken-3' href="/">Home</a></li>
+				<li><a className='grey-text text-darken-3' href="/">Achievements</a></li>
+				<li><a className='grey-text text-darken-3' href="/">Gallery</a></li>
+				<li><a className='grey-text text-darken-3' href="/">Our Team</a></li>
+				<li><a className='grey-text text-darken-3' href="/">Contact</a></li>
 			</ul>
 		</div>
 	)

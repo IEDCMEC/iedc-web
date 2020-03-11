@@ -22,3 +22,15 @@ body{
   box-sizing: border-box
 }
 
+.home{
+  min-height: 60vh;
+}
+
+.announcement-box{
+  min-height: 50vh;
+}
+
+#message-box{
+  min-height: 40px;
+  border: 1px grey;
+}
