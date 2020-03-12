@@ -1,10 +1,11 @@
 import React from 'react'
+import "../index.css";
 
 const About = () => {
 	return (
 		<section className="about section">
 			<div className="container">
-				<h3 className='grey-text text-darken-3 center-align'>About Us</h3>
+				<h3 className='grey-text text-darken-3 center-align' id="top_margin">About Us</h3>
 				<br />
 				<div className="row">
 					<div className="col s12 m5">
@@ -19,7 +20,7 @@ const About = () => {
 					</div>
 					<div className="col s12 m6 offset-m1">
 						<br />
-						<img src={require('../Assets/about.jpeg')} alt="about" className="responsive-img" />
+						<img src={require('../Assets/about.jpeg')} alt="about" className="responsive-img" id="about_img"/>
 					</div>
 				</div>
 			</div>

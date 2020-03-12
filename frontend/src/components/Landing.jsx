@@ -16,10 +16,12 @@ const Landing = () => {
 			<About/>
 			<Achievements/>
 			<Gallery/>
-			<Team/>
+
 			<Contact/>
 		</div>
 	)
 }
 
 export default Landing
+
+/* 	<Team/> */
