@@ -6,7 +6,7 @@ const Contact = () => {
     <div id="top_margin">
     <section  id="box_curve_top">
 
-    <div className='contact container' id="centre_mobile">
+    <div className='contact container' id="centre_mobile" id="contact">
       <div className="row">
         <div className="col s12 m4">
           <h4 className='grey-text text-darken-3' id="bottom_margin">Connect with us</h4>

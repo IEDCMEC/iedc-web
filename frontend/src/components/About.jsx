@@ -3,7 +3,8 @@ import "../index.css";
 
 const About = () => {
 	return (
-		<section className="about section">
+		
+		<section className="about section" id="About">
 			<div className="container">
 				<h3 className='grey-text text-darken-3 center-align' id="top_margin">About Us</h3>
 				<br />
