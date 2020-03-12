@@ -2,47 +2,7 @@ import React, { useEffect } from 'react'
 import 'materialize-css/dist/css/materialize.min.css';
 import M from 'materialize-css/dist/js/materialize.min.js';
 import { Link } from "react-scroll";
-export default class App extends Component {
-	state = { hidden: false };
-  
-	constructor(props) {
-	  super(props);
-  
-	  // Bind the function to this component, so it has access to this.state
-	  this.handleScroll = this.handleScroll.bind(this);
-	}
-  
-	componentWillMount() {
-	  // When this component mounts, begin listening for scroll changes
-	  window.addEventListener('scroll', this.handleScroll);
-	}
-  
-	componentWillUnmount() {
-	  // If this component is unmounted, stop listening
-	  window.removeEventListener('scroll', this.handleScroll);
-	}
-  
-	handleScroll(e) {
-	  let lastScrollTop = 0;
-	  const currentScrollTop = navbar.scrollTop;
-  
-	  // Set the state of hidden depending on scroll position
-	  // We only change the state if it needs to be changed
-	  if (!this.state.hidden && currentScrollTop > lastScrollTop) {
-		this.setState({ hidden: true });
-	  } else if(this.state.hidden) {
-		this.setState({ hidden: false });
-	  }
-	  lastScrollTop = currentScrollTop;
-	}
-  
-	render() {
-	  // We pass a hidden prop to Navbar which can render className="hidden" if the prop is true
-	  return (
-		<Navbar hidden={this.state.hidden} />
-	  );
-	}
-  }
+
 
 import Scroll from 'react-scroll'
 const ScrollLink = Scroll.ScrollLink
