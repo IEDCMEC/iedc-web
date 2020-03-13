@@ -2,6 +2,8 @@ import React, { useEffect } from 'react'
 import 'materialize-css/dist/css/materialize.min.css';
 import M from 'materialize-css/dist/js/materialize.min.js';
 import { Link } from "react-scroll";
+import "../css/fixed.css";
+
 
 
 import Scroll from 'react-scroll'
@@ -15,7 +17,7 @@ const Navbar = () => {
 	}, [])
 
 	return (
-		<div className='Navbar '>
+		<div className='Navbar'>
 			<nav className="nav-wrapper transparent accent-1">
 				<a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons grey-text text-darken-3">menu</i></a>
 				<div className="container">
