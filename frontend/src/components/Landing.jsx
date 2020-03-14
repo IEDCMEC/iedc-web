@@ -6,10 +6,11 @@ import Achievements from './Achievements';
 import Gallery from './Gallery';
 import Team from './Team';
 import Contact from './Contact';
+import "../css/fixed.css";
 
 const Landing = () => {
 	return (
-		<div className="landing">
+		<div className="landing" >
 
 			<Navbar />
 			<Home />
@@ -19,7 +20,9 @@ const Landing = () => {
 			<Team/> 
 			<Contact/>
 		</div>
+		
 	)
 }
+
 
 export default Landing

@@ -130,23 +130,3 @@ body {
   .margin_top_mobile {
     margin-top: 4em;
   }
-  /* .slider .slides{
-    background-color: red;
-  } */
-}
-
-/* .slides {
-  height: 250px !important;
-}
-.slider {
-  height: 250px !important;
-}
-
-@media only screen and (min-width: 600px) {
-  .slides {
-    height: 600px !important;
-  }
-  .slider {
-    height: 600px !important;
-  }
-} */

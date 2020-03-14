@@ -4,8 +4,8 @@ import "../index.css";
 const Home = () => {
 	return (
 		<div id=" bottom_margin">
-		<section className='home section' id="box_curve_bottom">
-			<div className="container ">
+		<section className='home section' id="box_curve_bottom" >
+			<div className="container " id="home">
 				<div className="row">
 					<div className="col s12 m6">
 						<h1 className="title">IEDCMEC</h1>

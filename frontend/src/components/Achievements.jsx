@@ -4,7 +4,7 @@ import React from 'react'
 const Achievements = () => {
 	return (
 		<section className="achievements section" id="section_spacing">
-			<div className="container">
+			<div className="container" id="achievements">
 				<h3 className='grey-text text-darken-3 center-align' id="bottom_margin">Achievements</h3>
 				<div className="row ">
 				

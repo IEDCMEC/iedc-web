@@ -16,7 +16,7 @@ const Team = () => {
 	
 	
 	return (
-		<section className="section team">
+		<section className="section team" id="team">
 			<div className="container">
 				<div className="center">
 				<h3 className='grey-text text-darken-3 center-align' id="bottom_margin">Our Team</h3>

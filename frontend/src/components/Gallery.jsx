@@ -10,7 +10,7 @@ const Gallery = () => {
 	})
 
 	return (
-		<div className='gallery section'>
+		<div className='gallery section' id="gallery">
 			<div className="container center">
 				<h3 className='grey-text text-darken-3 center-align' id="bottom_margin">Gallery</h3>
 				<div class="row">
