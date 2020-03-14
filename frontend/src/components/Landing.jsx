@@ -17,7 +17,7 @@ const Landing = () => {
 			<About/>
 			<Achievements/>
 			<Gallery/>
-
+			<Team/> 
 			<Contact/>
 		</div>
 		
@@ -26,5 +26,3 @@ const Landing = () => {
 
 
 export default Landing
-
-/* 	<Team/> */
