@@ -4,24 +4,45 @@ import CarouselSlider from 'react-carousel-slider';
 class Team extends Component {
 	render() {
 
+		// let data = [
+		// 	{
+		// 		des: "John Doe",
+		// 		imgSrc: `${require('../Assets/sample.jpeg')}`
+		// 	},
+		// 	{
+		// 		des: "Lynn Mathew",
+		// 		imgSrc: `${require('../Assets/s2.jpeg')}`
+		// 	},
+		// 	{
+		// 		des: "3",
+		// 		imgSrc: `${require('../Assets/gallery5.png')}`
+		// 	},
+		// 	{
+		// 		des: "Tony Stark",
+		// 		imgSrc: `${require('../Assets/TS.jpeg')}`
+		// 	},
+		// ];
+
 		let data = [
-			{
-				des: "John Doe",
-				imgSrc: `${require('../Assets/sample.jpeg')}`
-			},
-			{
-				des: "Lynn Mathew",
-				imgSrc: `${require('../Assets/s2.jpeg')}`
-			},
-			{
-				des: "3",
-				imgSrc: `${require('../Assets/gallery5.png')}`
-			},
-			{
-				des: "Tony Stark",
-				imgSrc: `${require('../Assets/TS.jpeg')}`
-			},
-		];
+			<div className="card-panel">
+				<div className="image">
+					<img src={require('../Assets/sample.jpeg')} alt="" className="circle" />
+					<p>JOgn Doe</p>
+				</div>
+			</div>,
+			<div className="card-panel">
+				<div className="image">
+					<img src={require('../Assets/s2.jpeg')} alt="" className="circle" />
+					<p>JOgn Doe</p>
+				</div>
+			</div>,
+			<div className="card-panel">
+				<div className="image">
+					<img src={require('../Assets/TS.jpeg')} alt="" className="circle" />
+					<p>Tony Stark</p>
+				</div>
+			</div>,
+		]
 
 		return (
 			<div className="Team">
@@ -40,7 +61,9 @@ class Team extends Component {
 				buttonSetting={{
 					placeOn: "bottom-beneath"
 				}} 
-				slideItems={data} />
+				slideCpnts={data}
+				// slideItems={data} 
+				/>
 			</div>
 		)
 	}
