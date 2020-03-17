@@ -1,119 +1,72 @@
-import React, { useEffect } from 'react'
-import M from 'materialize-css/dist/js/materialize.min.js';
+import React, { Component } from 'react'
+import CarouselSlider from 'react-carousel-slider';
 
-const Team = () => {
+class Team extends Component {
+	render() {
 
-	useEffect(() => {
-		// var height = window.innerWidth > 440 ? 265 : 400
-		const options = {
-			// height:400,
-			interval:4000			
-		}
-		var elems = document.querySelectorAll('.slider');
-		M.Slider.init(elems,options);
-		console.log( window.innerWidth);
-	})
-	
-	
-	return (
-		<section className="section team" id="team">
-			<div className="container">
-				<div className="center">
-				<h3 className=' text-darken-3 center-align' id="bottom_margin">Our Team</h3>
-					<div className="slider">
-						<ul className="slides grey lighten-5">
-							<li>
-								<div class="row">
-									<div className="col s6 m3">
-										<div className="card-panel">
-											<img src={require('../Assets/sample.jpeg')} alt="" className="circle" />
-											<span>John Doe</span>
-										</div>
-									</div>
-									<div className="col s6 m3">
-										<div className="card-panel">
-											<img src={require('../Assets/sample.jpeg')} alt="" className="circle" />
-											<span>John Doe</span>
-										</div>
-									</div>
-									<div className="col s6 m3">
-										<div className="card-panel">
-											<img src={require('../Assets/sample.jpeg')} alt="" className="circle" />
-											<span>John Doe</span>
-										</div>
+		// let data = [
+		// 	{
+		// 		des: "John Doe",
+		// 		imgSrc: `${require('../Assets/sample.jpeg')}`
+		// 	},
+		// 	{
+		// 		des: "Lynn Mathew",
+		// 		imgSrc: `${require('../Assets/s2.jpeg')}`
+		// 	},
+		// 	{
+		// 		des: "3",
+		// 		imgSrc: `${require('../Assets/gallery5.png')}`
+		// 	},
+		// 	{
+		// 		des: "Tony Stark",
+		// 		imgSrc: `${require('../Assets/TS.jpeg')}`
+		// 	},
+		// ];
 
-									</div>
-									<div className="col s6 m3">
-										<div className="card-panel">
-											<img src={require('../Assets/sample.jpeg')} alt="" className="circle" />
-											<span>John Doe</span>
-										</div>
-									</div>
-								</div>
-							</li>
-							<li>
-								<div class="row">
-									<div className="col s6 m3">
-										<div className="card-panel">
-											<img src={require('../Assets/s2.jpeg')} alt="" className="circle" />
-											<span>John Doe</span>
-										</div>
-									</div>
-									<div className="col s6 m3">
-										<div className="card-panel">
-											<img src={require('../Assets/s2.jpeg')} alt="" className="circle" />
-											<span>John Doe</span>
-										</div>
-									</div>
-									<div className="col s6 m3">
-										<div className="card-panel">
-											<img src={require('../Assets/s2.jpeg')} alt="" className="circle" />
-											<span>John Doe</span>
-										</div>
-									</div>
-									<div className="col s6 m3">
-										<div className="card-panel">
-											<img src={require('../Assets/s2.jpeg')} alt="" className="circle" />
-											<span>John Doe</span>
-										</div>
-									</div>
-								</div>
-							</li>
-							<li>
-								<div class="row">
-									<div className="col s6 m3">
-										<div className="card-panel">
-											<img src={require('../Assets/sample.jpeg')} alt="" className="circle" />
-											<span>John Doe</span>
-										</div>
-									</div>
-									<div className="col s6 m3">
-										<div className="card-panel">
-											<img src={require('../Assets/sample.jpeg')} alt="" className="circle" />
-											<span>John Doe</span>
-										</div>
-									</div>
-									<div className="col s6 m3">
-										<div className="card-panel">
-											<img src={require('../Assets/sample.jpeg')} alt="" className="circle" />
-											<span>John Doe</span>
-										</div>
-									</div>
-									<div className="col s6 m3">
-										<div className="card-panel">
-											<img src={require('../Assets/sample.jpeg')} alt="" className="circle" />
-											<span>John Doe</span>
-										</div>
-									</div>
-								</div>
-							</li>
-
-						</ul>
-					</div>
+		let data = [
+			<div className="card-panel">
+				<div className="image">
+					<img src={require('../Assets/sample.jpeg')} alt="" className="circle" />
+					<p>JOgn Doe</p>
 				</div>
+			</div>,
+			<div className="card-panel">
+				<div className="image">
+					<img src={require('../Assets/s2.jpeg')} alt="" className="circle" />
+					<p>JOgn Doe</p>
+				</div>
+			</div>,
+			<div className="card-panel">
+				<div className="image">
+					<img src={require('../Assets/TS.jpeg')} alt="" className="circle" />
+					<p>Tony Stark</p>
+				</div>
+			</div>,
+		]
+
+		return (
+			<div className="Team">
+
+ 			<div className="center">
+ 				<h3 className=' text-darken-3 center-align' id="bottom_margin">Our Team</h3>
 			</div>
-		</section>
-	)
+				
+				<CarouselSlider 
+				dotsSetting={{
+					style: {
+						dotColor: "#dbdbdb",
+						currDotColor: "#ff0000"
+					}
+				}}
+				buttonSetting={{
+					placeOn: "bottom-beneath"
+				}} 
+				slideCpnts={data}
+				// slideItems={data} 
+				/>
+			</div>
+		)
+	}
 }
 
 export default Team
