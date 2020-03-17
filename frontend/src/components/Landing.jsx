@@ -1,5 +1,4 @@
 import React from 'react'
-import Navbar from './Navbar';
 import Home from './Home';
 import About from './About';
 import Achievements from './Achievements';
@@ -12,7 +11,6 @@ const Landing = () => {
 	return (
 		<div className="landing" >
 
-			<Navbar />
 			<Home />
 			<About/>
 			<Achievements/>

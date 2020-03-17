@@ -19,7 +19,7 @@ const Team = () => {
 		<section className="section team" id="team">
 			<div className="container">
 				<div className="center">
-				<h3 className='grey-text text-darken-3 center-align' id="bottom_margin">Our Team</h3>
+				<h3 className=' text-darken-3 center-align' id="bottom_margin">Our Team</h3>
 					<div className="slider">
 						<ul className="slides grey lighten-5">
 							<li>
