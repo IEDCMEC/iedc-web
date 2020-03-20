@@ -7,9 +7,11 @@
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
     "materialize-css": "^1.0.0-rc.2",
+    "pure-react-carousel": "^1.26.1",
     "react": "^16.13.0",
     "react-carousel-slider": "^2.0.13",
     "react-dom": "^16.13.0",
+    "react-responsive-carousel": "^3.1.51",
     "react-router-dom": "^5.1.2",
     "react-scripts": "3.4.0",
     "react-scroll": "^1.7.16"

@@ -16,6 +16,10 @@ html {
   scroll-behavior: smooth;
 }
 
+.pos {
+  align-self: start;
+}
+
 body {
   background-color: rgb(255, 255, 255);
   color:#C33427;
@@ -183,6 +187,10 @@ p{
   }
   .margin_top_mobile {
     margin-top: 0em;
+  }
+
+  .pos {
+    align-self: start;
   }
 
 }
