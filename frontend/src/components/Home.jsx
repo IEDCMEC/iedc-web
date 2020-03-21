@@ -16,8 +16,10 @@ const Navbar = () => {
 	}, [])
 
 	return (
+		<div class="navbar-fixed">
+
 		<div className='nav'>
-			<nav className="nav-wrapper transparent accent-1">
+			<nav className="nav-wrapper accent-1" style={{'background-color':'white'}}>
 				<a href="#" data-target="slide-out" className="sidenav-trigger"><i className="material-icons" style={{'color':'#C33427'}}>menu</i></a>
 				<div className="container">
 					<ul className="right hide-on-small-and-down">
@@ -40,6 +42,7 @@ const Navbar = () => {
 				<li><Link className='grey-text' activeClass="active" to="contact" spy={true} smooth={true} offset={-70} duration={400}>Contact</Link></li>
 			</ul>
 		</div>
+		</div>
 	)
 }
 
@@ -50,7 +53,7 @@ const Home = () => {
 		<div id=" bottom_margin">
 
 
-		<section className='home section main_img' id="box_curve_bottom" style={{'background-color':'white', 'background-image': `url(${MainSvg})`}}>
+		<section className='home main_img' id="box_curve_bottom" style={{'background-color':'white', 'background-image': `url(${MainSvg})`}}>
 		<Navbar/>
 
 <div className="container" id="home" style={{'color':'rgb(223, 218, 218)' }}>
