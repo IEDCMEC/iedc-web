@@ -1,4 +1,5 @@
 {
+  "homepage": "http://123vivekr.github.io/iedc-web",
   "name": "frontend",
   "version": "0.1.0",
   "private": true,
@@ -17,6 +18,8 @@
     "react-scroll": "^1.7.16"
   },
   "scripts": {
+	"predeploy": "npm run build",
+	"deploy": "gh-pages -b gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
