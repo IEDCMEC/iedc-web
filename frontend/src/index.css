@@ -103,7 +103,8 @@ p{
 }
 
 #icon_space {
-  padding-right: 20px;
+  padding: 10px;
+  
 }
 
 #curve_border {
@@ -149,10 +150,6 @@ p{
   border-radius: 20px;
 }
 
-.message_box{
-  margin-top:20%;
-}
-
 #center_align {
   text-align: center;
 }
@@ -161,13 +158,27 @@ p{
   display:show;
 }
 
+#contact{
+  margin-top:4em;
+  border-radius: 24px;
+  margin-bottom: 2em;
+}
+#submit{
+  padding-bottom:2em;
+}
+
+#follow-us{
+  margin-top:5em;
+  padding-left:9em;
+}
+.center-alingnment{
+  width:7em;
+}
+
 @media only screen and (max-width: 600px) {
   .announcement_header{
     font-size:20px;
     margin-top:30px;
-  }
-  .message_box{
-    margin-top:0%;
   }
   #box_curve_bottom {
     border-bottom-left-radius: 10%;
@@ -191,6 +202,18 @@ p{
 
   .pos {
     align-self: start;
+  }
+  #contact{
+    margin-left:1em;
+    margin-top: 0;
+    box-shadow: none;
+  }
+  #follow-us{
+    padding-left:0;
+    margin-top:0;
+  }
+  .center-alingnment{
+    width:11em;
   }
 
 }
