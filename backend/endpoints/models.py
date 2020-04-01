@@ -6,7 +6,7 @@ class Announcements(models.Model):
     title = models.CharField(max_length=120)
     description = models.TextField()
     completed = models.BooleanField(default=False)
-    def _str_(self):
+    def __str__(self):
         return self.title
 class Contactform(models.Model):
     name = models.CharField(max_length=120)
@@ -14,5 +14,11 @@ class Contactform(models.Model):
     email = models.CharField(max_length=120)
     message = models.TextField()
     completed = models.BooleanField(default=False)
-    def _str_(self):
+    def __str__(self):
+        return self.name
+class ImageService(models.Model):
+    title = models.CharField(max_length=120)
+    content = models.TextField()
+    image = models.ImageField(upload_to='post_images')
+    def __str__(self):
         return self.name
