@@ -1,3 +1,8 @@
 from django.shortcuts import render
+from rest_framework import viewsets
+from .serializers import AnnouncementsSerializer
+from .models import Announcements
 
-# Create your views here.
+class AnnouncementsView(viewsets.ModelViewSet):
+    serializer_class = AnnouncementsSerializer         # add this
+    queryset = Announcements.objects.all()          
