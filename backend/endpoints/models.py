@@ -8,3 +8,4 @@ class Announcements(models.Model):
     completed = models.BooleanField(default=False)
     def _str_(self):
         return self.title
+#,fdgkdghm
