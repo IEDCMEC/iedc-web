@@ -8,7 +8,7 @@ class Announcements(models.Model):
     completed = models.BooleanField(default=False)
     def __str__(self):
         return self.title
-class Contactform(models.Model):
+class ContactForm(models.Model):
     name = models.CharField(max_length=120)
     phone = models.CharField(max_length=120)
     email = models.CharField(max_length=120)
