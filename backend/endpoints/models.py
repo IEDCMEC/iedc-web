@@ -8,3 +8,11 @@ class Announcements(models.Model):
     completed = models.BooleanField(default=False)
     def _str_(self):
         return self.title
+class Contactform(models.Model):
+    name = models.CharField(max_length=120)
+    phone = models.CharField(max_length=120)
+    email = models.CharField(max_length=120)
+    message = models.TextField()
+    completed = models.BooleanField(default=False)
+    def _str_(self):
+        return self.name
