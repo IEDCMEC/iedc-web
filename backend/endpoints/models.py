@@ -21,4 +21,4 @@ class ImageService(models.Model):
     content = models.TextField()
     image = models.ImageField(upload_to='post_images')
     def __str__(self):
-        return self.name
+        return self.title
