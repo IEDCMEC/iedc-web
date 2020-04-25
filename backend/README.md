@@ -14,11 +14,11 @@ Once the srever is running on localhost, you can use the Django Admin pannel loc
 # API ENPOINTS
 The endpoints for the API are as follows:
 
-[http://127.0.0.1:8000/api/announcements](http://127.0.0.1:8000/api/announcements) - To get or update announcements 
+[http://127.0.0.1:8000/api/announcements](http://127.0.0.1:8000/api/announcements/) - To get or update announcements 
 
-[http://127.0.0.1:8000/api/contactform](http://127.0.0.1:8000/api/contactform) - To get or update contactform 
+[http://127.0.0.1:8000/api/contactform](http://127.0.0.1:8000/api/contactform/) - To get or update contactform 
 
-[http://127.0.0.1:8000/api/imageupload](http://127.0.0.1:8000/api/imageupload) - To get or update image upload
+[http://127.0.0.1:8000/api/imageupload](http://127.0.0.1:8000/api/imageupload/) - To get or update image upload
 
 You can perform REST operations like GET, POST etc to these endpoints
 
@@ -29,6 +29,7 @@ You can perform REST operations like GET, POST etc to these endpoints
 |-------------|--------------------------|
 | title       | CharField( max char-120) |
 | description | TextField                |
+| image       | ImageField               |
 | completed   | boolean                  |
 
 ### contactForm
