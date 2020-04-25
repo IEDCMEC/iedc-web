@@ -3,10 +3,12 @@
   "name": "frontend",
   "version": "0.1.0",
   "private": true,
+  "proxy": "http://localhost:8000",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
+    "axios": "^0.19.2",
     "materialize-css": "^1.0.0-rc.2",
     "pure-react-carousel": "^1.26.1",
     "react": "^16.13.0",
