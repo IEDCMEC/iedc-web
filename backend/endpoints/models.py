@@ -5,6 +5,7 @@ from django.db import models
 class Announcements(models.Model):
     title = models.CharField(max_length=120)
     description = models.TextField()
+    image = models.ImageField(upload_to='announcement_img')
     completed = models.BooleanField(default=False)
     def __str__(self):
         return self.title

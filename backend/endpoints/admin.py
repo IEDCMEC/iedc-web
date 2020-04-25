@@ -3,7 +3,7 @@ from .models import Announcements, ContactForm, ImageService
 
 
 class AnnouncementAdmin(admin.ModelAdmin):
-    list_display = ('title', 'description', 'completed')
+    list_display = ('title', 'description','image', 'completed')
 
 class contactFormAdmin(admin.ModelAdmin):
     list_display = ('name', 'phone', 'email','message','completed')
