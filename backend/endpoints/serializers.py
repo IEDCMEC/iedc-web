@@ -5,7 +5,7 @@ from .models import Announcements, ContactForm, ImageService
 class AnnouncementsSerializer(serializers.ModelSerializer):
     class Meta:
         model = Announcements
-        fields = ('id', 'title', 'description', 'completed')
+        fields = '__all__'
 class ContactFormSerializer(serializers.ModelSerializer):
     class Meta:
         model = ContactForm
