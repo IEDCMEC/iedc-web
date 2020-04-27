@@ -1,0 +1,22 @@
+import React from 'react'
+
+const Card = ({name, designation}) => {
+   return (
+      <div>
+         <div className="col s12 m4">
+            <div className="card">
+               <div className="card-image circle">
+                  <img src={require("../../Assets/t.jfif")} alt="" />
+                  <span className="card-title">{name}</span>
+               </div>
+               <div className="card-content center">
+                  <p>{designation}</p>
+               </div>
+            </div>
+         </div>
+      </div>
+   )
+}
+
+export default Card
+

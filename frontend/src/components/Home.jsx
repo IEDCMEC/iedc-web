@@ -14,8 +14,6 @@ const Home = () => {
         id="box_curve_bottom"
         style={{ "background-color": "white", "background-image": `url(${MainSvg})` }}
       >
-        <Navbar />
-
         <div className="container" id="home" style={{ color: "rgb(223, 218, 218)" }}>
           <div className="row">
             <div className="col s12 m6">
