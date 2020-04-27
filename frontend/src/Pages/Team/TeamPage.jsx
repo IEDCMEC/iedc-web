@@ -1,6 +1,5 @@
 import React, {useState} from 'react'
 import Navbar from '../../components/Navbar'
-import Card from './Card'
 import MemberCollection from './MemberCollection'
 import MembersList from './MembersList'
 

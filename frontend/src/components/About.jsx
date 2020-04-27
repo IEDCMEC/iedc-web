@@ -4,7 +4,7 @@ import Popup from "reactjs-popup";
 
 const About = () => {
     return (
-      <section className="about section" id="About">
+      <section className="about section" id="about">
         <div className="container">
           <h3 className="text-darken-3 center-align" id="top_margin">
             About Us
