@@ -17,7 +17,6 @@
     "react-router-dom": "^5.1.2",
     "react-router-hash-link": "^1.2.2",
     "react-scripts": "3.4.0",
-    "react-scroll": "^1.7.16",
     "reactjs-popup": "^1.5.0"
   },
   "scripts": {
