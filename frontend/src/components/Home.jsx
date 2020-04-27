@@ -3,8 +3,6 @@ import "../index.css";
 import MainSvg from "../Assets/head.png";
 import IEDC from "../Assets/logo.svg";
 import "materialize-css/dist/css/materialize.min.css";
-import Navbar from "./Navbar";
-
 
 const Home = () => {
   return (
