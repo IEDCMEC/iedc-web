@@ -38,6 +38,14 @@ const TeamPage = () => {
                <h3 className="grey-text">Design Team:  </h3 >
                <h5 className="grey-text text-darken-4 names">John Doe, John Doe, John Doe</h5>
             </div>
+            <div className="team">
+               <h3 className="grey-text">Marketing Team: </h3 >
+               <h5 className="grey-text text-darken-4 names">John Doe, John Doe, John Doe</h5>
+            </div>
+            <div className="team">
+               <h3 className="grey-text">Social Media: </h3 >
+               <h5 className="grey-text text-darken-4 names">John Doe, John Doe, John Doe</h5>
+            </div>
          </div>
       </div>
    )

@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect } from 'react'
 import "materialize-css/dist/css/materialize.min.css";
 import M from "materialize-css/dist/js/materialize.min.js";
 
@@ -27,8 +27,8 @@ const Navbar = () => {
                   <a href="#" data-target="mobile-nav" className="sidenav-trigger">
                      <i className="material-icons" style={{ color: "#C33427" }}>menu</i>
                   </a>
-                  <div className="hide-on-med-and-up black-text title center-align"><span className="red-text">IEDC</span>MEC</div>
-                  <ul className="right hide-on-small-and-down">
+                  <div className="hide-on-large-only black-text center-align" style={{fontSize: 18 }} ><span className="red-text">IEDC</span>MEC</div>
+                  <ul className="right hide-on-med-and-down">
                      {links.map(link => (
                         <li key={link.id}>
                            <HLink className='black-text' to={link.to} >{link.Name}</HLink>

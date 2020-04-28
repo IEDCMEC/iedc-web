@@ -1,7 +1,6 @@
 import React from 'react'
 
 const Card = ({name, designation,imageUrl}) => {
-   let x = '/TeamMembers/ache1.png'
    return (
       <div>
          <div className="col s12 m4">
