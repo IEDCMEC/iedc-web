@@ -1,12 +1,13 @@
 import React from 'react'
 
-const Card = ({name, designation}) => {
+const Card = ({name, designation,imageUrl}) => {
+   let x = '/TeamMembers/ache1.png'
    return (
       <div>
          <div className="col s12 m4">
             <div className="card">
                <div className="card-image circle">
-                  <img src={require("../../Assets/t.jfif")} alt="" />
+                  <img src={imageUrl} alt={name} />
                   <span className="card-title">{name}</span>
                </div>
                <div className="card-content center">

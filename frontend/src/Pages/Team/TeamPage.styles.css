@@ -1,0 +1,12 @@
+.team{
+   display: flex;
+   /* justify-content: center; */
+   align-items: center;
+}
+
+.names{
+   margin-left: 6px;
+   padding-left: 12px;
+   margin-top: 12px;
+   padding-top: 17px;
+}

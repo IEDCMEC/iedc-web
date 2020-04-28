@@ -5,12 +5,10 @@ import Achievements from "../components/Achievements";
 import Gallery from "../components/Gallery";
 import Contact from "../components/Contact";
 import "../css/fixed.css";
-import Navbar from "../components/Navbar";
 
 const Landing = () => {
     return (
       <div className="landing">
-        <Navbar/>
         <Home />
         <About />
         <Achievements />

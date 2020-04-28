@@ -10,14 +10,14 @@ const Navbar = () => {
       M.Sidenav.init(sidenav, {});
    }, [])
 
-   const [links, setLinks] = useState([
+   const links = [
       { id: 1, Name: 'Home', to: '/#home' },
       { id: 2, Name: 'About', to: '/#about' },
       { id: 3, Name: 'Achievements', to: '/#achievements' },
       { id: 4, Name: 'Gallery', to: '/#gallery' },
       { id: 5, Name: 'Contact', to: '/#contact' },
       { id: 6, Name: 'Team', to: '/team' },
-   ])
+   ]
 
    return (
       <div className="navbar">
