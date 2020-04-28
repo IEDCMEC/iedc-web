@@ -1,7 +1,30 @@
-import React from "react";
+import React, { Component } from "react";
 import "../index.css";
+import axios from 'axios';
 
-const Contact = () => {
+class Contact extends Component{
+  constructor() {
+    super();
+    this.state = {
+      name: '',
+      phone: '',
+      email: '',
+      message: '',
+    };
+  }
+
+  onChange = (e) => {
+    this.setState({ [e.target.name]: e.target.value });
+  }
+
+  onSubmit = (e) => {
+    e.preventDefault();
+    const { name, phone, email, message } = this.state;
+    axios.post('http://127.0.0.1:8000/api/contactform/', { name, phone, email, message });
+  }
+
+  render(){
+    const { name, phone, email, message } = this.state;
     return (
       <div id="top_margin">
         <section id="box_curve_top">
@@ -13,39 +36,28 @@ const Contact = () => {
                     Connect with us
                   </h4>
                 </div>
-                <form>
+                <form onSubmit={this.onSubmit}>
                   <div className="col s11 m4 l6" id="column1">
                     <div className="input-field">
-                      <input type="text" name="name" />
+                      <input type="text" name='name' value={name} onChange={this.onChange} />
                       <label htmlFor="name">Your Name</label>
                     </div>
                     <div className="input-field">
-                      <input type="email" name="email" />
+                      <input type="email" name='email' value={email} onChange={this.onChange} />
                       <label htmlFor="email">Your email</label>
                     </div>
                   </div>
-                  <div className="col s11 m4 l6" id="column2">
+                  <div className="col s11 m4 l6" id='column2'>
                     <div className="input-field">
-                      <input type="text" name="number" />
-                      <label htmlFor="number">Your Phone Number</label>
+                      <input type="text" name='phone' value={phone} onChange={this.onChange} />
+                      <label htmlFor="phone">Your Phone Number</label>
                     </div>
                     <div className="input-field">
-                      <textarea
-                        placeholder="Your message"
-                        name="message"
-                        cols="30"
-                        rows="10"
-                        className="materialize-textarea"
-                      />
+                      <textarea placeholder='Your message' name="message" value={message} onChange={this.onChange} cols="30" rows="10" className="materialize-textarea"></textarea>
                     </div>
                   </div>
                   <div className="col s11 m4 l12 center-align" id="submit">
-                    <input
-                      type="submit"
-                      className="btn"
-                      value="submit"
-                      style={{ "background-color": "#C33427" }}
-                    />
+                    <input type="submit" className="btn" value="submit" style={{ 'background-color': '#C33427' }} />
                   </div>
                 </form>
               </div>
@@ -89,6 +101,7 @@ const Contact = () => {
         </section>
       </div>
     );
-};
+  }
+}
 
 export default Contact;
