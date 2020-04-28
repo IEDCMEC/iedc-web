@@ -2,8 +2,8 @@ import React from "react";
 
 const Achievements = () => {
     return (
-      <section className="achievements section" id="section_spacing">
-        <div className="container">
+      <section className="section" id='achievements'>
+        <div className="container" id="section_spacing">
           <h3 className="text-darken-3 center-align" id="bottom_margin">
             Achievements
           </h3>
