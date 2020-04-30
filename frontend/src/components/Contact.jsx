@@ -23,6 +23,17 @@ class Contact extends Component{
     axios.post('http://127.0.0.1:8000/api/contactform/', { name, phone, email, message });
   }
 
+  resetForm = () => {
+    this.setState({
+      ...this.state,
+      name: '',
+      phone:'',
+      email:'',
+      message:'',
+    })
+    alert('submit form');
+  }
+
   render(){
     const { name, phone, email, message } = this.state;
     return (
@@ -56,8 +67,8 @@ class Contact extends Component{
                       <textarea placeholder='Your message' name="message" value={message} onChange={this.onChange} cols="30" rows="10" className="materialize-textarea"></textarea>
                     </div>
                   </div>
-                  <div className="col s11 m4 l12 center-align" id="submit">
-                    <input type="submit" className="btn" value="submit" style={{ 'background-color': '#C33427' }} />
+                  <div className="col s11 m4 l12 center-align" style={{marginBottom:'2em'}}>
+                    <input type="submit" className="btn" value="submit" style={{ 'background-color': '#C33427' }} onClick={this.resetForm} />
                   </div>
                 </form>
               </div>
