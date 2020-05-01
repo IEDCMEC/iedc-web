@@ -7,6 +7,15 @@ docker-compose up
 ```
 inside the backend directory to install all the required utilities.
 
+If this does not work,
+
+``` pip install -r requirements.txt ```
+
+Then run ,
+
+``` python manage.py runserver ```
+
+
 # USING THE API
 
 Once the srever is running on localhost, you can use the Django Admin pannel located at [http://127.0.0.1:8000/admin](http://127.0.0.1:8000/admin) to enter and delete data.
