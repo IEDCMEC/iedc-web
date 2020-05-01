@@ -21,6 +21,7 @@ class Contact extends Component{
     e.preventDefault();
     const { name, phone, email, message } = this.state;
     axios.post('http://127.0.0.1:8000/api/contactform/', { name, phone, email, message });
+    this.resetForm()
   }
 
   resetForm = () => {
@@ -31,7 +32,7 @@ class Contact extends Component{
       email:'',
       message:'',
     })
-    alert('submit form');
+    alert('Thank you :)');
   }
 
   render(){
@@ -68,7 +69,7 @@ class Contact extends Component{
                     </div>
                   </div>
                   <div className="col s11 m4 l12 center-align" style={{marginBottom:'2em'}}>
-                    <input type="submit" className="btn" value="submit" style={{ 'background-color': '#C33427' }} onClick={this.resetForm} />
+                    <input type="submit" className="btn" value="submit" style={{ 'background-color': '#C33427' }} />
                   </div>
                 </form>
               </div>
