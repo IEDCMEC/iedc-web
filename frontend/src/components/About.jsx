@@ -33,7 +33,7 @@ const About = () => {
               trigger={(
                 <a
                   className="btn waves-effect"
-                  style={{ "background-color": "#C33427" }}
+                  style={{ "background-color": "#C33427", "z-index":'0' }}
                 >
                   <i className="material-icons right">arrow_forward</i>
                     Read More
