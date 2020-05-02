@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Announcements, ContactForm, ImageService
+from .models import Announcements, ContactForm, ImageService,Achievements
 
 
 class AnnouncementAdmin(admin.ModelAdmin):
@@ -13,3 +13,4 @@ class ImageServiceAdmin(admin.ModelAdmin):
 admin.site.register(Announcements , AnnouncementAdmin)
 admin.site.register(ContactForm , contactFormAdmin)
 admin.site.register(ImageService , ImageServiceAdmin)
+admin.site.register(Achievements)

@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from .models import Announcements, ContactForm, ImageService
+from .models import Announcements, ContactForm, ImageService, Achievements
 
 
 class AnnouncementsSerializer(serializers.ModelSerializer):
@@ -13,4 +13,8 @@ class ContactFormSerializer(serializers.ModelSerializer):
 class ImageServiceSerializer(serializers.ModelSerializer):
     class Meta:
         model = ImageService
+        fields = '__all__'
+class AchievementsSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Achievements
         fields = '__all__'
