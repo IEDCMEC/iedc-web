@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import "../index.css";
 import MainSvg from "../Assets/head.png";
-import IEDC from "../Assets/logo.svg";
+import IEDC from "../Assets/logo.png";
 import "materialize-css/dist/css/materialize.min.css";
 // import axios from 'axios';
 
@@ -9,7 +9,7 @@ class Home extends Component{
   constructor() {
     super();
     this.state = {
-      announcement: []
+      announcements: []
     }
   }
 
@@ -19,15 +19,15 @@ class Home extends Component{
 
     fetch('https://raw.githubusercontent.com/IEDCMEC/data/master/data.json')
       .then(response => response.json())
-      .then(data => this.setState({announcement: data.announcements}));
+      .then(data => this.setState({announcements: data.announcements}));
   }
 
   render(){
-    const display_announcement = this.state.announcement.map(announcements => {
+    const display_announcement = this.state.announcements.map(announcement => {
       return (
-        <div>
-          <p>> {announcements.title}</p>
-          <p>{announcements.description}</p>
+        <div style={{"text-align": "center"}}>
+          <h6><b>{announcement.title}</b></h6>
+          <p>{announcement.description}</p>
         </div>
       )
     })
