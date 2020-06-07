@@ -3,7 +3,7 @@ import "../index.css";
 import MainSvg from "../Assets/head.png";
 import IEDC from "../Assets/logo.svg";
 import "materialize-css/dist/css/materialize.min.css";
-import axios from 'axios';
+// import axios from 'axios';
 
 class Home extends Component{
   constructor() {
@@ -14,8 +14,12 @@ class Home extends Component{
   }
 
   componentDidMount() {
-    axios.get("http://127.0.0.1:8000/api/announcements/")
-      .then(res => this.setState({ announcement: res.data }))
+    // axios.get("http://127.0.0.1:8000/api/announcements/")
+    //   .then(res => this.setState({ announcement: res.data }))
+
+    fetch('https://raw.githubusercontent.com/IEDCMEC/data/master/data.json')
+      .then(response => response.json())
+      .then(data => this.setState({announcement: data.announcements}));
   }
 
   render(){
