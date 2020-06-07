@@ -176,7 +176,7 @@ form input[type=submit]:active{
   padding-left:9em;
 }
 .center-alingnment{
-  width:7em;
+  width:80%;
 }
 
 @media only screen and (max-width: 600px) {
