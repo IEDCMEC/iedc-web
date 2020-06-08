@@ -1,89 +1,78 @@
-import React from 'react'
+import React, { Component } from "react";
 import "../index.css";
-import MainSvg from '../Assets/head.png';
-import IEDC from '../Assets/logo.svg';
+import MainSvg from "../Assets/head.png";
+import IEDC from "../Assets/logo.png";
+import "materialize-css/dist/css/materialize.min.css";
+// import axios from 'axios';
 
-import { useEffect } from 'react'
-import 'materialize-css/dist/css/materialize.min.css';
-import M from 'materialize-css/dist/js/materialize.min.js';
-import { Link } from "react-scroll";
+class Home extends Component{
+  constructor() {
+    super();
+    this.state = {
+      announcements: []
+    }
+  }
 
-const Navbar = () => {
+  componentDidMount() {
+    // axios.get("http://127.0.0.1:8000/api/announcements/")
+    //   .then(res => this.setState({ announcement: res.data }))
 
-	useEffect(() => {
-		let sidenav = document.querySelector('#slide-out');
-		M.Sidenav.init(sidenav, {});
-	}, [])
+    fetch('https://raw.githubusercontent.com/IEDCMEC/data/master/data.json')
+      .then(response => response.json())
+      .then(data => this.setState({announcements: data.announcements}));
+  }
 
-	return (
-		<div class="navbar-fixed">
+  render(){
+    const display_announcement = this.state.announcements.map(announcement => {
+      return (
+        <div style={{"text-align": "center"}}>
+          <h6><b>{announcement.title}</b></h6>
+          <p>{announcement.description}</p>
+        </div>
+      )
+    })
+    return (
+      <div id=" bottom_margin">
+        <section
+          className="home main_img"
+          id="box_curve_bottom"
+          style={{ "background-color": "white", "background-image": `url(${MainSvg})` }}
+        >
+          <div className="container" id="home" style={{ color: "rgb(223, 218, 218)" }}>
+            <div className="row">
+              <div className="col s12 m6">
+                <div
+                  className="iedc_img"
+                  style={{ "background-image": `url(${IEDC})`, height: "15vh" }}
+                />
+              </div>
 
-		<div className='nav'>
-			<nav className="nav-wrapper accent-1" style={{'background-color':'white'}}>
-				<a href="#" data-target="slide-out" className="sidenav-trigger"><i className="material-icons" style={{'color':'#C33427'}}>menu</i></a>
-				<div className="container">
-					<ul className="right hide-on-small-and-down">
-						<li><Link className='grey-text text-darken-3' activeClass="active" to="home" spy={true} smooth={true} offset={-70} duration={400}>Home</Link></li>
-						<li><Link className='grey-text text-darken-3' activeClass="active" to="About" spy={true} smooth={true} offset={-70} duration={400}>About</Link></li>
-						<li><Link className='grey-text text-darken-3' activeClass="active" to="achievements" spy={true} smooth={true} offset={-70} duration={400}>Achievements</Link></li>
-						<li><Link className='grey-text text-darken-3' activeClass="active" to="gallery" spy={true} smooth={true} offset={-70} duration={400}>Gallery</Link></li>
-						<li><Link className='grey-text text-darken-3' activeClass="active" to="team" spy={true} smooth={true} offset={-70} duration={400}>Our Team</Link></li>
-						<li><Link className='grey-text text-darken-3' activeClass="active" to="contact" spy={true} smooth={true} offset={-70} duration={400}>Contact</Link></li>
-					</ul>
-				</div>
-			</nav>
-
-			<ul id="slide-out" className="sidenav" style={{'background-color':'black','padding':'10vh', 'text-align':'center', 'width':'100%'}}>
-				<li><Link className='grey-text' activeClass="active" to="home" spy={true} smooth={true} offset={-70} duration={400}>Home</Link></li>
-				<li><Link className='grey-text' activeClass="active" to="About" spy={true} smooth={true} offset={-70} duration={400}>About</Link></li>
-				<li><Link className='grey-text' activeClass="active" to="achievements" spy={true} smooth={true} offset={-70} duration={400}>Achievements</Link></li>
-				<li><Link className='grey-text' activeClass="active" to="gallery" spy={true} smooth={true} offset={-70} duration={400}>Gallery</Link></li>
-				<li><Link className='grey-text' activeClass="active" to="team" spy={true} smooth={true} offset={-70} duration={400}>Our Team</Link></li>
-				<li><Link className='grey-text' activeClass="active" to="contact" spy={true} smooth={true} offset={-70} duration={400}>Contact</Link></li>
-			</ul>
-		</div>
-		</div>
-	)
+              <div className="col s12 m5 offset-m1">
+                <h4
+                  id="center_align"
+                  className="announcement_header"
+                  style={{ color: "#C33427" }}
+                >
+                  Announcements
+                  </h4>
+                <div className="announcement-box">
+                  <div className="col s6 m3" id="announcements_card">
+                    <div className="card" id="curve_border">
+                      <div className="card-content" style={{ color: "black" }}>
+                        <p>
+                          {display_announcement}
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    );
+  }
 }
 
-const Home = () => {
-	return (
-
-		
-		<div id=" bottom_margin">
-
-
-		<section className='home main_img' id="box_curve_bottom" style={{'background-color':'white', 'background-image': `url(${MainSvg})`}}>
-		<Navbar/>
-
-<div className="container" id="home" style={{'color':'rgb(223, 218, 218)' }}>
-				<div className="row">
-					<div className="col s12 m6">
-						<div className="iedc_img" style={{'background-image': `url(${IEDC})`, 'height':'15vh'}}></div>
-					</div>
-
-
-
-
-					<div className="col s12 m5 offset-m1">
-						<h4 id="center_align" className="announcement_header" style={{'color':'#C33427'}}>Announcements</h4>
-						<div className="announcement-box">
-						<div className="col s6 m3" id="announcements_card">
-						<div className="card" id="curve_border">
-							
-							<div className="card-content" style={{'color':'black'}}>
-								<p>> Lorem ipsum dolor sit amet consectetur adipisicing elit. <br/><br/>> Eligendi eius veritatis aut quidem corporis rem ut pariatur harum quas nulla, nihil officiis voluptates tempora, libero aliquid dolorum rerum exercitationem? Repellendus? </p>
-							</div>
-							
-						</div>z
-					</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		</div>
-	)
-}
-
-export default Home
+export default Home;

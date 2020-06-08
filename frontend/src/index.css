@@ -163,8 +163,12 @@ p{
   border-radius: 24px;
   margin-bottom: 2em;
 }
-#submit{
-  padding-bottom:2em;
+
+form input[type=submit]:hover{
+  background-color: rgb(223, 72, 59);
+}
+form input[type=submit]:active{
+  width:6.5em;
 }
 
 #follow-us{
@@ -172,7 +176,7 @@ p{
   padding-left:9em;
 }
 .center-alingnment{
-  width:7em;
+  width:80%;
 }
 
 @media only screen and (max-width: 600px) {

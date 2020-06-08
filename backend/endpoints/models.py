@@ -21,10 +21,13 @@ class ImageService(models.Model):
     content = models.TextField()
     image = models.ImageField(upload_to='post_images')
     def __str__(self):
+<<<<<<< HEAD
         return self.title
 class Achievements(models.Model):
     title = models.CharField(max_length=120)
     content = models.TextField()
     image = models.ImageField(upload_to='achievements')
     def __str__(self):
+=======
+>>>>>>> 929eb0fe3ee2230d73a7547c2d217963bbcfcae2
         return self.title
