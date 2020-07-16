@@ -98,7 +98,6 @@ class Contact extends Component{
                       <i className="fab circle fa-pinterest fa-2x" />
                     </a>
                   </div>
-
                   <div className="row margin_top_mobile ">
                     <h4>Contact</h4>
                     <p>reachiedcmec@gmail.com</p>
