@@ -27,7 +27,7 @@ class Home extends Component{
       return (
         <div style={{"text-align": "center"}}>
           <h6><b>{announcement.title}</b></h6>
-          <p>{announcement.description}</p>
+          <p style={{fontSize: "80%"}}>{announcement.description}</p>
         </div>
       )
     })
@@ -43,7 +43,7 @@ class Home extends Component{
               <div className="col s12 m6">
                 <div
                   className="iedc_img"
-                  style={{ "background-image": `url(${IEDC})`, height: "15vh" }}
+                  style={{ "background-image": `url(${IEDC})`, "height": "15vh", "width":"50vh" }}
                 />
               </div>
 

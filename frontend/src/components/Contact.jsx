@@ -38,7 +38,7 @@ class Contact extends Component{
   render(){
     const { name, phone, email, message } = this.state;
     return (
-      <div id="top_margin">
+      <div id="top_margin" style={{ "background-color": "rgb(223, 72, 59)"}}>
         <section id="box_curve_top">
           <div className="contact container" id="centre_mobile">
             <div className="row">
@@ -108,8 +108,6 @@ class Contact extends Component{
               </div>
             </div>
           </div>
-
-          <div className="extra_bottom" />
         </section>
       </div>
     );

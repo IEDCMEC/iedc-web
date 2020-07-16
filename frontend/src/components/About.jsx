@@ -12,7 +12,6 @@ const About = () => {
         <br />
         <div className="row">
           <div className="col s12 m5">
-            <h5>What is IEDC?</h5>
             <p style={{ color: "black" }}>
               The concept of Innovation and Entrepreneurship Development Cell (IEDC)
               was formulated to promote innovation and entrepreneurial culture in
@@ -88,7 +87,7 @@ const About = () => {
                       To organise Entrepreneurship Awareness Camps,
                       Entrepreneurship Development Programmes, Faculty
                       Development Programmes and Skill Development Programmes
-                        in the institution.{" "}
+                      in the institution.{" "}
                     </li>
                     <li>To organize Business Plan Competitions every year.</li>
                     <li>
