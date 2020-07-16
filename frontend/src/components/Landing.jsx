@@ -10,7 +10,6 @@ import "../css/fixed.css";
 const Landing = () => {
 	return (
 		<div className="landing" >
-
 			<Home />
 			<About/>
 			<Achievements/>
@@ -18,7 +17,6 @@ const Landing = () => {
 			<Team/> 
 			<Contact/>
 		</div>
-		
 	)
 }
 
