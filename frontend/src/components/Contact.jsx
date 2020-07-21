@@ -42,7 +42,7 @@ class Contact extends Component{
         <section id="box_curve_top">
           <div className="contact container" id="centre_mobile">
             <div className="row">
-              <div className="col s11 l6 z-depth-2" id="contact">
+              {/* <div className="col s11 l6 z-depth-2" id="contact">
                 <div className="col s11 m4 l12 center-align" id="heading">
                   <h4 className="text-darken-3" id="bottom_margin">
                     Connect with us
@@ -72,16 +72,16 @@ class Contact extends Component{
                     <input type="submit" className="btn" value="submit" style={{ 'background-color': '#C33427' }} />
                   </div>
                 </form>
-              </div>
+              </div> */}
               <div
-                className="col s12 m4 l6  margin_top_mobile  center-align"
-                id="follow-us"
+                className="col s12 m4 l12  margin_top_mobile"
+                id="contact"
               >
-                <h4 id="bottom_margin" className="center-alingnment">
+                <h4 id="bottom_margin" className="">
                   Follow Us
                 </h4>
-                <div className="col s12 m10">
-                  <div className="row">
+                <div className="col s12 m12 l12">
+                  <div className="">
                     <a href="" style={{ color: "#C33427" }} id="icon_space">
                       <i className="fab circle fa-facebook fa-2x" />
                     </a>
@@ -98,12 +98,11 @@ class Contact extends Component{
                       <i className="fab circle fa-pinterest fa-2x" />
                     </a>
                   </div>
-                  <div className="row margin_top_mobile ">
+                  </div>
+                  <div style={{marginTop:"6rem", marginBottom:"3rem"}}>
                     <h4>Contact</h4>
                     <p>reachiedcmec@gmail.com</p>
-                    <p>+91 82812 84062</p>
                   </div>
-                </div>
               </div>
             </div>
           </div>

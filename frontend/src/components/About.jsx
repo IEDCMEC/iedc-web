@@ -7,25 +7,17 @@ const About = () => {
     <section className="about section" id="about">
       <div className="container">
         <h3 className="text-darken-3 center-align" id="top_margin">
-          About Us
+          About IEDC MEC
           </h3>
         <br />
         <div className="row">
           <div className="col s12 m5">
-            <p style={{ color: "black" }}>
-              The concept of Innovation and Entrepreneurship Development Cell (IEDC)
-              was formulated to promote innovation and entrepreneurial culture in
-              educational institutions and to develop institutional mechanism to
-              foster techno-entrepreneurship for generation of wealth and employment
-              by persons. The IEDCs are established in academic institutions across
-              Kerala having requisite expertise and infrastructure.
-                <br />
-              <br />
-                Kerala Startup Mission has taken this initiative of the Govt of Kerala
-                to the academic institutions in order to create awareness, exposure and
-                skills among the students and to enable and promote an environment to
-                create entrepreneurial ventures by developing innovative products of
-                social relevance.
+            <p style={{ color: "black", marginBottom:"3rem" }}>
+            Founded in January in the year 2009 as Entrepreneurship Cell, MEC and revamped as IEDC MEC under the guidance of Kerala Startup Mission as a Govt. of Kerala initiative in 2015, the Innovation and Entrepreneurship Development Cell of Model Engineering college has constantly worked towards helping the community find an intersection between technology and entrepreneurship.
+            <br /><br />
+            We strongly believe that entrepreneurship is the key to unlock the nation’s true potential and therefore strive to promote the idea of job creation rather than job seeking. By consistently hosting a large number of inspiring and innovative events and through our flagship annual national level symposium- ‘Technopreneur’, IEDC MEC,from its humble beginnings is now one of the best functioning IEDCs in the state.
+            <br /><br />
+            IEDC MEC currently acts as a pre-incubator which helps in providing mentorship and support to the projects of our students and help to scale them into potential startup realities. We are funded by the Kerala Startup Mission(KSUM).
               </p>
 
             <Popup
@@ -55,34 +47,27 @@ const About = () => {
               >
                 <p className="pop-up" style={{ color: "grey" }}>
                   {" "}
-                    The Innovation and Entrepreneurship Development Centres (IEDC)
-                    are platforms set up in Engineering, Management, Arts & Science
-                    Colleges and Polytechnics with an aim to provide students an
-                    opportunity to experiment and innovate. Kerala Startup Mission
-                    has set up IEDCs in 226 institutions across the State which
-                    provide avenues for creative students to learn, collaborate and
-                    transform their innovative ideas into prototypes of viable
-                    products and services.
+                  <h6 style={{ color: "black" }}>Technopreneur</h6>
+                  Technopreneur, the flagship event of IEDC MEC is the annual entrepreneurial and managerial symposium of MEC which weaves the perfect symphony of technology meeting entrepreneurship. Over the years it has attracted the best minds in the country and has been a grand success in stimulating and inspiring the community through this national level symposium.
+Visit our Facebook page below to know more about it.
+https://www.facebook.com/technopreneur.mec
                     <br />
                   <br />
                   <h6 style={{ color: "black" }}>Vision</h6>
-                    The vision of IEDC is to "promote and enrich entrepreneurial
-                    culture in the state by strengthening and supporting the
-                    innovative ideas using technology and mentorship for the social
-                    and economical growth of the Nation".
+                  To promote and enrich the entrepreneurial culture in MEC, strengthening and supporting innovative ideas using technology and mentorship for social and economic growth.
                     <br />
                   <br />
                   <h6 style={{ color: "black" }}>Mission</h6>
-                    The mission of the IEDC is to "develop institutional mechanism
-                    to create entrepreneurial culture in academic institutions to
-                    foster growth of innovation and entrepreneurship amongst the
-                    faculty and students in the state".
+                  To Develop, Nurture and Sustain the utopian dream of preparing MECians to be leaders of tomorrow and driving the change for the future.
                     <br />
                   <br />
                   <h6 style={{ color: "black" }}>
-                    The main objectives of IEDC are
+                  Objectives
                     </h6>
                   <ol>
+                    <li>
+                    To be a self sustainable Technology Business Incubator
+                    </li>
                     <li>
                       To organise Entrepreneurship Awareness Camps,
                       Entrepreneurship Development Programmes, Faculty
