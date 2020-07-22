@@ -1,12 +1,14 @@
 import React from 'react'
+import './TeamPage.styles.css'
+
 
 const Card = ({name, designation,imageUrl}) => {
    return (
       <div>
-         <div className="col s12 m4">
+         <div className="col s12 m4 ">
             <div className="card">
                <div className="card-image circle">
-                  <img src={imageUrl} alt={name} />
+                  <img src={imageUrl} alt={name} style={{ "height":'25em' }}/>
                   <span className="card-title">{name}</span>
                </div>
                <div className="card-content center">
