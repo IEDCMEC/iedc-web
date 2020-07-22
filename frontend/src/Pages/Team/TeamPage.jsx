@@ -7,10 +7,10 @@ const TeamPage = () => {
    return (
       <div id='team-page' >
          <div className="container">
-            <h2 className="title center-align bold">EXECUTIVE COMITTEE</h2>
+            <h2 className="title center-align bold" >EXECUTIVE COMITTEE</h2>
             <div className="row" id="executive-members-list">
                {executiveMembers.map(({ id, ...otherProps }) => (
-                  <Card key={id} {...otherProps} />
+                  <Card key={id} {...otherProps}  />
                ))}
             </div>
             <br />
