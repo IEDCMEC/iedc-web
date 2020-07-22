@@ -49,21 +49,15 @@ class Contact extends Component{
                   Follow Us
                 </h4>
                 <div className="col s12 m12 l12">
-                  <div className="">
-                    <a href="" style={{ color: "#C33427" }} id="icon_space">
-                      <i className="fab circle fa-facebook fa-2x" />
-                    </a>
-                    <a href="" style={{ color: "#C33427" }} id="icon_space">
+                  <div>
+                    <a href="https://twitter.com/iedc_mec" style={{ color: "#C33427" }} id="icon_space">
                       <i className="fab circle fa-twitter fa-2x" />
                     </a>
-                    <a href="" style={{ color: "#C33427" }} id="icon_space">
+                    <a href="http://linkedin.com/company/iedcmec" style={{ color: "#C33427" }} id="icon_space">
                       <i className="fab circle fa-linkedin fa-2x" />
                     </a>
-                    <a href="" style={{ color: "#C33427" }} id="icon_space">
-                      <i className="fab circle fa-google-plus fa-2x" />
-                    </a>
-                    <a href="" style={{ color: "#C33427" }} id="icon_space">
-                      <i className="fab circle fa-pinterest fa-2x" />
+                    <a href="https://www.instagram.com/iedcmec/" style={{ color: "#C33427" }} id="icon_space">
+                      <i className="fab circle fa-instagram fa-2x" />
                     </a>
                   </div>
                   </div>
