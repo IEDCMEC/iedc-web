@@ -31,30 +31,32 @@ class Intro extends Component {
                         </div>
                         <div className="col s12 m6 offset-m1">
                             <br />
-                            <img
-                                src={require("../Assets/startup_culture.jpg")}
-                                alt="about"
-                                className="responsive-img"
-                                id="startup_img"
-                            />
+                            <a target="_blank" href='https://www.freepik.com/free-photos-vectors/business'>
+                                <img
+                                    src={require("../Assets/startup_culture.jpg")}
+                                    alt="about"
+                                    className="responsive-img"
+                                    id="startup_img"
+                                />
+                            </a>
                         </div>
                         </div>
                     </div>
                 </section>
                 <section className="section" id="about" style={{ "background-color": "#fafafa", "padding-bottom": "5%"}}>
-                        <div className="container">
+                        <div className="container" style={{marginTop: '50px'}}>
                             <div className="row">
                                 <div className="col s12 m5" style={{ "color": "white" }}>
-                                <img
-                                    src={require("../Assets/help.jpg")}
-                                    alt="about"
-                                    className="responsive-img"
-                                    id="about_img"
-                                />
+                                <a target="_blank" href='https://www.freepik.com/free-photos-vectors/business'>
+                                    <img
+                                        src={require("../Assets/help.jpg")}
+                                        alt="about"
+                                        className="responsive-img"
+                                        id="about_img"
+                                    />
+                                </a>                               
                                 </div>
                                 <div className="col s12 m6 offset-m1">
-                                    <br />
-
                                 <h3>We are there for you</h3>
                                 <p style={{ color: "black" }}>
                                 Have an idea? Don't know how to implement it? We'll help you bring it to life.
@@ -67,7 +69,7 @@ class Intro extends Component {
                         </div>
                 </section>
                 <section className="projects section z-depth-4" style={{ "background-color": "#DF483B"}}>
-                    <div className="container">
+                    <div className="container" style={{ marginTop: '50px' }}>
                         <div className="row">
                             <div className="col s12 m5" style={{ "color": "white" }}>
                                 <h3>Projects</h3>
@@ -81,12 +83,14 @@ class Intro extends Component {
                             </div>
                             <div className="col s12 m6 offset-m1">
                                 <br />
-                                <img
-                                    src={require("../Assets/help.svg")}
-                                    alt="about"
-                                    className="responsive-img"
-                                    id="about_img"
-                                />
+                                <a target="_blank" href="https://stories.freepik.com/?utm_source=Stories&utm_medium=referral&utm_campaign=web-attribution&utm_term=copy%20and%20attribute&utm_content=donwload-pop-up">
+                                    <img
+                                        src={require("../Assets/help.svg")}
+                                        alt="about"
+                                        className="responsive-img"
+                                        id="about_img"
+                                    />
+                                </a>
                             </div>
                         </div>
                     </div>

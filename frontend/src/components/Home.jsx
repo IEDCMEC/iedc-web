@@ -46,7 +46,7 @@ class Home extends Component{
                   style={{ "background-image": `url(${IEDC})`, "height": "15vh", "width":"50vh" }}
                 />
               </div>
-
+              <a target="_blank" href='https://www.freepik.es/fotos-vectores-gratis/fondo'></a>
               <div className="col s12 m5 offset-m1">
                 <h4
                   id="center_align"
