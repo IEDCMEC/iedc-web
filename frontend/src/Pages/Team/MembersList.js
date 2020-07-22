@@ -1,14 +1,14 @@
 export const executiveMembers = [{
         id: 1,
-        name: "Allen",
-        designation: "Tech Team Head",
+        name: "Allen Joseph",
+        designation: "Chief Executive Officer",
         imageUrl: require("../../Assets/team/allen.jpg"),
 
     },
     {
         id: 2,
-        name: "Alan",
-        designation: "Tech Team Head",
+        name: "Alan Sebastian",
+        designation: "Chief Marketing Officer",
         imageUrl: require("../../Assets/team/alan.jpg"),
     },
     {
@@ -38,7 +38,7 @@ export const executiveMembers = [{
     {
         id: 7,
         name: "Vivek",
-        designation: "Tech Team Head",
+        designation: "Chief Technology Officer",
         imageUrl: require("../../Assets/team/vivek.jpg"),
     }
 ];

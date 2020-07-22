@@ -21,7 +21,6 @@ html {
 }
 
 body {
-  background-color: rgb(255, 255, 255);
   color:#C33427;
   margin: 0;
   padding: 0;
@@ -34,11 +33,6 @@ body {
 
 .announcement-box {
   min-height: 50vh;
-}
-
-#message-box {
-  min-height: 40px;
-  border: 1px grey;
 }
 
 /*----------------------------------------------------------------------------------------*/
@@ -156,11 +150,9 @@ p{
 
 #box_curve_top {
   background-color: rgb(255, 255, 255);
-  border-top-left-radius: 20%;
+  border-top-left-radius: 40%;
   border-top-right-radius: 40%;
   box-shadow: 0 -4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  padding-top: 0px;
-  margin-bottom: 0;
 }
 
 .extra_bottom{
@@ -184,7 +176,6 @@ p{
 #contact{
   margin-top:2em;
   border-radius: 24px;
-  margin-bottom: 2em;
 }
 
 form input[type=submit]:hover{
@@ -236,8 +227,6 @@ form input[type=submit]:active{
   #follow-us{
     padding-left:0;
     margin-top:0;
-  }
-  .center-alingnment{
   }
 
 }
