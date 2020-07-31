@@ -5,7 +5,7 @@ import './TeamPage.styles.css'
 const Card = ({name, designation,imageUrl}) => {
    return (
       <div>
-         <div className="col s5 m3 ">
+         <div className="col m3">
             <div className="card">
                <div className="card-image">
                   <img src={imageUrl} alt={name} style={{ "height": '25em' }} />
