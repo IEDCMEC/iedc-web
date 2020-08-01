@@ -24,7 +24,7 @@ const About = () => {
               trigger={(
                 <a
                   className="btn waves-effect"
-                  style={{ "background-color": "#C33427", "z-index":'0' }}
+                  style={{ "background-color": "#C33427", "z-index": '0', "border-radius": "8px"}}
                 >
                   <i className="material-icons right">arrow_forward</i>
                     Read More
@@ -32,7 +32,10 @@ const About = () => {
               )}
               modal
               closeOnDocumentClick
-              style={{ "background-color": "red" }}
+              style={{ 
+                borderCollapse: 'collapsed',
+                borderRadius: "15px",
+              }}
             >
               <div
                 style={{
@@ -50,8 +53,9 @@ const About = () => {
                   <h6 style={{ color: "black" }}>Technopreneur</h6>
                   Technopreneur, the flagship event of IEDC MEC is the annual entrepreneurial and managerial symposium of MEC which weaves the perfect symphony of technology meeting entrepreneurship. Over the years it has attracted the best minds in the country and has been a grand success in stimulating and inspiring the community through this national level symposium.
 Visit our Facebook page below to know more about it.
-https://www.facebook.com/technopreneur.mec
-                    <br />
+<br />
+<a href="https://www.facebook.com/technopreneur.mec">Technopreneur Facebook</a>
+                  <br />
                   <br />
                   <h6 style={{ color: "black" }}>Vision</h6>
                   To promote and enrich the entrepreneurial culture in MEC, strengthening and supporting innovative ideas using technology and mentorship for social and economic growth.
@@ -91,6 +95,12 @@ https://www.facebook.com/technopreneur.mec
                                         </li>
                   </ol>
                 </p>
+                <br />
+                KTU awards activity points for B.Tech students participating in IEDC, NSS and Sports. 
+                A student should gain 100 activity points at the end of 4 years of his/her study. 
+                Points that can be gained in IEDC activities, workshops, social innovations,  internship in startup, 
+                Attended/ participated Exhibitions, project contest, prototype development, 
+                company registration, IPR, Start-up activity.
               </div>
             </Popup>
           </div>

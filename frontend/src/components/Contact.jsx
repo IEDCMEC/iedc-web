@@ -40,71 +40,32 @@ class Contact extends Component{
     return (
       <div id="top_margin" style={{ "background-color": "rgb(223, 72, 59)"}}>
         <section id="box_curve_top">
-          <div className="contact container" id="centre_mobile">
-            <div className="row">
-              {/* <div className="col s11 l6 z-depth-2" id="contact">
-                <div className="col s11 m4 l12 center-align" id="heading">
-                  <h4 className="text-darken-3" id="bottom_margin">
-                    Connect with us
-                  </h4>
-                </div>
-                <form onSubmit={this.onSubmit}>
-                  <div className="col s11 m4 l6" id="column1">
-                    <div className="input-field">
-                      <input type="text" name='name' value={name} onChange={this.onChange} />
-                      <label htmlFor="name">Your Name</label>
-                    </div>
-                    <div className="input-field">
-                      <input type="email" name='email' value={email} onChange={this.onChange} />
-                      <label htmlFor="email">Your email</label>
-                    </div>
-                  </div>
-                  <div className="col s11 m4 l6" id='column2'>
-                    <div className="input-field">
-                      <input type="text" name='phone' value={phone} onChange={this.onChange} />
-                      <label htmlFor="phone">Your Phone Number</label>
-                    </div>
-                    <div className="input-field">
-                      <textarea placeholder='Your message' name="message" value={message} onChange={this.onChange} cols="30" rows="10" className="materialize-textarea"></textarea>
-                    </div>
-                  </div>
-                  <div className="col s11 m4 l12 center-align" style={{marginBottom:'2em'}}>
-                    <input type="submit" className="btn" value="submit" style={{ 'background-color': '#C33427' }} />
-                  </div>
-                </form>
-              </div> */}
+            <div className="row" style={{marginBottom: "0px"}} id="centre_mobile">
               <div
-                className="col s12 m4 l12  margin_top_mobile"
+                className="col s12 m3 l12 margin_top_mobile"
                 id="contact"
               >
-                <h4 id="bottom_margin" className="">
+                <h4 id="bottom_margin">
                   Follow Us
                 </h4>
                 <div className="col s12 m12 l12">
-                  <div className="">
-                    <a href="" style={{ color: "#C33427" }} id="icon_space">
-                      <i className="fab circle fa-facebook fa-2x" />
-                    </a>
-                    <a href="" style={{ color: "#C33427" }} id="icon_space">
+                  <div>
+                    <a href="https://twitter.com/iedc_mec" style={{ color: "#C33427" }} id="icon_space">
                       <i className="fab circle fa-twitter fa-2x" />
                     </a>
-                    <a href="" style={{ color: "#C33427" }} id="icon_space">
+                    <a href="http://linkedin.com/company/iedcmec" style={{ color: "#C33427" }} id="icon_space">
                       <i className="fab circle fa-linkedin fa-2x" />
                     </a>
-                    <a href="" style={{ color: "#C33427" }} id="icon_space">
-                      <i className="fab circle fa-google-plus fa-2x" />
-                    </a>
-                    <a href="" style={{ color: "#C33427" }} id="icon_space">
-                      <i className="fab circle fa-pinterest fa-2x" />
+                    <a href="https://www.instagram.com/iedcmec/" style={{ color: "#C33427" }} id="icon_space">
+                      <i className="fab circle fa-instagram fa-2x" />
                     </a>
                   </div>
                   </div>
                   <div style={{marginTop:"6rem", marginBottom:"3rem"}}>
                     <h4>Contact</h4>
-                    <p>reachiedcmec@gmail.com</p>
+                    <p>iedc@mec.ac.in</p>
                   </div>
               </div>
-            </div>
           </div>
         </section>
       </div>

@@ -13,9 +13,8 @@ const Navbar = () => {
    const links = [
       { id: 1, Name: 'Home', to: '/#home' },
       { id: 2, Name: 'About', to: '/#about' },
-      { id: 3, Name: 'Achievements', to: '/#achievements' },
-      { id: 4, Name: 'Contact', to: '/#contact' },
-      { id: 5, Name: 'Team', to: '/team' },
+      { id: 3, Name: 'Contact', to: '/#contact' },
+      { id: 4, Name: 'Team', to: '/team' },
    ]
 
    return (
