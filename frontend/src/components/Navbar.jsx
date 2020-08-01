@@ -25,7 +25,11 @@ const Navbar = () => {
                   <a href="#" data-target="mobile-nav" className="sidenav-trigger">
                      <i className="material-icons" style={{ color: "#C33427" }}>menu</i>
                   </a>
-                  <div className="hide-on-large-only black-text center-align" style={{fontSize: 18 }} ><span className="red-text">IEDC</span>MEC</div>
+                  <div className="hide-on-large-only black-text" style={{
+                     position: 'relative',
+                     left: -10,
+                     fontSize: 18
+                  }} ><span className="red-text">IEDC</span>MEC</div>
                   <ul className="right hide-on-med-and-down">
                      {links.map(link => (
                         <li key={link.id}>
