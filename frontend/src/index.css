@@ -33,7 +33,6 @@ body {
 
 .announcement-box {
   min-height: 50vh;
-  min-width: 100vw;
 }
 
 /*----------------------------------------------------------------------------------------*/
@@ -235,6 +234,6 @@ form input[type=submit]:active{
     background-image: none;
   }
   #icons {
-  margin-left: 0px;
+    margin-left: 0px;
   }
 }
