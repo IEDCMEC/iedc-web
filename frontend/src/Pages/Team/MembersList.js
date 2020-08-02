@@ -76,25 +76,25 @@ export const webTeam = [{
     {
         id: 4,
         name: "Meenakshi",
-        designation: "Member",
+        designation: "Full Stack Developer",
         imageUrl: require("../../Assets/team/meenakshi.jpg"),
     },
     {
         id: 5,
         name: "Ameen",
-        designation: "Member",
+        designation: "Full Stack Developer",
         imageUrl: require("../../Assets/team/ameen.jpg"),
     },
     {
         id: 6,
         name: "Arti Bhatia",
-        designation: "Member",
+        designation: "Full Stack Developer",
         imageUrl: require("../../Assets/team/arti.jpg"),
     },
     {
         id: 7,
         name: "Jagath Jijo",
-        designation: "Member",
+        designation: "Full Stack Developer",
         imageUrl: require("../../Assets/team/jagath.jpg"),
     },
 ];

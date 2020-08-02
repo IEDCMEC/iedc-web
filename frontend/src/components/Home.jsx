@@ -52,6 +52,8 @@ class Home extends Component{
               </div>
               <a target="_blank" href='https://www.freepik.es/fotos-vectores-gratis/fondo'></a>
               <div className="col s12 m3 offset-m1">
+                <br />
+                <br />
                 <h4
                   id="center_align"
                   className="announcement_header"
