@@ -18,3 +18,19 @@
    margin-right: 1em;
    padding-top: 10%;
 }
+.grid-container{
+   display: grid;
+   grid-template-columns: repeat(3, 3fr);
+   grid-gap: 1em 2em;
+}
+
+.card {
+   max-width: 20em;
+}
+
+@media (max-width: 600px ){
+   .grid-container{
+      grid-template-columns: 18em;
+      justify-content: center;
+   }
+}

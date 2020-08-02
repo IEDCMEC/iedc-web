@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import "../index.css";
-import MainSvg from "../Assets/head.png";
 import IEDC from "../Assets/logo.png";
 import "materialize-css/dist/css/materialize.min.css";
 // import axios from 'axios';
@@ -36,18 +35,23 @@ class Home extends Component{
         <section
           className="home main_img"
           id="box_curve_bottom"
-          style={{ "background-color": "white", "background-image": `url(${MainSvg})` }}
+          style={{ "background-color": "white" }}
         >
           <div className="container" id="home" style={{ color: "rgb(223, 218, 218)" }}>
             <div className="row">
               <div className="col s12 m6">
                 <div
                   className="iedc_img"
-                  style={{ "background-image": `url(${IEDC})`, "height": "15vh", "width":"50vh" }}
-                />
+                >
+                  <img
+                    src={IEDC}
+                    alt="Logo"
+                    className="responsive-img"
+                  />
+                </div>
               </div>
               <a target="_blank" href='https://www.freepik.es/fotos-vectores-gratis/fondo'></a>
-              <div className="col s12 m5 offset-m1">
+              <div className="col s12 m3 offset-m1">
                 <h4
                   id="center_align"
                   className="announcement_header"
@@ -56,7 +60,7 @@ class Home extends Component{
                   Announcements
                   </h4>
                 <div className="announcement-box">
-                  <div className="col s6 m3" id="announcements_card">
+                  <div className="col" id="announcements_card">
                     <div className="card" id="curve_border">
                       <div className="card-content" style={{ color: "black" }}>
                         <p>

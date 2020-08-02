@@ -4,26 +4,6 @@ import "../index.css";
 
 class Team extends Component {
 	render() {
-
-		// let data = [
-		// 	{
-		// 		des: "John Doe",
-		// 		imgSrc: `${require('../Assets/sample.jpeg')}`
-		// 	},
-		// 	{
-		// 		des: "Lynn Mathew",
-		// 		imgSrc: `${require('../Assets/s2.jpeg')}`
-		// 	},
-		// 	{
-		// 		des: "3",
-		// 		imgSrc: `${require('../Assets/gallery5.png')}`
-		// 	},
-		// 	{
-		// 		des: "Tony Stark",
-		// 		imgSrc: `${require('../Assets/TS.jpeg')}`
-		// 	},
-		// ];
-
 		let textBoxStyle = {
 			width: "99%",
 			background: '#C33427',
