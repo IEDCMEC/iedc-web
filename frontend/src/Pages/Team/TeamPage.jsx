@@ -34,7 +34,6 @@ const TeamPage = () => {
             </div>
             <br />
             <h2 className="title center-align bold">WEB TEAM</h2>
-            <h3 className="grey-text center-align">Second Years</h3>
             <div className="row  grid-container" id="web-team-list">
                {webTeam.map(({ id, ...otherProps }) => (
                   <Card key={id} {...otherProps} />

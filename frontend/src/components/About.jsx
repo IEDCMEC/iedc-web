@@ -10,6 +10,7 @@ const About = () => {
   return (
     <section className="about section" id="about">
       <div className="container">
+        <br />
         <h3 className="text-darken-3 center-align" id="top_margin">
           About IEDC MEC
           </h3>
