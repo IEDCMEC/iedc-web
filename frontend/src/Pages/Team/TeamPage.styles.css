@@ -20,8 +20,12 @@
 }
 .grid-container{
    display: grid;
-   grid-template-columns: repeat(3, 1fr);
+   grid-template-columns: repeat(3, 3fr);
    grid-gap: 1em 2em;
+}
+
+.card {
+   max-width: 20em;
 }
 
 @media (max-width: 600px ){

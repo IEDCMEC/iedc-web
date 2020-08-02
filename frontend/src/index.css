@@ -33,6 +33,7 @@ body {
 
 .announcement-box {
   min-height: 50vh;
+  min-width: 100vw;
 }
 
 /*----------------------------------------------------------------------------------------*/
@@ -75,7 +76,6 @@ p{
   background-size: cover;
   background-position: bottom;
   background-blend-mode: multiply;
-  background-image: url("./Assets/head.jpg")
 }
 
 .iedc_img{
@@ -106,7 +106,11 @@ p{
 }
 
 #icon_space {
-  padding: 10px;
+  padding-right: 20px;
+}
+
+#icons {
+  margin-left: 10px;
 }
 
 #curve_border {
@@ -158,7 +162,7 @@ p{
 }
 
 #announcements_card {
-  width: 100%;
+  width: 200%;
   border-radius: 20px;
 }
 
@@ -198,9 +202,7 @@ form input[type=submit]:active{
     border-bottom-left-radius: 10%;
     border-bottom-right-radius: 10%;
   }
-  .iedc_img {
-    display: none;
-  }
+
 
   #box_curve_top {
     border-top-left-radius: 10%;
@@ -231,5 +233,8 @@ form input[type=submit]:active{
   }
   .main_img {
     background-image: none;
+  }
+  #icons {
+  margin-left: 0px;
   }
 }
