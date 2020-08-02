@@ -75,13 +75,14 @@ p{
   background-size: cover;
   background-position: bottom;
   background-blend-mode: multiply;
+  background-image: url("./Assets/head.jpg")
 }
 
 .iedc_img{
   margin-top:5em;
   background-repeat:no-repeat;
-  height:100%;
-  width:100%;
+  height:15vh;
+  max-width: auto;
 }
 
 #about_img {
@@ -197,6 +198,9 @@ form input[type=submit]:active{
     border-bottom-left-radius: 10%;
     border-bottom-right-radius: 10%;
   }
+  .iedc_img {
+    display: none;
+  }
 
   #box_curve_top {
     border-top-left-radius: 10%;
@@ -205,6 +209,7 @@ form input[type=submit]:active{
   }
   #centre_mobile {
     text-align: left;
+    margin-left: 30%;
   }
   .mobile_space {
     margin-bottom: 0px;
@@ -224,7 +229,7 @@ form input[type=submit]:active{
     padding-left:0;
     margin-top:0;
   }
-
-
-
+  .main_img {
+    background-image: none;
+  }
 }

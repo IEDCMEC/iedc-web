@@ -55,7 +55,7 @@ export const executiveMembers = [{
     }
 ];
 
-export const firstYears = [{
+export const webTeam = [{
         id: 1,
         name: "Aditya Anil Kumar",
         designation: "Webmaster",
@@ -75,29 +75,31 @@ export const firstYears = [{
     },
     {
         id: 4,
-        name: "Arti Bhatia",
-        designation: "Member",
-        imageUrl: require("../../Assets/team/arti.jpg"),
-    },
-    {
-        id: 5,
-        name: "Jagath Jijo",
-        designation: "Member",
-        imageUrl: require("../../Assets/team/jagath.jpg"),
-    },
-];
-
-
-export const secondYears = [{
-        id: 1,
         name: "Meenakshi",
         designation: "Member",
         imageUrl: require("../../Assets/team/meenakshi.jpg"),
     },
     {
-        id: 2,
+        id: 5,
         name: "Ameen",
         designation: "Member",
         imageUrl: require("../../Assets/team/ameen.jpg"),
     },
+    {
+        id: 6,
+        name: "Arti Bhatia",
+        designation: "Member",
+        imageUrl: require("../../Assets/team/arti.jpg"),
+    },
+    {
+        id: 7,
+        name: "Jagath Jijo",
+        designation: "Member",
+        imageUrl: require("../../Assets/team/jagath.jpg"),
+    },
+
+];
+
+
+export const secondYears = [
 ]

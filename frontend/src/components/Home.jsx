@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "../index.css";
-import MainSvg from "../Assets/head.png";
+import MainSvg from "../Assets/head.jpg";
 import IEDC from "../Assets/logo.png";
 import "materialize-css/dist/css/materialize.min.css";
 // import axios from 'axios';
@@ -36,14 +36,14 @@ class Home extends Component{
         <section
           className="home main_img"
           id="box_curve_bottom"
-          style={{ "background-color": "white", "background-image": `url(${MainSvg})` }}
+          style={{ "background-color": "white" }}
         >
           <div className="container" id="home" style={{ color: "rgb(223, 218, 218)" }}>
             <div className="row">
               <div className="col s12 m6">
                 <div
                   className="iedc_img"
-                  style={{ "background-image": `url(${IEDC})`, "height": "15vh", "width":"50vh" }}
+                  style={{ "background-image": `url(${IEDC})`}}
                 />
               </div>
               <a target="_blank" href='https://www.freepik.es/fotos-vectores-gratis/fondo'></a>

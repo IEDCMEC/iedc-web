@@ -1,5 +1,5 @@
 import React from 'react'
-import { executiveMembers, secondYears, firstYears } from './MembersList'
+import { executiveMembers, webTeam } from './MembersList'
 import './TeamPage.styles.css'
 import Card from './Card'
 const TeamPage = () => {
@@ -35,15 +35,8 @@ const TeamPage = () => {
             <br />
             <h2 className="title center-align bold">WEB TEAM</h2>
             <h3 className="grey-text center-align">Second Years</h3>
-            <div className="row  grid-container" id="second-years-list">
-               {secondYears.map(({ id, ...otherProps }) => (
-                  <Card key={id} {...otherProps} />
-               ))}
-            </div>
-            <br />
-            <h3 className="grey-text center-align">First Years</h3>
-            <div className="row  grid-container" id="first-years-list">
-               {firstYears.map(({ id, ...otherProps }) => (
+            <div className="row  grid-container" id="web-team-list">
+               {webTeam.map(({ id, ...otherProps }) => (
                   <Card key={id} {...otherProps} />
                ))}
             </div>
