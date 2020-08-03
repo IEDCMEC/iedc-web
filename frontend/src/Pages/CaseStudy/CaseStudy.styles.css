@@ -1,0 +1,28 @@
+.grid-container{
+   display: grid;
+   grid-template-columns: repeat(3, 3fr);
+   grid-gap: 1em 2em;
+}
+.title{
+   font-family: 'Roboto';
+   font-weight: bold;
+   font-size:13px;
+   
+}
+.card-content{
+   margin-top:-30px;
+  
+}
+.row{
+   margin-bottom:30px;
+}
+.card:hover {
+   box-shadow: 0 4px 8px 0 #1d1b1b;
+ }
+@media (max-width: 600px ){
+   #mobcard{
+      
+padding-left:80px;
+
+   }
+}
