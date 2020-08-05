@@ -27,7 +27,7 @@ const TeamPage = () => {
                </div>
             </div>
             <h2 className="title center-align bold" >EXECUTIVE COMMITTEE</h2>
-            <div className="row grid-container" id="executive-members-list">
+            <div className="grid-container row" id="executive-members-list">
                {executiveMembers.map(({ id, ...otherProps }) => (
                   <Card key={id} {...otherProps}  />
                ))}

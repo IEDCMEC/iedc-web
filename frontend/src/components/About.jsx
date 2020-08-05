@@ -20,9 +20,9 @@ const About = () => {
             <p style={{ color: "black", marginBottom: "3rem" }}>
               Founded in January in the year 2009 as Entrepreneurship Cell, MEC and revamped as IEDC MEC under the guidance of Kerala Startup Mission as a Govt. of Kerala initiative in 2015, the Innovation and Entrepreneurship Development Cell of Model Engineering college has constantly worked towards helping the community find an intersection between technology and entrepreneurship.
             <br /><br />
-            We strongly believe that entrepreneurship is the key to unlock the nation’s true potential and therefore strive to promote the idea of job creation rather than job seeking. By consistently hosting a large number of inspiring and innovative events and through our flagship annual national level symposium- ‘Technopreneur’, IEDC MEC,from its humble beginnings is now one of the best functioning IEDCs in the state.
+            We strongly believe that entrepreneurship is the key to unlock the nation’s true potential and therefore strive to promote the idea of job creation rather than job seeking. By consistently hosting a large number of inspiring and innovative events and through our flagship annual national level symposium- ‘Technopreneur’, IEDC MEC, from its humble beginnings is now one of the best functioning IEDCs in the state.
             <br /><br />
-            IEDC MEC currently acts as a pre-incubator which helps in providing mentorship and support to the projects of our students and help to scale them into potential startup realities. We are funded by the Kerala Startup Mission(KSUM).
+            IEDC MEC currently acts as a pre-incubator which helps in providing mentorship and support to the projects of our students and help to scale them into potential startup realities. We are funded by the Kerala Startup Mission (KSUM).
               </p>
             <button data-target="modal1" className="btn modal-trigger z-depth-0" style={{ backgroundColor: '#C33427', 'border-radius': "8px" }} >
               <i className="material-icons right">arrow_forward</i>Read More</button>
