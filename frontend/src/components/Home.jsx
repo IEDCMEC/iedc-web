@@ -51,18 +51,19 @@ class Home extends Component{
                 </div>
               </div>
               <a target="_blank" href='https://www.freepik.es/fotos-vectores-gratis/fondo'></a>
-              <div className="col s12 m3 offset-m1">
+              <div className="col s24 m3 offset-m2">
                 <br />
                 <br />
-                <h4
+                <h3
                   id="center_align"
                   className="announcement_header"
                   style={{ color: "#C33427" }}
                 >
                   Announcements
-                  </h4>
+                  </h3>
+                  <br/>
                 <div className="announcement-box">
-                  <div className="col" id="announcements_card">
+                  <div className="col s8 m6" id="announcements_card">
                     <div className="card" id="curve_border">
                       <div className="card-content" style={{ color: "black" }}>
                         <p>

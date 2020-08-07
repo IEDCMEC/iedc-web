@@ -29,7 +29,7 @@ const Navbar = () => {
                   <div className="hide-on-large-only black-text" style={{
                      position: 'relative',
                      left: -10,
-                     fontSize: 18
+                     fontSize: 20
                   }} ><span className="red-text">IEDC</span>MEC</div>
                   <ul className="right hide-on-med-and-down">
                      {links.map(link => (
@@ -42,10 +42,10 @@ const Navbar = () => {
             </nav>
          </div>
 
-         <ul className="sidenav" id='mobile-nav'>
+         <ul className="sidenav" style={{paddingTop:"25vh"}} id='mobile-nav'>
             {links.map(link => (
                <li key={link.id} >
-                  <HLink className='black-text' to={link.to} >{link.Name}</HLink>
+                  <HLink className='black-text' style={{textAlign: "center"}} to={link.to} >{link.Name}</HLink>
                </li>
             ))}
          </ul>

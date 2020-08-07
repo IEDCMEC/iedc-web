@@ -3,10 +3,10 @@
    grid-template-columns: repeat(3, 3fr);
    grid-gap: 1em 2em;
 }
-.title{
+.card-content .title{
    font-family: 'Roboto';
    font-weight: bold;
-   font-size:13px;
+   font-size:20px;
    
 }
 .card-content{
