@@ -4,18 +4,19 @@ import './TeamPage.styles.css'
 
 const Card = ({name, designation,imageUrl}) => {
    return (
-      <div>
-         <div >
+      <div class="col s12 m6 l4 ">
+         
+         <div id="mobcard">
             <div className="card">
                <div className="card-image">
-                  <img src={imageUrl} alt={name} style={{ "height": '25em' }} />
+                  <img src={imageUrl} alt={name} style={{"height": '25em'}} />
                   <span className="card-title">{name}</span>
                </div>
                <div className="card-content center">
-                  <p>{designation}</p>
+                  <p className="designation">{designation}</p>
                </div>
             </div>
-         </div>
+            </div>
       </div>
    )
 }

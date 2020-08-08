@@ -24,19 +24,24 @@
    margin-right: 1em;
    padding-top: 10%;
 }
-/* .grid-container{
+/* #executive-members-list{
    display: grid;
-   grid-template-columns: repeat(3, 3fr);
+   grid-template-columns: auto auto auto;
    grid-gap: 1em 2em;
 } */
 
 .card {
    max-width: 20em;
 }
-
+.card-content{
+   min-height: 7em;
+}
+.designation{
+   padding-top:20px;
+}
 @media (max-width: 600px ){
-   .grid-container{
+   /* .grid-container{
       grid-template-columns: 18em;
       justify-content: center;
-   }
+   } */
 }

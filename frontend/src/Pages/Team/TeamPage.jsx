@@ -8,7 +8,7 @@ const TeamPage = () => {
          <div className="container">
             <h2 className="title center-align bold" >Nodal Officer</h2>
             <div className="row">
-               <div className="col s10 m4 l4 offset-s1">
+               <div>
                   <Card key="1"
                      name= "Prof. Dr. Sreenivas P"
                      designation= "Dept of Mechanical Engineering"
@@ -27,14 +27,17 @@ const TeamPage = () => {
                </div>
             </div>
             <h2 className="title center-align bold" >EXECUTIVE COMMITTEE</h2>
-            <div className="grid-container row" id="executive-members-list">
+            <div className="row" id="executive-members-list">
+            
                {executiveMembers.map(({ id, ...otherProps }) => (
                   <Card key={id} {...otherProps}  />
+                  
                ))}
+            
             </div>
             <br />
             <h2 className="title center-align bold">WEB TEAM</h2>
-            <div className="row  grid-container" id="web-team-list">
+            <div className="row  " id="web-team-list">
                {webTeam.map(({ id, ...otherProps }) => (
                   <Card key={id} {...otherProps} />
                ))}
