@@ -65,7 +65,7 @@ class Home extends Component{
                 <div className="announcement-box">
                   <div className="col s8 m6" id="announcements_card">
                     <div className="card" id="curve_border">
-                      <div className="card-content" style={{ color: "black" }}>
+                      <div className="card-content" style={{ color: "black", maxHeight:"100%" }}>
                         <p>
                           {display_announcement}
                         </p>
