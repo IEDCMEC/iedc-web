@@ -42,13 +42,13 @@ class Contact extends Component{
         <section id="box_curve_top">
             <div className="row" style={{marginBottom: "0px"}} id="centre_mobile">
               <div
-                className="col s12 m3 l12 margin_top_mobile"
+                className="col s12 m12 l12 margin_top_mobile"
                 id="contact"
               >
                 <h4 id="bottom_margin">
                   Follow Us
                 </h4>
-                <div className="col s12 m3 l12" id="icons">
+                <div className="col s12 m12 l12" id="icons">
                   <div>
                     <a href="https://twitter.com/iedc_mec" style={{ color: "#C33427" }} id="icon_space">
                       <i className="fab circle fa-twitter fa-2x" />
