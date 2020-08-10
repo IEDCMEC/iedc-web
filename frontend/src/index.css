@@ -6,6 +6,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow-x:hidden;
+  background-image: url("./Assets/bg-texture.png");
 }
 
 code {
@@ -202,10 +203,6 @@ form input[type=submit]:active{
   .announcement_header{
     font-size:30px;
     margin-top:30px;
-    width:80vw;
-  }
-  #announcements_card {
-    margin-left:15%;
   }
   #box_curve_bottom {
     border-bottom-left-radius: 10%;
@@ -242,6 +239,6 @@ form input[type=submit]:active{
     background-image: none;
   }
   #icons {
-    margin-left: 0px;
+    margin-left: -20px;
   }
 }
