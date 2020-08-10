@@ -97,6 +97,12 @@ export const webTeam = [{
         designation: "Full Stack Developer",
         imageUrl: require("../../Assets/team/jagath.jpg"),
     },
+    {
+        id: 8,
+        name: "Rindish Krishna",
+        designation: "Front End Developer",
+        imageUrl: require("../../Assets/team/rindish.jpg")
+    }
 ];
 
 
