@@ -13,6 +13,9 @@
    margin-top:-30px;
   
 }
+.main {
+   background-image: url("../../Assets/bg-texture.png");
+}
 .row{
    margin-bottom:30px;
 }
