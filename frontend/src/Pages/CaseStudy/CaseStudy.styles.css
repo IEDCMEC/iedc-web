@@ -12,13 +12,12 @@
 .card-content{
    margin-top:-30px;
    max-height: 6em;
-  
 }
 .main {
    background-image: url("../../Assets/bg-texture.png");
 }
 .card{
-   width:450px
+   width:450px;
 }
 
 .row{
@@ -29,8 +28,6 @@
  }
 @media (max-width: 600px ){
    #mobcard{
-      
-padding-left:80px;
-
+      padding-left:80px;
    }
 }
