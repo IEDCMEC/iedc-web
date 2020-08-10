@@ -6,16 +6,21 @@
 .card-content .title{
    font-family: 'Roboto';
    font-weight: bold;
-   font-size:20px;
-   
+   font-size:15px;
+   letter-spacing:0.6px;
 }
 .card-content{
    margin-top:-30px;
+   max-height: 6em;
   
 }
 .main {
    background-image: url("../../Assets/bg-texture.png");
 }
+.card{
+   width:450px
+}
+
 .row{
    margin-bottom:30px;
 }
