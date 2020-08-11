@@ -35,6 +35,12 @@ body {
 
 .announcement-box {
   min-height: 50vh;
+  margin-left: -10vw;
+}
+
+.announcement_header {
+    margin-left: -15vw;
+    padding-top: 30px;
 }
 
 /*----------------------------------------------------------------------------------------*/
@@ -101,10 +107,6 @@ p{
   height: 50%;
 }
 
-.announcements_header{
-  margin-top:1.5em;
-  margin-bottom:15em;
-}
 
 #icon_space {
   padding-right: 20px;
@@ -202,7 +204,11 @@ form input[type=submit]:active{
   background-repeat:no-repeat;
   max-width: auto;
 }
+.announcement-box {
+  margin-left: 1vw;
+}
   .announcement_header{
+    margin-left: 5vw;
     font-size:30px;
     margin-top:30px;
   }

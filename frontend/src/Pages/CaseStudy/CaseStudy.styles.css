@@ -28,4 +28,11 @@
    #mobcard{
       padding-left:80px;
    }
+   .case_study_card {
+      max-width: 20em;
+      margin-left: -15vw;
+   }
+   .case_study_content {
+      min-height: 10em;
+   }
 }
