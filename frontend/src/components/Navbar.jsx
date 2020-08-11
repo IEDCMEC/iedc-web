@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react'
 import "materialize-css/dist/css/materialize.min.css";
 import M from "materialize-css/dist/js/materialize.min.js";
+import "../index.css";
 
 import { HashLink as HLink } from 'react-router-hash-link';
 
@@ -21,7 +22,7 @@ const Navbar = () => {
    return (
       <div className="navbar">
          <div className="navbar-fixed">
-            <nav className="nav-wrapper accent-1" style={{ "background-color": "white" }}>
+            <nav className="nav-wrapper accent-1 nav_img">
                <div className="container">
                   <a href="#" data-target="mobile-nav" className="sidenav-trigger">
                      <i className="material-icons" style={{ color: "#C33427" }}>menu</i>

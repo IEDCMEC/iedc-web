@@ -45,7 +45,7 @@ const TeamPage = () => {
             <h2 className="title center-align bold">CORE TEAMS</h2>
             <div className="team"  >
                <h3 className="grey-text">Design</h3 >
-               <h5 className="grey-text text-darken-4 names">Arpith S, Abhiram Anil, Ameen Azeez, Denin Paul</h5>
+               <h5 className="grey-text text-darken-4 names">Arpith S, Abhiram Anil, Ameen Azeez</h5>
             </div>
             <div className="team">
                <h3 className="grey-text">Social Media</h3>
@@ -61,7 +61,7 @@ const TeamPage = () => {
             </div>
             <div className="team">
                <h3 className="grey-text">Media</h3 >
-               <h5 className="grey-text text-darken-4 names">Karthik Suresh, Denin Paul, Adil Rafeek</h5>
+               <h5 className="grey-text text-darken-4 names">Karthik Suresh, Adil Rafeek</h5>
             </div>
             <div className="team">
                <h3 className="grey-text">Marketing</h3 >
