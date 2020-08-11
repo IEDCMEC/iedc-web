@@ -18,7 +18,7 @@ class CaseStudy extends Component {
 
    render() {
       return (
-         <div class="main">
+         <div>
             <div className="row" >
                {
                   this.state.case_studies.map(case_study => {

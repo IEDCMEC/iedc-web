@@ -13,9 +13,7 @@
    margin-top:-30px;
    max-height: 6em;
 }
-.main {
-   background-image: url("../../Assets/bg-texture.png");
-}
+
 .card{
    width:450px;
 }
