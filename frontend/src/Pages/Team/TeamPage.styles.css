@@ -40,8 +40,11 @@
    padding-top:20px;
 }
 @media (max-width: 600px ){
-   /* .grid-container{
-      grid-template-columns: 18em;
-      justify-content: center;
-   } */
+.team_card {
+   max-width: 20em;
+   margin-left: -15vw;
+}
+.team_card_content {
+   min-height: 10em;
+}
 }
