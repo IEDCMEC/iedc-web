@@ -6,7 +6,6 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow-x:hidden;
-  background-image: url("./Assets/bg-texture.png");
 }
 
 code {
@@ -80,7 +79,7 @@ p{
 }
 
 .nav_img{
-  background: url("./Assets/bg-texture.png");
+  background-color: white;
   background-size: 10em;
 }
 
