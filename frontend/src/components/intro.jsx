@@ -168,13 +168,13 @@ class Intro extends Component {
                                                 className="col s12 m6 offset-m1"
                                                 style={{ color: "white" }}
                                             >
-                                                <h6>DevQuest: </h6>
-                                                "We bridge the gap between the Indian tech hiring
+                                                <h6><b>DevQuest</b></h6>
+                                                DevQuest bridges the gap between the Indian tech hiring
                                                 scenario and the Indian technical education system
                                                 by imbibing a specially curated evaluation process
                                                 that assesses practical knowledge and technical
                                                 skills through our gamified upskilling and hackathon
-                                                platform."
+                                                platform.
                                             </div>
                                         </div>
                                         <span
@@ -208,7 +208,7 @@ class Intro extends Component {
                                                 className="col s12 m6 offset-m1"
                                                 style={{ color: "white" }}
                                             >
-                                                <h6>lyfboat:</h6> "LifeBoat is a platform that will
+                                                <h6><b>lyfboat</b></h6> LifeBoat is a platform that will
                                                 change the way mental health care is seen in India.
                                                 We collaborate with similar organisations and
                                                 practising health care workers to offer free as well
@@ -216,7 +216,7 @@ class Intro extends Component {
                                                 inclusive and hassle free user experience. We've
                                                 paid careful attention to building a beautiful and
                                                 intuitive interface for our mobile application,
-                                                making LifeBoat both useful and easy to get around."
+                                                making LifeBoat both useful and easy to get around.
                                             </div>
                                         </div>
                                         <span
