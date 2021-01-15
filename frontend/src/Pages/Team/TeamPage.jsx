@@ -48,30 +48,30 @@ const TeamPage = () => {
                ))}
             </div>
 
-            <h2 className="title center-align bold">CORE TEAMS</h2>
+            <h2 className="title center-align bold" style={{marginTop:'3em'}}>CORE TEAMS</h2>
             <div className="team"  >
-               <h3 className="grey-text">Design</h3 >
-               <h5 className="grey-text text-darken-4 names">Arpith S, Abhiram Anil, Ameen Azeez</h5>
+               <h3>Design</h3 >
+               <h5>Arpith S, Abhiram Anil, Ameen Azeez</h5>
             </div>
             <div className="team">
-               <h3 className="grey-text">Social Media</h3>
-               <h5 className="grey-text text-darken-4 names">Akshayraj KR, Namith Krishnan, Savion David, Amalraj K, Krishna Gaadha, Nayana Vinod, Lakshmipriya Mohandas</h5>
+               <h3>Social Media</h3>
+               <h5>Akshayraj KR, Namith Krishnan, Savion David, Amalraj K, Krishna Gaadha, Nayana Vinod, Lakshmipriya Mohandas</h5>
             </div>
             <div className="team">
-               <h3 className="grey-text">Publicity</h3 >
-               <h5 className="grey-text text-darken-4 names">Jisna Jose, Gopika Murali, Devdutt Shenoi, Patrick Prakash, Rose Joseph, John Tharian</h5>
+               <h3>Publicity</h3 >
+               <h5>Jisna Jose, Gopika Murali, Devdutt Shenoi, Patrick Prakash, Rose Joseph, John Tharian</h5>
             </div>
             <div className="team">
-               <h3 className="grey-text">Content</h3 >
-               <h5 className="grey-text text-darken-4 names">Aswathy S Menon, Abhiram V, Sharath Jacob Jacob, Ethena Mothi, Vishnumaya S Unni</h5>
+               <h3>Content</h3 >
+               <h5>Aswathy S Menon, Abhiram V, Sharath Jacob Jacob, Ethena Mothi, Vishnumaya S Unni</h5>
             </div>
             <div className="team">
-               <h3 className="grey-text">Media</h3 >
-               <h5 className="grey-text text-darken-4 names">Karthik Suresh, Adil Rafeek</h5>
+               <h3>Media</h3 >
+               <h5>Karthik Suresh, Adil Rafeek</h5>
             </div>
             <div className="team">
-               <h3 className="grey-text">Marketing</h3 >
-               <h5 className="grey-text text-darken-4 names">Niranjana, Denil Geo Daise, Neetha Jayan, Razeen Muhammed, Nandakrishnan R</h5>
+               <h3>Marketing</h3 >
+               <h5>Niranjana, Denil Geo Daise, Neetha Jayan, Razeen Muhammed, Nandakrishnan R</h5>
             </div>
          </div>
       </div>

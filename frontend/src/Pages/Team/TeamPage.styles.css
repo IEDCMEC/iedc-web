@@ -1,4 +1,6 @@
-
+.container{
+   margin-bottom: 3em;
+}
 .container .title {
    margin-top: 20px;
    padding-top: 20px;
@@ -59,7 +61,26 @@
    margin: 0px;
    font-size: 20px;
 }
-
+.team{
+   text-align: left;
+   margin-top:5em;
+}
+.team >h3{
+   display: inline-block;
+   position: absolute;
+   margin: -0.6em 0 0 2em;
+   color: #122B42;
+   background-color: white;
+   padding: 0 0.1em;
+}
+.team >h5{
+   text-align: center;
+   color: rgba(18, 43, 66, 0.81);
+   padding: 2em;
+   border: 2px dashed #8895a1;
+   border-radius: 40px;
+   line-height: 32px;
+}
 #web-team-list {
    margin-bottom: 70px;
 }
