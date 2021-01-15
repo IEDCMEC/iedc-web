@@ -2,7 +2,7 @@ import React from 'react'
 import './TeamPage.styles.css'
 import linkedinIcon from '../../Assets/linkedin-icon.png'
 
-const TeamCard = ({ spacingId, name, designation, imageUrl }) => {
+const Card = ({ spacingId, name, designation, imageUrl }) => {
     const offSpaced = [2, 5, 8, 11, 13, 14, 16, 17, 18]
 
     return (
@@ -25,5 +25,5 @@ const TeamCard = ({ spacingId, name, designation, imageUrl }) => {
     )
 }
 
-export default TeamCard
+export default Card
 
