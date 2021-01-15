@@ -2,46 +2,52 @@ import React from 'react'
 import { executiveMembers, webTeam } from './MembersList'
 import './TeamPage.styles.css'
 import Card from './Card'
+
 const TeamPage = () => {
    return (
       <div id='team-page' >
          <div className="container">
-            <h2 className="title center-align bold" >Nodal Officer</h2>
+            <h2 className="title center-align bold" >NODAL OFFICER</h2>
             <div className="row">
-               <div>
-                  <Card key="1"
-                     name= "Prof. Dr. Sreenivas P"
-                     designation= "Dept of Mechanical Engineering"
-                     imageUrl= {require("../../Assets/team/srinivas.jpg")}
-                  />
+               <div className="col s12 m5">
+                  <img className="circle-icon officer-img" src={require("../../Assets/team/srinivas.jpg")} alt="member" />
                </div>
-               <div className="black-text message">
-                  <p >
-                     "Students in MEC always have had a knack for hacking problems and are passionate learners. 
-                     At IEDC MEC we provide a platform for our extremely talented engineering minds to collaborate and learn with the faculty, 
-                     students, our esteemed alumni and industry experts to stimulate themselves in this amazing environment 
-                     and go beyond classroom based learning to focus more on problem based learning and come with innovative ideas 
-                     and solutions to create a macroscopic impact in the society. 
-                     Come join IEDC and let's find joy in working together to come up with innovative solutions and daring to dream."
-                  </p>
+               <div className="col m7 black-text">
+                  <div className="officer-content">
+                     <h3>Prof. Dr. Sreenivas P</h3>
+                     <h4>Dept of Mechanical Engineering</h4>
+                  </div>
                </div>
             </div>
+            <div className="black-text message">
+               <p >
+                  "Students in MEC always have had a knack for hacking problems and are passionate learners.
+                  At IEDC MEC we provide a platform for our extremely talented engineering minds to collaborate and learn with the faculty,
+                  students, our esteemed alumni and industry experts to stimulate themselves in this amazing environment
+                  and go beyond classroom based learning to focus more on problem based learning and come with innovative ideas
+                  and solutions to create a macroscopic impact in the society.
+                  Come join IEDC and let's find joy in working together to come up with innovative solutions and daring to dream."
+                  </p>
+            </div>
+
             <h2 className="title center-align bold" >EXECUTIVE COMMITTEE</h2>
             <div className="row" id="executive-members-list">
-            
+
                {executiveMembers.map(({ id, ...otherProps }) => (
-                  <Card key={id} {...otherProps}  />
-                  
+                  <Card key={id} spacingId={id} {...otherProps} />
+
                ))}
-            
+
             </div>
             <br />
+
             <h2 className="title center-align bold">WEB TEAM</h2>
             <div className="row  " id="web-team-list">
                {webTeam.map(({ id, ...otherProps }) => (
-                  <Card key={id} {...otherProps} />
+                  <Card key={id} spacingId={id + 10} {...otherProps} />
                ))}
             </div>
+
             <h2 className="title center-align bold">CORE TEAMS</h2>
             <div className="team"  >
                <h3 className="grey-text">Design</h3 >
