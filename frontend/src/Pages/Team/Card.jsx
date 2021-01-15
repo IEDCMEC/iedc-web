@@ -1,24 +1,29 @@
 import React from 'react'
 import './TeamPage.styles.css'
+import linkedinIcon from '../../Assets/linkedin-icon.png'
 
+const TeamCard = ({ spacingId, name, designation, imageUrl }) => {
+    const offSpaced = [2, 5, 8, 11, 13, 14, 16, 17, 18]
 
-const Card = ({name, designation,imageUrl}) => {
-   return (
-      <div class="col s12 m6 l4 ">
-         <div id="mobcard">
-            <div className="card team_card">
-               <div className="card-image">
-                  <img src={imageUrl} alt={name} style={{"height": '25em'}} />
-                  <span className="card-title">{name}</span>
-               </div>
-               <div className="card-content team_card_content center">
-                  <p className="designation">{designation}</p>
-               </div>
-            </div>
-            </div>
-      </div>
-   )
+    return (
+        <div className={[17, 18].includes(spacingId) ? "col s12 m6 l6" : "col s12 m6 l4"} >
+            < div className={offSpaced.includes(spacingId) ? "team-member-block offspace" : "team-member-block"}>
+                <div>
+                    <img className="circle-icon" src={imageUrl} alt={name} />
+                </div>
+                <div className="ln-icon-block">
+                    <a href="" target="_blank" rel="noreferrer">
+                        <img className="ln-icon" src={linkedinIcon} alt="linkedIN" />
+                    </a>
+                </div>
+                <div className="black-text">
+                    <h5 className="team-member-name">{name}</h5>
+                    <p className="team-member-designation">{designation}</p>
+                </div>
+            </div >
+        </div >
+    )
 }
 
-export default Card
+export default TeamCard
 
