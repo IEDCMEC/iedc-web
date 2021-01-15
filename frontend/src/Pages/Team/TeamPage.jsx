@@ -9,14 +9,12 @@ const TeamPage = () => {
          <div className="container">
             <h2 className="title center-align bold" >NODAL OFFICER</h2>
             <div className="row">
-               <div className="col s12 m5">
-                  <img className="circle-icon officer-img" src={require("../../Assets/team/srinivas.jpg")} alt="member" />
+               <div className="col s12 m12 l5">
+                  <img className="officer-img" src={require("../../Assets/team/srinivas.jpg")} alt="member" />
                </div>
-               <div className="col m7 black-text">
-                  <div className="officer-content">
-                     <h3>Prof. Dr. Sreenivas P</h3>
-                     <h4>Dept of Mechanical Engineering</h4>
-                  </div>
+               <div className="col m12 l7 black-text officer-content">
+                  <h3>Prof. Dr. Sreenivas P</h3>
+                  <h4>Dept of Mechanical Engineering</h4>
                </div>
             </div>
             <div className="black-text message">
@@ -48,28 +46,28 @@ const TeamPage = () => {
                ))}
             </div>
 
-            <h2 className="title center-align bold" style={{marginTop:'3em'}}>CORE TEAMS</h2>
-            <div className="team"  >
+            <h2 className="title center-align bold" >CORE TEAMS</h2>
+            <div className="core-team"  >
                <h3>Design</h3 >
                <h5>Arpith S, Abhiram Anil, Ameen Azeez</h5>
             </div>
-            <div className="team">
+            <div className="core-team">
                <h3>Social Media</h3>
                <h5>Akshayraj KR, Namith Krishnan, Savion David, Amalraj K, Krishna Gaadha, Nayana Vinod, Lakshmipriya Mohandas</h5>
             </div>
-            <div className="team">
+            <div className="core-team">
                <h3>Publicity</h3 >
                <h5>Jisna Jose, Gopika Murali, Devdutt Shenoi, Patrick Prakash, Rose Joseph, John Tharian</h5>
             </div>
-            <div className="team">
+            <div className="core-team">
                <h3>Content</h3 >
                <h5>Aswathy S Menon, Abhiram V, Sharath Jacob Jacob, Ethena Mothi, Vishnumaya S Unni</h5>
             </div>
-            <div className="team">
+            <div className="core-team">
                <h3>Media</h3 >
                <h5>Karthik Suresh, Adil Rafeek</h5>
             </div>
-            <div className="team">
+            <div className="core-team">
                <h3>Marketing</h3 >
                <h5>Niranjana, Denil Geo Daise, Neetha Jayan, Razeen Muhammed, Nandakrishnan R</h5>
             </div>
