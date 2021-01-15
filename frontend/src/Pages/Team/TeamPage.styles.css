@@ -1,8 +1,9 @@
 .container{
    margin-bottom: 3em;
 }
+
 .container .title {
-   margin-top: 20px;
+   margin-top: 50px;
    padding-top: 20px;
    font-size:50px;
 }
@@ -16,21 +17,25 @@
    padding-top:20px;
 }
 
-.circle-icon {
+.circle-icon, .officer-img {
    border-radius: 50%;
    margin-top: 20px;
    object-fit: cover;
+ }
+
+ .circle-icon {
    width: 220px;
    height: 220px;
  }
 
- .officer-img {
+.officer-img {
    width: 300px;
    height: 300px;
 }
 
 .officer-content {
-   margin-top: 80px;
+   width: 100%;
+   margin-top: 10px;
    border: 3px dashed rgba(0, 0, 0, 0.1);
    border-radius: 20px;
 }
@@ -53,7 +58,7 @@
 }
 
 .team-member-name {
-   font-size: 30px;
+   font-size: 25px;
    margin-bottom: 0px;
 }
 
@@ -61,11 +66,17 @@
    margin: 0px;
    font-size: 20px;
 }
-.team{
+
+#web-team-list {
+   margin-bottom: 9em;
+}
+
+
+.core-team{
    text-align: left;
    margin-top:5em;
 }
-.team >h3{
+.core-team >h3{
    display: inline-block;
    position: absolute;
    margin: -0.6em 0 0 2em;
@@ -73,7 +84,7 @@
    background-color: white;
    padding: 0 0.1em;
 }
-.team >h5{
+.core-team >h5{
    text-align: center;
    color: rgba(18, 43, 66, 0.81);
    padding: 2em;
@@ -81,14 +92,38 @@
    border-radius: 40px;
    line-height: 32px;
 }
-#web-team-list {
-   margin-bottom: 70px;
+
+@media(max-width: 1200px)
+{
+   .circle-icon {
+      width: 200px;
+      height: 200px;
+   }
+   .team-member-name{
+      font-size: 20px;
+   }
+   .team-member-designation {
+      font-size: 17px;
+   }
 }
 
-@media(min-width: 1024px)
+@media(min-width: 992px)
 {
- .offspace {
-   position: relative;
-   top: 75px;
- }
+   .offspace {
+      position: relative;
+      top: 75px;
+   }
+   .officer-content {
+      margin-top: 70px;
+   }
+}
+
+@media(max-width: 500px)
+{
+   .officer-content>h3{
+      font-size: 30px;
+   }
+   .officer-content>h4{
+      font-size: 20px;
+   }
 }
