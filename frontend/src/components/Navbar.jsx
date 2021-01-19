@@ -21,21 +21,23 @@ const Navbar = () => {
 
    return (
       <div className="navbar">
-         <div className="navbar-fixed">
-            <nav className="nav-wrapper accent-1 nav_img">
-               <div className="container">
+         <div className="navbar-fixed  ">
+            <nav className="nav-wrapper z-depth-0 transparent accent-1 nav_img">
+               <div className="container" style={{ display: 'flex' }} >
                   <a href="#" data-target="mobile-nav" className="sidenav-trigger">
                      <i className="material-icons" style={{ color: "#C33427" }}>menu</i>
                   </a>
-                  <div className="hide-on-large-only black-text" style={{
+                  <div className="hide-on-large-only black-text " style={{
                      position: 'relative',
                      left: -10,
-                     fontSize: 20
+                     flex: 1,
+                     fontSize: 20,
+                     alignSelf: 'center',
                   }} ><span className="red-text">IEDC</span>MEC</div>
-                  <ul className="right hide-on-med-and-down">
+                  <ul className="hide-on-med-and-down" style={{ display: 'flex', flex: '1', justifyContent: 'space-between' }} >
                      {links.map(link => (
-                        <li key={link.id}>
-                           <HLink className='black-text' to={link.to} >{link.Name}</HLink>
+                        <li key={link.id}  >
+                           <HLink className='black-text ' to={link.to} >{link.Name}</HLink>
                         </li>
                      ))}
                   </ul>
@@ -43,10 +45,10 @@ const Navbar = () => {
             </nav>
          </div>
 
-         <ul className="sidenav" style={{paddingTop:"25vh"}} id='mobile-nav'>
+         <ul className="sidenav" style={{ paddingTop: "25vh" }} id='mobile-nav'>
             {links.map(link => (
                <li key={link.id} >
-                  <HLink className='black-text' style={{textAlign: "center"}} to={link.to} >{link.Name}</HLink>
+                  <HLink className='black-text' style={{ textAlign: "center" }} to={link.to} >{link.Name}</HLink>
                </li>
             ))}
          </ul>
