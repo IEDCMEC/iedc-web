@@ -33,7 +33,6 @@ const TeamPage = () => {
 
                {executiveMembers.map(({ id, ...otherProps }) => (
                   <Card key={id} spacingId={id} {...otherProps} />
-
                ))}
 
             </div>

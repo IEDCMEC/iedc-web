@@ -1,85 +1,61 @@
-import React, { Component } from "react";
-import "../index.css";
+import React, { useState, useEffect } from "react";
 import IEDC from "../Assets/logo.png";
 import "materialize-css/dist/css/materialize.min.css";
-// import axios from 'axios';
+import HeaderImage from '../Assets/svgs/Frame1.png'
+import WaterHose from '../Assets/svgs/WaterHose.png'
 
-class Home extends Component{
-  constructor() {
-    super();
-    this.state = {
-      announcements: []
-    }
-  }
+const Home = () => {
+  const [announcements, setAnnouncements] = useState([
+    { id: 1, title: 'ISRO Remote Sensing Outreach Programme', link: '/' },
+    { id: 2, title: 'ISRO Remote Sensing Outreach Programme', link: '/' },
+    { id: 3, title: 'ISRO Remote Sensing Outreach Programme', link: '/' },
+    { id: 4, title: 'ISRO Remote Sensing Outreach Programme', link: '/' },
+    { id: 5, title: 'ISRO Remote Sensing Outreach Programme', link: '/' },
+    { id: 6, title: 'ISRO Remote Sensing Outreach Programme', link: '/' },
+  ]);
 
-  componentDidMount() {
-    // axios.get("http://127.0.0.1:8000/api/announcements/")
-    //   .then(res => this.setState({ announcement: res.data }))
+  // useEffect(() => {
+  //   fetch("https://raw.githubusercontent.com/IEDCMEC/data/master/data.json")
+  //     .then((response) => response.json())
+  //     .then(({ announcements }) => setAnnouncements(announcements));
+  // }, []);
 
-    fetch('https://raw.githubusercontent.com/IEDCMEC/data/master/data.json')
-      .then(response => response.json())
-      .then(data => this.setState({announcements: data.announcements}));
-  }
-
-  render(){
-    const display_announcement = this.state.announcements.map(announcement => {
-      return (
-        <div style={{"text-align": "center"}}>
-          <h6><b>{announcement.title}</b></h6>
-          <p style={{fontSize: "80%"}}>{announcement.description}</p>
-        </div>
-      )
-    })
-    return (
-      <div id="bottom_margin">
-        <section
-          className="home main_img"
-          id="box_curve_bottom"
-          style={{}}
-        >
-          <div className="container " id="home" style={{ color: "rgb(223, 218, 218)" }}>
-            <div className="row">
-              <div className="col s12 m6">
-                <div
-                  className="iedc_img"
-                >
-                  <img
-                    src={IEDC}
-                    alt="Logo"
-                    className="responsive-img"
-                  />
-                </div>
-              </div>
-              <a target="_blank" href='https://www.freepik.es/fotos-vectores-gratis/fondo'></a>
-              <div className="col s24 m3 offset-m2">
-                <br />
-                <br />
-                <h3
-                  id="center_align"
-                  className="announcement_header"
-                  style={{ color: "#C33427" }}
-                >
-                  Announcements
-                  </h3>
-                  <br/>
-                <div className="announcement-box">
-                  <div className="col s8 m6" id="announcements_card">
-                    <div className="card" id="curve_border">
-                      <div className="card-content" style={{ color: "black", maxHeight:"100%" }}>
-                        <p>
-                          {display_announcement}
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+  return (
+    <div className="container center" id='home'  >
+      <div className="row" >
+        <div className="col s12 m5 mr2" style={{ height: '60vh', display: 'flex', flexDirection: 'column', justifyContent: 'center' }} >
+          <img src={IEDC} alt="logo" />
+          <div className="row" style={{ display: 'flex', 'justifyContent': 'space-evenly', marginTop: '20px' }} >
+            <a href="#" className='icon-link'><i class="fa fa-instagram medium" aria-hidden="true"></i></a>
+            <a href="#" className='icon-link'><i class="fa fa-linkedin medium" aria-hidden="true"></i></a>
+            <a href="#" className='icon-link'><i class="fa fa-linkedin medium" aria-hidden='true' ></i></a>
+            <a href="#" className='icon-link'><i class="fa fa-twitter medium" aria-hidden="true"></i></a>
           </div>
-        </section>
+        </div>
+        <div className="col s12 m6 offset-m1" >
+          <img style={{ height: '50vh' }} className='responsive-img' src={HeaderImage} alt="headerImage" />
+        </div>
       </div>
-    );
-  }
-}
+
+      {/*.....................Announcements Row .............*/}
+
+      <h3 style={{ marginBottom: '45px', color: '#c33427' }}  >Announcements</h3>
+      <div className="row">
+        <div className="col s12 l5 hide-on-med-and-down"  >
+          <img src={WaterHose} style={{ height: '40vh' }} alt="logo" />
+        </div>
+        <div className="col s12 l7 announcements " style={{ height: '40vh' }}  >
+          {announcements.map(({ title, id, link }) => (
+            <div key={id} className=" announcement-box " style={{ display: "flex", justifyContent: 'space-between' }} >
+              <h5 className='left-align' >{title}</h5>
+              <a href={link} className='icon-link'><i class="fa fa-instagram medium" aria-hidden="true"></i></a>
+            </div>)
+          )}
+        </div>
+      </div>
+    </div >
+  )
+
+};
 
 export default Home;
