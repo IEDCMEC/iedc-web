@@ -12,7 +12,7 @@ const Card = ({ spacingId, name, designation, imageUrl }) => {
                     <img className="circle-icon" src={imageUrl} alt={name} />
                 </div>
                 <div className="ln-icon-block">
-                    <a href="" target="_blank" rel="noreferrer">
+                    <a href="" target="_blank" rel="noopener noreferrer">
                         <img className="ln-icon" src={linkedinIcon} alt="linkedIN" />
                     </a>
                 </div>

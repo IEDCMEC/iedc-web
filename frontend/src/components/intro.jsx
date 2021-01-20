@@ -1,8 +1,5 @@
 import React, { Component } from "react";
-import "materialize-css/dist/css/materialize.min.css";
-
 import Wave from "react-wavify";
-import "../index.css";
 
 class Intro extends Component {
     startups = [
@@ -190,25 +187,25 @@ class Intro extends Component {
                                         </span>
                                     </div>
                                 ) : (
-                                    <div className="container">
-                                        <div className="row" style={{ margin: "3rem" }}>
-                                            <div className="col s12 m5">
-                                                <img
-                                                    src={require("../Assets/startup2.jpg")}
-                                                    alt="startup2"
-                                                    className="responsive-img"
-                                                    style={{
-                                                        width: "180px",
-                                                        height: "180px",
-                                                        marginTop: "2rem",
-                                                    }}
-                                                />
-                                            </div>
-                                            <div
-                                                className="col s12 m6 offset-m1"
-                                                style={{ color: "white" }}
-                                            >
-                                                <h6><b>lyfboat</b></h6> LifeBoat is a platform that will
+                                        <div className="container">
+                                            <div className="row" style={{ margin: "3rem" }}>
+                                                <div className="col s12 m5">
+                                                    <img
+                                                        src={require("../Assets/startup2.jpg")}
+                                                        alt="startup2"
+                                                        className="responsive-img"
+                                                        style={{
+                                                            width: "180px",
+                                                            height: "180px",
+                                                            marginTop: "2rem",
+                                                        }}
+                                                    />
+                                                </div>
+                                                <div
+                                                    className="col s12 m6 offset-m1"
+                                                    style={{ color: "white" }}
+                                                >
+                                                    <h6><b>lyfboat</b></h6> LifeBoat is a platform that will
                                                 change the way mental health care is seen in India.
                                                 We collaborate with similar organisations and
                                                 practising health care workers to offer free as well
@@ -218,46 +215,46 @@ class Intro extends Component {
                                                 intuitive interface for our mobile application,
                                                 making LifeBoat both useful and easy to get around.
                                             </div>
-                                        </div>
-                                        <span
-                                            style={{
-                                                cursor: "pointer",
-                                                color: "white",
-                                                fontSize: "2rem",
-                                            }}
-                                            onClick={this.returnToStartups}
-                                            className="material-icons "
-                                        >
-                                            arrow_back
+                                            </div>
+                                            <span
+                                                style={{
+                                                    cursor: "pointer",
+                                                    color: "white",
+                                                    fontSize: "2rem",
+                                                }}
+                                                onClick={this.returnToStartups}
+                                                className="material-icons "
+                                            >
+                                                arrow_back
                                         </span>
-                                    </div>
-                                )
+                                        </div>
+                                    )
                             ) : (
-                                <div
-                                    style={{
-                                        display: "flex",
-                                        flexDirection: "row",
-                                        justifyContent: "center",
-                                    }}
-                                >
-                                    {this.startups.map((startup) => (
-                                        <img
-                                            onClick={() => this.startupClickHandler(startup.id)}
-                                            src={require(`../Assets/${startup.img}`)}
-                                            alt="startups"
-                                            id="startup.id"
-                                            className="responsive-img"
-                                            style={{
-                                                width: "180px",
-                                                height: "180px",
-                                                marginLeft: "30px",
-                                                marginRight: "30px",
-                                                cursor: "pointer",
-                                            }}
-                                        />
-                                    ))}
-                                </div>
-                            )}
+                                    <div
+                                        style={{
+                                            display: "flex",
+                                            flexDirection: "row",
+                                            justifyContent: "center",
+                                        }}
+                                    >
+                                        {this.startups.map((startup) => (
+                                            <img
+                                                onClick={() => this.startupClickHandler(startup.id)}
+                                                src={require(`../Assets/${startup.img}`)}
+                                                alt="startups"
+                                                id="startup.id"
+                                                className="responsive-img"
+                                                style={{
+                                                    width: "180px",
+                                                    height: "180px",
+                                                    marginLeft: "30px",
+                                                    marginRight: "30px",
+                                                    cursor: "pointer",
+                                                }}
+                                            />
+                                        ))}
+                                    </div>
+                                )}
                         </div>
                     </div>
                 </section>
