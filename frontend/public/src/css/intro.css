@@ -1,0 +1,19 @@
+.contentAlign{
+    width: 50vw;
+    margin-left:25vw;
+}
+
+.rocketSize{
+    width: 25vw;
+}
+
+@media only screen and (max-width: 600px) {
+    .contentAlign{
+        width: 80vw;
+        margin-left:10vw;
+    }
+
+    .rocketSize{
+        width: 50vw;
+    }
+}
