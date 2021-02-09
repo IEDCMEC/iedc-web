@@ -54,6 +54,7 @@
  }
 
 .team-member-block {
+   text-align: center;
    margin-bottom: 20px;
 }
 
@@ -91,6 +92,10 @@
    border: 2px dashed #8895a1;
    border-radius: 40px;
    line-height: 32px;
+}
+
+.center-block {
+   margin: auto;
 }
 
 @media(max-width: 1200px)
