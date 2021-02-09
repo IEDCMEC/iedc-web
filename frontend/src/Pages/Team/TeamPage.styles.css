@@ -94,10 +94,6 @@
    line-height: 32px;
 }
 
-.center-block {
-   margin: auto;
-}
-
 @media(max-width: 1200px)
 {
    .circle-icon {
