@@ -1,0 +1,72 @@
+.grid-container{
+   display: grid;
+   grid-template-columns: repeat(3, 3fr);
+   grid-gap: 1em 2em;
+}
+.card-content .title{
+   font-family: 'Roboto';
+   font-weight: bold;
+   font-size:15px;
+   letter-spacing:0.6px;
+}
+.card-content{
+   margin-top:-30px;
+   max-height: 6em;
+}
+
+.card{
+   width:450px;
+}
+
+.row{
+   margin-bottom:30px;
+}
+.card:hover {
+   box-shadow: 0 4px 8px 0 #1d1b1b;
+ }
+@media (max-width: 600px ){
+   #mobcard{
+      padding-left:80px;
+   }
+   .case_study_card {
+      max-width: 20em;
+      margin-left: -15vw;
+   }
+   .case_study_content {
+      min-height: 10em;
+   }
+}
+
+
+.cards-container {
+    column-break-inside: avoid;
+  }
+  .cards-container .card {
+    display: inline-block;
+    overflow: visible;
+  }
+
+  @media only screen and (max-width : 600px) {
+    .cards-container {
+      -webkit-column-count: 1;
+      -moz-column-count: 1;
+      column-count: 1;
+    }
+  }
+  @media only screen and (min-width : 601px) {
+    .cards-container {
+      -webkit-column-count: 2;
+      -moz-column-count: 2;
+      column-count: 2;
+    }
+  }
+  @media only screen and (min-width : 993px) {
+    .cards-container {
+      -webkit-column-count: 3;
+      -moz-column-count: 3;
+      column-count: 3;
+    }
+  }
+  .text-center {
+    text-align: center;
+  }
