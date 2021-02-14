@@ -17,7 +17,8 @@ const Navbar = () => {
     { id: 2, Name: 'About', to: '/#about' },
     { id: 3, Name: 'Contact', to: '/#contact' },
    // { id: 4, Name: 'Case Study', to: '/case-study' },
-    { id: 4, Name: 'Team', to: '/team' },
+    { id: 4, Name: 'Projects', to: '/projects' },
+    { id: 5, Name: 'Team', to: '/team' },
   ]
 
   const handleSideNavClick = () => {
