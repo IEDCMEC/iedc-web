@@ -4,9 +4,16 @@ import linkedinIcon from '../../Assets/linkedin-icon.png'
 
 const Card = ({ spacingId, name, designation, imageUrl }) => {
     const offSpaced = [2, 5, 8, 11, 13, 14, 16, 17, 19, 20, 21]
+    let alignmentClass = "col s12 m6 l4";
+    if (spacingId === 20)
+        alignmentClass = "col s12 m6 l6"
+    else if (spacingId === 21)
+        alignmentClass = "col s12 m12 l4"
+    else if (spacingId === 9)
+        alignmentClass = "col s12 m12 l4"
 
     return (
-        <div className={[20, 21].includes(spacingId) ? "col s12 m6 l6" : "col s12 m6 l4"}>
+        <div className={alignmentClass}>
             <div className={offSpaced.includes(spacingId) ? "team-member-block offspace" : "team-member-block"}>
                 <div>
                     <img className="circle-icon" src={imageUrl} alt={name} />
