@@ -7,9 +7,9 @@ const TeamPage = () => {
    return (
       <div id='team-page' >
          <div className="container">
-            <h2 className="title center-align bold" style={{color: "#BF2200"}} >Nodal Officer</h2>
-            <div className="row">
-               <div className="col s12 m12 l5">
+            <h2 className="title center-align bold" style={{ color: "#BF2200" }} >Nodal Officer</h2>
+            <div className="row ">
+               <div className="col s12 m12 l5 text-center">
                   <img className="officer-img" src={require("../../Assets/team/srinivas.jpg")} alt="member" />
                </div>
                <div className="col m12 l7 black-text officer-content">
@@ -17,7 +17,7 @@ const TeamPage = () => {
                   <h4>Dept of Mechanical Engineering</h4>
                </div>
             </div>
-            <div className="black-text message">
+            <div className="black-text message text-center">
                <p >
                   "Students in MEC always have had a knack for hacking problems and are passionate learners.
                   At IEDC MEC we provide a platform for our extremely talented engineering minds to collaborate and learn with the faculty,
@@ -28,7 +28,7 @@ const TeamPage = () => {
                   </p>
             </div>
 
-            <h2 className="title center-align bold" style={{color: "#BF2200"}}  >Executive Committee</h2>
+            <h2 className="title center-align bold" style={{ color: "#BF2200" }}  >Executive Committee</h2>
             <div className="row" id="executive-members-list">
 
                {executiveMembers.map(({ id, ...otherProps }) => (
@@ -38,14 +38,14 @@ const TeamPage = () => {
             </div>
             <br />
 
-            <h2 className="title center-align bold" style={{color: "#BF2200"}} >Web Team</h2>
+            <h2 className="title center-align bold" style={{ color: "#BF2200" }} >Web Team</h2>
             <div className="row  " id="web-team-list">
                {webTeam.map(({ id, ...otherProps }) => (
                   <Card key={id} spacingId={id + 10} {...otherProps} />
                ))}
             </div>
 
-            <h2 className="title center-align bold" style={{color: "#BF2200"}}  >Core Teams</h2>
+            <h2 className="title center-align bold" style={{ color: "#BF2200" }}  >Core Teams</h2>
             <div className="core-team"  >
                <h3>Design</h3 >
                <h5>Arpith S, Abhiram Anil, Ameen Azeez</h5>
@@ -70,8 +70,8 @@ const TeamPage = () => {
                <h3>Marketing</h3 >
                <h5>Niranjana, Denil Geo Daise, Neetha Jayan, Razeen Muhammed, Nandakrishnan R</h5>
             </div>
-         </div>
-      </div>
+         </div >
+      </div >
    )
 }
 
