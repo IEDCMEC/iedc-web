@@ -2,7 +2,7 @@ import React from 'react'
 import './TeamPage.styles.css'
 import linkedinIcon from '../../Assets/linkedin-icon.png'
 
-const Card = ({ spacingId, name, designation, imageUrl }) => {
+const Card = ({ spacingId, name, designation, imageUrl, linkedin }) => {
     const offSpaced = [2, 5, 8, 11, 13, 14, 16, 17, 19, 20, 21]
     let alignmentClass = "col s12 m6 l4";
     if (spacingId === 20)
@@ -19,7 +19,7 @@ const Card = ({ spacingId, name, designation, imageUrl }) => {
                     <img className="circle-icon" src={imageUrl} alt={name} />
                 </div>
                 <div className="ln-icon-block">
-                    <a href="" target="_blank" rel="noopener noreferrer">
+                    <a href={linkedin} target="_blank" rel="noopener noreferrer">
                         <img className="ln-icon" src={linkedinIcon} alt="linkedIN" />
                     </a>
                 </div>
