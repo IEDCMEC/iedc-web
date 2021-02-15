@@ -1,72 +1,42 @@
-.grid-container{
-   display: grid;
-   grid-template-columns: repeat(3, 3fr);
-   grid-gap: 1em 2em;
+.projects-main {
+   text-align: center;
 }
-.card-content .title{
+
+.project-card {
+   color: #000;
+   width: 450px;
+   border-radius: 10px;
+}
+
+.project-card-content {
+   margin-top:-40px;
+   padding-bottom: 20px;
+}
+
+
+/* .card-image {
+} */
+
+.project-title {
    font-family: 'Roboto';
    font-weight: bold;
-   font-size:15px;
+   font-size:28px;
    letter-spacing:0.6px;
-}
-.card-content{
-   margin-top:-30px;
-   max-height: 6em;
+   margin-top: 40px;
+   padding-top: 10px;
 }
 
-.card{
-   width:450px;
+.project-btn {
+   height: 35px;
+   background: #fff;
+   color: #bf2200;
+   border-radius: 10px;
+   border: 2px solid;
+   cursor: pointer;
 }
 
-.row{
-   margin-bottom:30px;
+.project-btn:hover {
+   transition: 0.4s;
+   background: #bf2200;
+   color: #fff;
 }
-.card:hover {
-   box-shadow: 0 4px 8px 0 #1d1b1b;
- }
-@media (max-width: 600px ){
-   #mobcard{
-      padding-left:80px;
-   }
-   .case_study_card {
-      max-width: 20em;
-      margin-left: -15vw;
-   }
-   .case_study_content {
-      min-height: 10em;
-   }
-}
-
-
-.cards-container {
-    column-break-inside: avoid;
-  }
-  .cards-container .card {
-    display: inline-block;
-    overflow: visible;
-  }
-
-  @media only screen and (max-width : 600px) {
-    .cards-container {
-      -webkit-column-count: 1;
-      -moz-column-count: 1;
-      column-count: 1;
-    }
-  }
-  @media only screen and (min-width : 601px) {
-    .cards-container {
-      -webkit-column-count: 2;
-      -moz-column-count: 2;
-      column-count: 2;
-    }
-  }
-  @media only screen and (min-width : 993px) {
-    .cards-container {
-      -webkit-column-count: 3;
-      -moz-column-count: 3;
-      column-count: 3;
-    }
-  }
-  .text-center {
-    text-align: center;
-  }
