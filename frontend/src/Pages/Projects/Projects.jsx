@@ -21,16 +21,16 @@ class Projects extends Component {
     return (
       <div className="projects-main">
         <div className="pre-incubation">
-          <h3 style={{ color: "#BF2200", marginTop:'1.5em' }}>Projects under pre-incubation</h3>
-          <div className="row" style={{padding:'0 5.5em'}}>
+          <h3 className="project-main-title">Projects under pre-incubation</h3>
+          <div className="row project-row">
             {incubationProjects.map(({ id, ...otherProps }) => (
               <ProjectCard key={id} {...otherProps} />
             ))}
           </div>
         </div>
-        <div className="other-projects" style={{marginTop:'7em'}}>
-          <h3 style={{ color: "#BF2200" }}>Other projects</h3>
-          <div className="row" style={{ padding: '0 5.5em' }}>
+        <div className="other-projects" style={{ marginTop: '7em' }}>
+          <h3 className="project-main-title">Other projects</h3>
+          <div className="row project-row">
             {otherProjects.map(({ id, ...otherProps }) => (
               <ProjectCard key={id} {...otherProps} />
             ))}
