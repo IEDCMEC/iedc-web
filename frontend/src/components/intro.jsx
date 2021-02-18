@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import Wave from "react-wavify";
 import BGImageStar from '../Assets/svgs/Vector.svg'
 import BGImageGlobe from '../Assets/svgs/2.svg'
+import ThereForYou from '../Assets/home/ThereForYou.jpg'
 import Rocket from '../Assets/svgs/Group 3.svg'
 import '../css/intro.css'
 
@@ -124,7 +125,7 @@ class Intro extends Component {
                                 <h3>We are there for you</h3>
 
                                 <img
-                                        src={BGImageGlobe}
+                                        src={ThereForYou}
                                         alt="about"
                                         className="responsive-img rocketSize"
                                         id="startup_img"
@@ -182,7 +183,7 @@ class Intro extends Component {
                                     href="https://www.freepik.com/free-photos-vectors/business"
                                 >
                                     <img
-                                        src={require("../Assets/help.jpg")}
+                                        src={require("../Assets/home/projects.svg")}
                                         alt="about"
                                         className="responsive-img"
                                         id="about_img"
@@ -197,7 +198,7 @@ class Intro extends Component {
                                 Bring us your ideas, and we'll help you unlock its true potential.
                                 </p>
 
-                                <a className="btn waves-effect " style={{'color':'#BF2200', 'background-color':'white','font-weight':'500'}}>
+                                <a href="/projects" className="btn waves-effect " style={{'color':'#BF2200', 'background-color':'white','font-weight':'500'}}>
 							<i className="material-icons right">arrow_forward</i>
 							Read More
 			</a>
