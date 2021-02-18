@@ -1,5 +1,5 @@
 import React from 'react'
-import { executiveMembers, webTeam } from './MembersList'
+import { executiveMembers, webTeam, advisoryBoard } from './MembersList'
 import './TeamPage.styles.css'
 import Card from './Card'
 
@@ -26,6 +26,13 @@ const TeamPage = () => {
                   and solutions to create a macroscopic impact in the society.
                   Come join IEDC and let's find joy in working together to come up with innovative solutions and daring to dream."
                   </p>
+            </div>
+
+            <h2 className="title center-align bold" style={{ color: "#BF2200" }} >Advisory Board</h2>
+            <div className="row  " id="web-team-list">
+               {advisoryBoard.map(({ id, ...otherProps }) => (
+                  <Card key={id} spacingId={id + 10} {...otherProps} />
+               ))}
             </div>
 
             <h2 className="title center-align bold" style={{ color: "#BF2200" }}  >Executive Committee</h2>
