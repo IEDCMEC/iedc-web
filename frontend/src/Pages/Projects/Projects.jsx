@@ -1,200 +1,43 @@
 import React, { Component } from "react";
 import './Projects.styles.css'
-import Card from './Card'
+import ProjectCard from './ProjectCard'
+import { incubationProjects, otherProjects } from './projectList'
 
-class CaseStudy extends Component {
-   constructor() {
-      super();
-      this.state = {
-         case_studies: []
-      }
-   }
+class Projects extends Component {
+  constructor() {
+    super();
+    this.state = {
+      projects: []
+    }
+  }
 
-   componentDidMount() {
-      fetch('https://raw.githubusercontent.com/IEDCMEC/data/master/case_study.json')
-         .then(response => response.json())
-         .then(data => this.setState({ case_studies: data }));
-   }
+  // componentDidMount() {
+  //   fetch('https://raw.githubusercontent.com/IEDCMEC/data/master/case_study.json')
+  //     .then(response => response.json())
+  //     .then(data => this.setState({ projects: data }));
+  // }
 
-   render() {
-      return (
-         <div>
+  render() {
+    return (
+      <div className="projects-main">
+        <div className="pre-incubation">
+          <h3 className="project-main-title">Projects under pre-incubation</h3>
+          <div className="row project-row">
+            {incubationProjects.map(({ id, ...otherProps }) => (
+              <ProjectCard key={id} {...otherProps} />
+            ))}
+          </div>
+        </div>
+        <div className="other-projects" style={{ marginTop: '7em' }}>
+          <h3 className="project-main-title">Other projects</h3>
+          <div className="row project-row">
+            {otherProjects.map(({ id, ...otherProps }) => (
+              <ProjectCard key={id} {...otherProps} />
+            ))}
+          </div>
+        </div>
 
-<div>
-  <div class="row">
-    <div class="col s12 cards-container">
-       <div class="card blue-grey darken-1">
-         <div class="card-content white-text">
-           <span class="card-title">Card Title</span>
-           <p>I am a very simple card. I am good at containing small bits of information.
-             I am convenient because I require little markup to use effectively.</p>
-         </div>
-         <div class="card-action">
-           <a href="#">This is a link</a>
-           <a href="#">This is a link</a>
-         </div>
-        </div>
-       <div class="card blue-grey darken-1">
-         <div class="card-content white-text">
-           <span class="card-title">Card Title</span>
-           <p>I am a very simple card. I am good at containing small bits of information.</p>
-         </div>
-         <div class="card-action">
-           <a href="#">This is a link</a>
-           <a href="#">This is a link</a>
-         </div>
-        </div>
-       <div class="card blue-grey darken-1">
-         <div class="card-content white-text">
-           <span class="card-title">Card Title</span>
-           <p>I am a very simple card. I am good at containing small bits of information.
-             I am convenient because I require little markup to use effectively.</p>
-         </div>
-         <div class="card-action">
-           <a href="#">This is a link</a>
-           <a href="#">This is a link</a>
-         </div>
-        </div>
-       <div class="card blue-grey darken-1">
-         <div class="card-content white-text">
-           <span class="card-title">Card Title</span>
-           <p>I am a very simple card. I am good at containing small bits of information.
-             I am convenient because I require little markup to use effectively.</p>
-         </div>
-         <div class="card-action">
-           <a href="#">This is a link</a>
-           <a href="#">This is a link</a>
-         </div>
-        </div>
-       <div class="card blue-grey darken-1">
-         <div class="card-content white-text">
-           <span class="card-title">Card Title</span>
-           <p>I am a very simple card. I am good at containing small bits of information.
-             I am convenient because I require little markup to use effectively.</p>
-         </div>
-         <div class="card-action">
-           <a href="#">This is a link</a>
-           <a href="#">This is a link</a>
-         </div>
-        </div>
-       <div class="card blue-grey darken-1">
-         <div class="card-content white-text">
-           <span class="card-title">Card Title</span>
-           <p>I am a very simple card. I am good at containing small bits of information.
-             I am convenient because I require little markup to use effectively.</p>
-         </div>
-         <div class="card-action">
-           <a href="#">This is a link</a>
-           <a href="#">This is a link</a>
-         </div>
-        </div>
-       <div class="card blue-grey darken-1">
-         <div class="card-content white-text">
-           <span class="card-title">Card Title</span>
-           <p>I am a very simple card. I am good at containing small bits of information</p>
-         </div>
-         <div class="card-action">
-           <a href="#">This is a link</a>
-           <a href="#">This is a link</a>
-         </div>
-        </div>
-       <div class="card blue-grey darken-1">
-         <div class="card-content white-text">
-           <span class="card-title">Card Title</span>
-           <p>I am a very simple card. I am good at containing small bits of information.
-             I am convenient because I require little markup to use effectively.</p>
-
-           <p>This card has some extra info, which will make it taller. This is OK because we're using CSS columns!!!</p>
-         </div>
-         <div class="card-action">
-           <a href="#">This is a link</a>
-           <a href="#">This is a link</a>
-         </div>
-        </div>
-       <div class="card blue-grey darken-1">
-         <div class="card-content white-text">
-           <span class="card-title">Card Title</span>
-           <p>I am a very simple card. I am good at containing small bits of information.
-             I am convenient because I require little markup to use effectively.</p>
-           <p>This card has some extra info, which will make it taller. This is OK because we're using CSS columns!!!</p>
-         </div>
-         <div class="card-action">
-           <a href="#">This is a link</a>
-           <a href="#">This is a link</a>
-         </div>
-        </div>
-       <div class="card blue-grey darken-1">
-         <div class="card-content white-text">
-           <span class="card-title">Card Title</span>
-           <p>I am a very simple card. I am good at containing small bits of information.
-             I am convenient because I require little markup to use effectively.</p>
-           <p>This card has some extra info, which will make it taller. This is OK because we're using CSS columns!!!</p>
-         </div>
-         <div class="card-action">
-           <a href="#">This is a link</a>
-           <a href="#">This is a link</a>
-         </div>
-        </div>
-       <div class="card blue-grey darken-1">
-         <div class="card-content white-text">
-           <span class="card-title">Card Title</span>
-           <p>I am a very simple card. I am good at containing small bits of information.
-             I am convenient because I require little markup to use effectively.</p>
-           <p>This card has some extra info, which will make it taller. This is OK because we're using CSS columns!!!</p>
-         </div>
-         <div class="card-action">
-           <a href="#">This is a link</a>
-           <a href="#">This is a link</a>
-         </div>
-        </div>
-       <div class="card blue-grey darken-1">
-         <div class="card-content white-text">
-           <span class="card-title">Card Title</span>
-           <p>I am a very simple card. I am good at containing small bits of information.
-             I am convenient because I require little markup to use effectively.</p>
-         </div>
-         <div class="card-action">
-           <a href="#">This is a link</a>
-           <a href="#">This is a link</a>
-         </div>
-        </div>
-       <div class="card blue-grey darken-1">
-         <div class="card-content white-text">
-           <span class="card-title">Card Title</span>
-           <p>I am a very simple card. I am good at containing small bits of information.
-             I am convenient because I require little markup to use effectively.</p>
-         </div>
-         <div class="card-action">
-           <a href="#">This is a link</a>
-           <a href="#">This is a link</a>
-         </div>
-        </div>
-       <div class="card blue-grey darken-1">
-         <div class="card-content white-text">
-           <span class="card-title">Card Title</span>
-           <p>I am a very simple card. I am good at containing small bits of information.
-             I am convenient because I require little markup to use effectively.</p>
-         </div>
-         <div class="card-action">
-           <a href="#">This is a link</a>
-           <a href="#">This is a link</a>
-         </div>
-        </div>
-       <div class="card blue-grey darken-1">
-         <div class="card-content white-text">
-           <span class="card-title">Card Title</span>
-           <p>I am a very simple card. I am good at containing small bits of information.
-             I am convenient because I require little markup to use effectively.</p>
-         </div>
-         <div class="card-action">
-           <a href="#">This is a link</a>
-           <a href="#">This is a link</a>
-         </div>
-        </div>
-    </div>
-  </div>
-</div>
-            {/* <div className="row" >
+        {/* <div className="row" >
                {
                   this.state.case_studies.map(case_study => {
                      return(
@@ -206,9 +49,9 @@ class CaseStudy extends Component {
                   })
                }
             </div> */}
-         </div>
-      )
-   }
+      </div>
+    )
+  }
 }
 
-export default CaseStudy;
+export default Projects;
