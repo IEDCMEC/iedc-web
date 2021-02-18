@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import Wave from "react-wavify";
 import BGImageStar from '../Assets/svgs/Vector.svg'
 import BGImageGlobe from '../Assets/svgs/2.svg'
-import ThereForYou from '../Assets/home/ThereForYou.jpg'
+import ThereForYou from '../Assets/home/ThereForYou.svg'
 import Rocket from '../Assets/svgs/Group 3.svg'
 import '../css/intro.css'
 

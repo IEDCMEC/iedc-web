@@ -31,7 +31,7 @@ class Contact extends Component{
                     </a>
                   </div>
                   </div>
-                  <div style={{paddingTop:"6rem", paddingBottom:"3rem", paddingLeft:"5px"}}>
+                  <div style={{paddingTop:"3rem", paddingBottom:"3rem", paddingLeft:"5px"}}>
                     <h4>Contact</h4>
                     <h6>iedc@mec.ac.in</h6>
                   </div>
