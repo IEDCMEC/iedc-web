@@ -55,9 +55,9 @@ class Intro extends Component {
                         "background-image": "",
                     }}
                 >
-                    <div className="contentAlign" style={{ color: "white", textAlign: "center" }}>
+                    <div className="contentAlign mobile-text" style={{ color: "white", textAlign: "center" }}>
                         {/* <img src={BGImageGlobe} className='responsive-img' style={{ marginBottom: '20px' }} alt="About us image" /> */}
-                        <h3>The Startup Culture</h3>
+                        <h3>The Startup Culture</h3><br/>
                         <p style={{ color: "white" }}>
                             MEC has a wide network of students passionate about technology
                             and learning and we nurture a system of guidance and support for
@@ -123,13 +123,13 @@ class Intro extends Component {
                     <div className="contentAlign" style={{ color: "#BF2200", textAlign: "center" }}>
                         {/* <img src={BGImageGlobe} className='responsive-img' style={{ marginBottom: '20px' }} alt="About us image" /> */}
                         <h3>We are there for you</h3>
-
+                        <br/>
                         <img
                             src={ThereForYou}
                             alt="about"
                             className="responsive-img rocketSize"
                             id="startup_img"
-                        />
+                        /><br/><br/>
                         <p style={{ color: "black" }}>
                             Have an idea? Don't know how to implement it? We'll help you
                             bring it to life. If you have a project or an idea in mind, we
@@ -193,15 +193,15 @@ class Intro extends Component {
                                     <div className="col s12 m6 offset-m1">
                                         <p style={{ color: "white", textAlign: "left" }}>
                                             Having an exciting idea in your mind and not having the means to fulfill it can be frustrating. Well, good news! Here’s a platform where you can work in collaboration with others on projects and turn your ideas into working prototypes.
-                                    <br />
                                             <br />
-                                Bring us your ideas, and we'll help you unlock its true potential.
-                                </p>
-
+                                            <br />
+                                            Bring us your ideas, and we'll help you unlock its true potential.
+                                        </p>
+                                        <br/>
                                         <a href="/projects" className="btn waves-effect " style={{ 'color': '#BF2200', 'background-color': 'white', 'font-weight': '500' }}>
                                             <i className="material-icons right">arrow_forward</i>
-							Read More
-			</a>
+							                Read More
+			                            </a>
                                     </div>
                                 </div>
                             </div>

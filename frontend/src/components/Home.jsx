@@ -23,17 +23,17 @@ const Home = () => {
   return (
     <div className="container center" id='home'  >
       <div className="row" >
-        <div className="col s12 m5 mr2" style={{ height: '60vh', display: 'flex', flexDirection: 'column', justifyContent: 'center' }} >
-          <img src={IEDC} alt="logo" />
+        <div className="col s12 m6 mr2" style={{ height: '60vh', display: 'flex', flexDirection: 'column', justifyContent: 'center' }} >
+          <img src={IEDC} className="iedc_img" alt="logo" />
           <div className="row" style={{ display: 'flex', 'justifyContent': 'space-evenly', marginTop: '20px' }} >
-            <a href="https://www.instagram.com/iedcmec/" className='icon-link'><i class="fa fa-instagram medium" aria-hidden="true"></i></a>
-            <a href="https://www.linkedin.com/company/iedcmec/" className='icon-link'><i class="fa fa-linkedin medium" aria-hidden="true"></i></a>
-            <a href="https://discord.gg/Je6rGaT" className='icon-link'><i class="fab fa-discord medium" aria-hidden='true' ></i></a>
-            <a href="https://twitter.com/iedc_mec" className='icon-link'><i class="fa fa-twitter medium" aria-hidden="true"></i></a>
+            <a href="https://www.instagram.com/iedcmec/" className='icon-link'><i class="fa fa-instagram" aria-hidden="true"></i></a>
+            <a href="https://www.linkedin.com/company/iedcmec/" className='icon-link'><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+            <a href="https://discord.gg/Je6rGaT" className='icon-link'><i class="fab fa-discord" aria-hidden='true' ></i></a>
+            <a href="https://twitter.com/iedc_mec" className='icon-link'><i class="fa fa-twitter" aria-hidden="true"></i></a>
           </div>
         </div>
-        <div className="col s12 m6 offset-m1" >
-          <img style={{ height: '50vh' }} className='responsive-img' src={HeaderImage} alt="headerImage" />
+        <div className="col s12 m5 offset-m1" >
+          <img style={{ height: '50vh' }} className='responsive-img illustration' src={HeaderImage} alt="headerImage" />
         </div>
       </div>
 
@@ -63,7 +63,7 @@ const Home = () => {
           <h4>Dept of Mechanical Engineering</h4>
         </div>
       </div>
-      <div className="black-text message text-center">
+      <div className="black-text message text-center mobile-text">
         <p >
           "Students in MEC always have had a knack for hacking problems and are passionate learners.
           At IEDC MEC we provide a platform for our extremely talented engineering minds to collaborate and learn with the faculty,
@@ -71,7 +71,7 @@ const Home = () => {
           and go beyond classroom based learning to focus more on problem based learning and come with innovative ideas
           and solutions to create a macroscopic impact in the society.
           Come join IEDC and let's find joy in working together to come up with innovative solutions and daring to dream."
-                  </p>
+        </p>
       </div>
     </div >
   )

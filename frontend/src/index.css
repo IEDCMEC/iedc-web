@@ -75,12 +75,19 @@ p {
 .nav_img {
     background-color: #ffffffaa;
 }
-
+#home{
+    margin-top: 1.5em;
+    padding-bottom: 2em;
+}
+.icon-link {
+    font-size: 4rem;
+    margin-left: 22px;
+}
 .about-section {
     background-color: #BF2200;
     border-radius: 170px 170px 0 0;
     margin-top: 60px;
-    padding-bottom: 70px;
+    padding-bottom: 40px;
 }
 
 #icon_space {
@@ -129,7 +136,7 @@ p {
 }
 
 #contact {
-    margin-top: 2em;
+    margin-top: 3em;
     border-radius: 24px;
 }
 
@@ -151,10 +158,41 @@ form input[type="submit"]:active {
     body {
         overflow-x: hidden;
     }
+    h3{
+        font-size: 39px !important;
+    }
+    #home {
+        margin-top: 0;
+    }
     .iedc_img {
-        margin-top: 2em;
-        background-repeat: no-repeat;
-        max-width: auto;
+        margin: 0 auto;
+        width: 15em;
+        height: auto;
+    }
+    .icon-link{
+        font-size: 2.5rem;
+    }
+    .illustration{
+        object-fit: cover;
+        margin-top: -6em;
+    }
+    #home>h2{
+        font-size: 39px;
+    }
+    .officer-content>h3{
+        text-align: center;
+        font-size: 25px !important;
+    }
+    .officer-content>h4 {
+        text-align: center;
+        font-size: 19px !important;
+    }
+    .officer-img{
+        height: 250px !important;
+        width: 250px !important;
+    }
+    .mobile-text>p{
+        font-size: 15px;
     }
     #box_curve_bottom {
         border-bottom-left-radius: 10%;
@@ -178,6 +216,7 @@ form input[type="submit"]:active {
 
     #contact {
         margin-top: 0;
+        padding-top: 2em;
         box-shadow: none;
     }
     #follow-us {
@@ -189,6 +228,7 @@ form input[type="submit"]:active {
     }
 
     .about-section {
-        border-radius: 100px 100px 0 0;
+        border-radius: 50px 50px 0 0;
+        padding-bottom: 10px;
     }
 }
