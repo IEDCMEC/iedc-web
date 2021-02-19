@@ -154,6 +154,19 @@ form input[type="submit"]:active {
     width: 80%;
 }
 
+.modal-container {
+    padding-bottom: 20px;
+}
+.modal-container li{
+    text-align: left;
+}
+.modal-content {
+    border: 2px solid #BF2200;
+    margin: 20px;
+    width: auto !important;
+    border-radius: 15px;
+}
+
 @media only screen and (max-width: 600px) {
     body {
         overflow-x: hidden;

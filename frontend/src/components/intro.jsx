@@ -57,7 +57,7 @@ class Intro extends Component {
                 >
                     <div className="contentAlign mobile-text" style={{ color: "white", textAlign: "center" }}>
                         {/* <img src={BGImageGlobe} className='responsive-img' style={{ marginBottom: '20px' }} alt="About us image" /> */}
-                        <h3>The Startup Culture</h3><br/>
+                        <h3>The Startup Culture</h3><br />
                         <p style={{ color: "white" }}>
                             MEC has a wide network of students passionate about technology
                             and learning and we nurture a system of guidance and support for
@@ -86,6 +86,7 @@ class Intro extends Component {
                         <br />
                         <a
                             target="_blank"
+                            rel="noopener noreferrer"
                             href="https://www.freepik.com/free-photos-vectors/business"
                         >
                             <img
@@ -123,13 +124,13 @@ class Intro extends Component {
                     <div className="contentAlign" style={{ color: "#BF2200", textAlign: "center" }}>
                         {/* <img src={BGImageGlobe} className='responsive-img' style={{ marginBottom: '20px' }} alt="About us image" /> */}
                         <h3>We are there for you</h3>
-                        <br/>
+                        <br />
                         <img
                             src={ThereForYou}
                             alt="about"
                             className="responsive-img rocketSize"
                             id="startup_img"
-                        /><br/><br/>
+                        /><br /><br />
                         <p style={{ color: "black" }}>
                             Have an idea? Don't know how to implement it? We'll help you
                             bring it to life. If you have a project or an idea in mind, we
@@ -180,6 +181,7 @@ class Intro extends Component {
                                     <div className="col s12 m5" style={{ color: "white" }}>
                                         <a
                                             target="_blank"
+                                            rel="noopener noreferrer"
                                             href="https://www.freepik.com/free-photos-vectors/business"
                                         >
                                             <img
@@ -197,7 +199,7 @@ class Intro extends Component {
                                             <br />
                                             Bring us your ideas, and we'll help you unlock its true potential.
                                         </p>
-                                        <br/>
+                                        <br />
                                         <a href="/projects" className="btn waves-effect " style={{ 'color': '#BF2200', 'background-color': 'white', 'font-weight': '500' }}>
                                             <i className="material-icons right">arrow_forward</i>
 							                Read More
