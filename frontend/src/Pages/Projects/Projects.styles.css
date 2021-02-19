@@ -2,6 +2,16 @@
    text-align: center;
 }
 
+.project-row {
+  padding: 0 5.5em;
+}
+
+.project-main-title {
+   color: #BF2200; 
+   margin-top: 1.5em; 
+   margin-bottom: 50px;
+}
+
 .project-card {
    color: #000;
    max-width: 100%;
@@ -16,9 +26,6 @@
 }
 
 
-/* .card-image {
-} */
-
 .project-title {
    font-weight: bold;
    font-size:26px;
@@ -31,6 +38,11 @@
    font-size: 15px;
    font-family: "Quicksand",sans-serif;
 }
+
+.project-card-col {
+   padding: 0 1.5em !important;
+}
+
 .project-btn {
    margin-top: 0.7em;
    padding: 0.6em 1.3em;
@@ -45,4 +57,24 @@
    transition: 0.4s;
    background: #bf2200;
    color: #fff;
+}
+
+.project-btn:focus {
+   background: #bf2200;
+   color: #fff;
+}
+
+@media (max-width: 700px)
+{
+   .project-card-col {
+      margin: auto;
+      padding: 0 0em !important;
+   }
+   
+   .project-row {
+      padding: 0 2.0em;
+   }
+   .project-main-title {
+      font-size: 35px;
+   }
 }

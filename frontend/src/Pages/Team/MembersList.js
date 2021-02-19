@@ -1,3 +1,30 @@
+export const advisoryBoard = [{
+    id: 1,
+    name: "Anas Rahman Junaid",
+    designation: "Founder and MD of Hurun India",
+    desc: "XMEC, Batch of 2005",
+    imageUrl: require("../../Assets/team/anas.jpg"),
+    linkedin: 'https://www.linkedin.com/in/anasrahmanjunaid',
+},
+{
+    id: 2,
+    name: "Jacob Pattara",
+    designation: "AVP Product at PayTM",
+    desc: "XMEC Batch of 2009. Started E-Cell MEC. Had a startup called WeavedIn, acquired by PayTM.",
+    imageUrl: require("../../Assets/team/jacob.jpg"),
+    linkedin: 'https://www.linkedin.com/in/jacobpattara',
+},
+{
+    id: 3,
+    name: "Samir Madhavan",
+    designation: "Principal/Founder of Saitama Solutions",
+    desc: "Author of popular book 'Mastering Python for Data Science'. E- Cell Chairman 2010. XMEC Batch of 2010",
+    imageUrl: require("../../Assets/team/samir.jpg"),
+    linkedin: 'https://www.linkedin.com/in/samir-madhavan-7b172115',
+},
+];
+
+
 export const executiveMembers = [{
     id: 1,
     name: "Allen Joseph",
@@ -73,7 +100,7 @@ export const webTeam = [{
 },
 {
     id: 2,
-    name: "Aditya Anil Kumar",
+    name: "Adithya Anilkumar",
     designation: "Webmaster",
     imageUrl: require("../../Assets/team/aditya.jpg"),
     linkedin: 'https://www.linkedin.com/in/adithyaanilkumar/',

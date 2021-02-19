@@ -1,5 +1,5 @@
 import React from 'react'
-import { executiveMembers, webTeam } from './MembersList'
+import { executiveMembers, webTeam, advisoryBoard } from './MembersList'
 import './TeamPage.styles.css'
 import Card from './Card'
 
@@ -28,6 +28,13 @@ const TeamPage = () => {
                   </p>
             </div>
 
+            <h2 className="title center-align bold" style={{ color: "#BF2200" }} >Advisory Board</h2>
+            <div className="row  " id="web-team-list">
+               {advisoryBoard.map(({ id, ...otherProps }) => (
+                  <Card key={id} spacingId={id + 10} {...otherProps} />
+               ))}
+            </div>
+
             <h2 className="title center-align bold" style={{ color: "#BF2200" }}  >Executive Committee</h2>
             <div className="row" id="executive-members-list">
 
@@ -48,7 +55,7 @@ const TeamPage = () => {
             <h2 className="title center-align bold" style={{ color: "#BF2200" }}  >Core Teams</h2>
             <div className="core-team"  >
                <h3>Design</h3 >
-               <h5>Arpith S, Abhiram Anil, Ameen Azeez</h5>
+               <h5>Arpith S, Abhiram Anil, Ameen Azeez, Elizabeth, Rosia, Malavika</h5>
             </div>
             <div className="core-team">
                <h3>Social Media</h3>
