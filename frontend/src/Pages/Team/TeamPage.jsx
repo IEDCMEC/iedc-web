@@ -55,7 +55,7 @@ const TeamPage = () => {
             <h2 className="title center-align bold" style={{ color: "#BF2200" }}  >Core Teams</h2>
             <div className="core-team"  >
                <h3>Design</h3 >
-               <h5>Arpith S, Abhiram Anil, Ameen Azeez</h5>
+               <h5>Arpith S, Abhiram Anil, Ameen Azeez, Elizabeth, Rosia, Malavika</h5>
             </div>
             <div className="core-team">
                <h3>Social Media</h3>
