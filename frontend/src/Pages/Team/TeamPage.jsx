@@ -6,7 +6,15 @@ import Card from './Card'
 const TeamPage = () => {
    return (
       <div id='team-page' >
-         <div className="container">
+            <div className="container">
+
+            <h2 className="title center-align bold" style={{ color: "#BF2200" }} >Advisory Board</h2>
+            <div className="row  " id="web-team-list">
+               {advisoryBoard.map(({ id, ...otherProps }) => (
+                  <Card key={id} spacingId={id + 10} {...otherProps} />
+               ))}
+            </div>
+
             <h2 className="title center-align bold" style={{ color: "#BF2200" }} >Nodal Officer</h2>
             <div className="row ">
                <div className="col s12 m12 l5 text-center">
@@ -28,12 +36,6 @@ const TeamPage = () => {
                   </p>
             </div>
 
-            <h2 className="title center-align bold" style={{ color: "#BF2200" }} >Advisory Board</h2>
-            <div className="row  " id="web-team-list">
-               {advisoryBoard.map(({ id, ...otherProps }) => (
-                  <Card key={id} spacingId={id + 10} {...otherProps} />
-               ))}
-            </div>
 
             <h2 className="title center-align bold" style={{ color: "#BF2200" }}  >Executive Committee</h2>
             <div className="row" id="executive-members-list">
