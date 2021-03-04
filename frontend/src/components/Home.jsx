@@ -33,7 +33,7 @@ const Home = () => {
           </div>
         </div>
         <div className="col s12 m5 offset-m1" >
-          <img style={{ height: '50vh' }} className='responsive-img illustration' src={HeaderImage} alt="headerImage" />
+          <img className='responsive-img illustration' src={HeaderImage} alt="headerImage" />
         </div>
       </div>
 
@@ -53,26 +53,7 @@ const Home = () => {
           )}
         </div>
       </div> */}
-      <h2 className="title center-align bold" style={{ color: "#BF2200" }} >Nodal Officer</h2>
-      <div className="row ">
-        <div className="col s12 m12 l5 text-center">
-          <img className="officer-img" src={require("../Assets/team/srinivas.jpg")} alt="member" />
-        </div>
-        <div className="col m12 l7 black-text officer-content">
-          <h3>Prof. Dr. Sreenivas P</h3>
-          <h4>Dept of Mechanical Engineering</h4>
-        </div>
-      </div>
-      <div className="black-text message text-center mobile-text">
-        <p >
-          "Students in MEC always have had a knack for hacking problems and are passionate learners.
-          At IEDC MEC we provide a platform for our extremely talented engineering minds to collaborate and learn with the faculty,
-          students, our esteemed alumni and industry experts to stimulate themselves in this amazing environment
-          and go beyond classroom based learning to focus more on problem based learning and come with innovative ideas
-          and solutions to create a macroscopic impact in the society.
-          Come join IEDC and let's find joy in working together to come up with innovative solutions and daring to dream."
-        </p>
-      </div>
+
     </div >
   )
 
