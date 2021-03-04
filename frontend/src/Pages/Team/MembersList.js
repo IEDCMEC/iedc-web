@@ -165,7 +165,7 @@ export const webTeam = [{
     id: 11,
     name: "Ranjana",
     designation: "Front End Developer",
-    imageUrl: require("../../Assets/team/ranjana-temp.jpeg"),
+    imageUrl: require("../../Assets/team/ranjana.jpg"),
     linkedin: 'https://www.linkedin.com/in/ranjana-reghunath/',
 },
 ];
