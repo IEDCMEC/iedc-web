@@ -28,7 +28,6 @@ const Home = () => {
           <div className="row" style={{ display: 'flex', 'justifyContent': 'space-evenly', marginTop: '20px' }} >
             <a href="https://www.instagram.com/iedcmec/" className='icon-link'><i class="fa fa-instagram" aria-hidden="true"></i></a>
             <a href="https://www.linkedin.com/company/iedcmec/" className='icon-link'><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-            <a href="https://discord.gg/Je6rGaT" className='icon-link'><i class="fab fa-discord" aria-hidden='true' ></i></a>
             <a href="https://twitter.com/iedc_mec" className='icon-link'><i class="fa fa-twitter" aria-hidden="true"></i></a>
           </div>
         </div>

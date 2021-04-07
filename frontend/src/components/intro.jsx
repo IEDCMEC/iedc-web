@@ -200,7 +200,7 @@ class Intro extends Component {
                                             Bring us your ideas, and we'll help you unlock its true potential.
                                         </p>
                                         <br />
-                                        <a href="/projects" className="btn waves-effect " style={{ 'color': '#BF2200', 'background-color': 'white', 'font-weight': '500' }}>
+                                        <a href="https://github.com/IEDCMEC/projects/blob/main/README.md" className="btn waves-effect " style={{ 'color': '#BF2200', 'background-color': 'white', 'font-weight': '500' }}>
                                             <i className="material-icons right">arrow_forward</i>
 							                Read More
 			                            </a>
