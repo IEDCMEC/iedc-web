@@ -26,9 +26,6 @@ class Contact extends Component {
                   <a href="https://www.instagram.com/iedcmec/" target="_blank" rel="noopener noreferrer" style={{ color: "white" }} id="icon_space">
                     <i className="fab circle fa-instagram fa-2x" />
                   </a>
-                  <a href="https://discord.gg/Je6rGaT" target="_blank" rel="noopener noreferrer" style={{ color: "white" }} id="icon_space">
-                    <i className="fab circle fa-discord fa-2x" />
-                  </a>
                 </div>
               </div>
               <div style={{ paddingTop: "3rem", paddingBottom: "3rem", paddingLeft: "5px" }}>
