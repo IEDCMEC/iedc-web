@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'corsheaders',
     'rest_framework',
     'endpoints',
+    'rest_framework_jwt'
 ]
 
 MIDDLEWARE = [
@@ -75,7 +76,6 @@ TEMPLATES = [
 WSGI_APPLICATION = 'iedc_backend.wsgi.application'
 AUTHENTICATION_BACKENDS = [
     'django.contrib.auth.backends.ModelBackend',
-    'django.contrib.auth.backends.RemoteUserBackend',
 ]
 REST_FRAMEWORK = {
     'DEFAULT_PERMISSION_CLASSES': (
@@ -87,6 +87,7 @@ REST_FRAMEWORK = {
         'rest_framework.authentication.BasicAuthentication',
     ),
 }
+'''
 JWT_AUTH = {
     'JWT_PAYLOAD_GET_USERNAME_HANDLER':
         'iedc_backend.utils.jwt_get_username_from_payload_handler',
@@ -96,7 +97,7 @@ JWT_AUTH = {
     'JWT_AUDIENCE': os.getenv('JWT_AUDIENCE'),
     'JWT_ISSUER': 'https://dev-ngfh7t97.eu.auth0.com/',
     'JWT_AUTH_HEADER_PREFIX': 'Bearer',
-}
+}'''
 
 # Database
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases
