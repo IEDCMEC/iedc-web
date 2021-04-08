@@ -11,6 +11,6 @@ router.register(r'achievements', views.AchievementsView, 'Achievements')
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('homepage/', include(router.urls))
+    path('api/', include(router.urls))
 ]
 
