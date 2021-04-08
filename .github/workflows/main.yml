@@ -21,6 +21,10 @@ jobs:
         env:
           CI: false
         run: npm run build
+      - name: Install firebase
+        env:
+          CI: false
+        run: npm install -g firebase-tools
       - name: Deploy to Firebase
         env:
           CI: false
