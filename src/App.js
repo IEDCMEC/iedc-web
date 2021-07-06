@@ -5,6 +5,7 @@ import TeamPage from "./Pages/Team/TeamPage";
 import CaseStudy from "./Pages/CaseStudy/CaseStudy";
 import Projects from "./Pages/Projects/Projects";
 import Navbar from "./components/Navbar";
+import Catalyst from "./Pages/Catalyst/Catalyst";
 
 const App = () => {
     return (
@@ -16,6 +17,7 @@ const App = () => {
                     <Route path="/team" component={TeamPage} />
                     <Route path="/case-study" component={CaseStudy} />
                     <Route path="/projects" component={Projects} />
+                    <Route path="/catalyst" component={Catalyst} />
                 </Switch>
             </div>
         </Router>
