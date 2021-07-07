@@ -12,7 +12,7 @@ class Catalyst extends Component {
     render() {
         return (
             <div className="catalyst-card">
-                    <img src={Catalyst2021 } className="catalyst-image"/>
+                    <img src={Catalyst2021} className="catalyst-image"/>
 
                 <div className="catalyst-content">
                     <div className="catalyst-headings">
@@ -24,16 +24,16 @@ class Catalyst extends Component {
                     </div>
 
                     <div className="catalyst-buttons">
-                        <div className="catalyst-button">
                             <a href="https://issuu.com/iedcmec/docs/catalyst_2021_min_" target="_blank" rel="noopener noreferrer">
-                                READ ONLINE
-                            </a>
-                        </div>
                         <div className="catalyst-button">
-                            <a href="https://drive.google.com/file/d/1B0W1ni6bTOPspthYkTZsTovY6M7doK1y/view?usp=sharing" target="_blank" rel="noopener noreferrer">
-                                DOWNLOAD
-                            </a>
+                                READ ONLINE
                         </div>
+                            </a>
+                            <a href="https://drive.google.com/file/d/1B0W1ni6bTOPspthYkTZsTovY6M7doK1y/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+                        <div className="catalyst-button">
+                                DOWNLOAD
+                        </div>
+                            </a>
                     </div>
                 </div>
             </div>
