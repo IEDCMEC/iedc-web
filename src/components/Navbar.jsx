@@ -16,11 +16,10 @@ const Navbar = () => {
 
     const links = [
         { id: 1, Name: "Home", to: "/#home" },
-        { id: 2, Name: "About", to: "/#about" },
-        { id: 3, Name: "Contact", to: "/#contact" },
+        { id: 2, Name: "Contact", to: "/#contact" },
         // { id: 4, Name: 'Case Study', to: '/case-study' },
-        { id: 5, Name: "Team", to: "/team" },
-        { id: 5, Name: "Catalyst", to: "/catalyst" },
+        { id: 3, Name: "Team", to: "/team" },
+        { id: 4, Name: "Catalyst", to: "/catalyst" },
     ];
 
     const handleSideNavClick = () => {
