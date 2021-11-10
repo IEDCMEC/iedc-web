@@ -47,14 +47,14 @@ const TeamPage = () => {
             </div>
             <br />
 
-            <h2 className="title center-align bold" style={{ color: "#BF2200" }} >Web Team</h2>
+            {/* <h2 className="title center-align bold" style={{ color: "#BF2200" }} >Web Team</h2>
             <div className="row  " id="web-team-list">
                {webTeam.map(({ id, ...otherProps }) => (
                   <Card key={id} spacingId={id + 10} {...otherProps} />
                ))}
-            </div>
+            </div> */}
 
-            <h2 className="title center-align bold" style={{ color: "#BF2200" }}  >Core Teams</h2>
+            {/* <h2 className="title center-align bold" style={{ color: "#BF2200" }}  >Core Teams</h2>
             <div className="core-team"  >
                <h3>Design</h3 >
                <h5>Arpith S, Abhiram Anil, Ameen Azeez, Elizabeth, Rosia, Malavika</h5>
@@ -78,7 +78,7 @@ const TeamPage = () => {
             <div className="core-team">
                <h3>Marketing</h3 >
                <h5>Niranjana, Denil Geo Daise, Neetha Jayan, Razeen Muhammed, Nandakrishnan R</h5>
-            </div>
+            </div> */}
          </div >
       </div >
    )
