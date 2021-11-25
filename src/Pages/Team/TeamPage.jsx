@@ -43,7 +43,6 @@ const TeamPage = () => {
                   </p>
             </div>
 
-
             <h2 className="title center-align bold" style={{ color: "#BF2200" }}  >Executive Committee</h2>
             <div className="row" id="executive-members-list">
 
