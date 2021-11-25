@@ -292,6 +292,3 @@ export const webTeam = [{
 },
 ];
 
-
-export const secondYears = [
-]
