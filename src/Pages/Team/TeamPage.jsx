@@ -1,8 +1,15 @@
 import React from 'react'
-import { executiveMembers, webTeam, advisoryBoard } from './MembersList'
+import { executiveMembers, webTeam, advisoryBoard,ex_executiveMembers_2021 } from './MembersList'
 import './TeamPage.styles.css'
 import Card from './Card'
-
+import {
+   Accordion,
+   AccordionItem,
+   AccordionItemButton,
+   AccordionItemHeading,
+   AccordionItemPanel,
+ } from "react-accessible-accordion";
+ import "./accordionStyles.css"
 const TeamPage = () => {
    return (
       <div id='team-page' >
@@ -11,7 +18,7 @@ const TeamPage = () => {
             <h2 className="title center-align bold" style={{ color: "#BF2200" }} >Advisory Board</h2>
             <div className="row  " id="web-team-list">
                {advisoryBoard.map(({ id, ...otherProps }) => (
-                  <Card key={id} spacingId={id + 10} {...otherProps} />
+                  <Card key={id+50} spacingId={id} {...otherProps} />
                ))}
             </div>
 
@@ -36,7 +43,6 @@ const TeamPage = () => {
                   </p>
             </div>
 
-
             <h2 className="title center-align bold" style={{ color: "#BF2200" }}  >Executive Committee</h2>
             <div className="row" id="executive-members-list">
 
@@ -46,6 +52,32 @@ const TeamPage = () => {
 
             </div>
             <br />
+
+            <h2 className="title center-align bold" style={{ color: "#BF2200" }}  >Ex-Executive Committee</h2>
+            <div className="faq-text">
+            <Accordion preExpanded={[1, 2]} allowMultipleExpanded>
+            <AccordionItem>
+                <AccordionItemHeading>
+                    <AccordionItemButton>
+                        2020-21
+                    </AccordionItemButton>
+                </AccordionItemHeading>
+                <AccordionItemPanel>
+                <div className="row" id="executive-members-list">
+         
+         {ex_executiveMembers_2021.map(({ id, ...otherProps }) => (
+            <Card key={id} spacingId={id} {...otherProps} />
+         ))}
+
+      </div>
+      <br /> 
+                </AccordionItemPanel>
+            </AccordionItem>
+        </Accordion>
+
+            </div>
+          
+                    
 
             {/* <h2 className="title center-align bold" style={{ color: "#BF2200" }} >Web Team</h2>
             <div className="row  " id="web-team-list">

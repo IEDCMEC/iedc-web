@@ -22,6 +22,14 @@ export const advisoryBoard = [{
     imageUrl: require("../../Assets/team/samir.jpg"),
     linkedin: 'https://www.linkedin.com/in/samir-madhavan-7b172115',
 },
+{
+    id: 4,
+    name: "Paul Thomas",
+    designation: "Former Principal Software Consultant at Sequoia India",
+    desc: "",
+    imageUrl: require("../../Assets/team/paul_thomas.jpeg"),
+    linkedin: 'https://www.linkedin.com/in/paul-thomas-b3241824/',
+},
 ];
 
 
@@ -140,6 +148,71 @@ export const executiveMembers = [{
 }
 ];
 
+export const ex_executiveMembers_2021 = [{
+    id: 1,
+    name: "Allen Joseph",
+    designation: "Chief Executive Officer",
+    imageUrl: require("../../Assets/team/allen.jpg"),
+    linkedin: 'https://www.linkedin.com/in/allen-joseph-b72221124/',
+},
+{
+    id: 2,
+    name: "Ansif T A",
+    designation: "Chief Operating Officer",
+    imageUrl: require("../../Assets/team/ansif.jpg"),
+    linkedin: 'https://www.linkedin.com/in/ansif/',
+},
+{
+    id: 3,
+    name: "Aswin Shanil",
+    designation: "Chief Financial Officer",
+    imageUrl: require("../../Assets/team/aswin.jpg"),
+    linkedin: 'https://www.linkedin.com/in/aswin-shanil-150a55160/',
+},
+{
+    id: 4,
+    name: "Vivek R",
+    designation: "Chief Technology Officer",
+    imageUrl: require("../../Assets/team/vivek.jpg"),
+    linkedin: 'https://www.linkedin.com/in/123vivekr/',
+},
+{
+    id: 5,
+    name: "Harinarayanan Shaji",
+    designation: "Chief Design Officer",
+    imageUrl: require("../../Assets/team/hari.jpg"),
+    linkedin: 'https://www.linkedin.com/in/harinarayanan-shaji/',
+},
+{
+    id: 6,
+    name: "Alan Sebastian",
+    designation: "Chief Marketing Officer",
+    imageUrl: require("../../Assets/team/alan.jpg"),
+    linkedin: 'https://www.linkedin.com/in/alan-sebastian-george-09172615b/',
+},
+{
+    id: 7,
+    name: "Medha Lakshman Rao",
+    designation: "Chief Social Media Officer",
+    imageUrl: require("../../Assets/team/medha.jpg"),
+    linkedin: 'https://www.linkedin.com/in/medha-lakshman-rao-8138aa186/',
+},
+{
+    id: 8,
+    name: "Suvarna Sivadas",
+    designation: "Chief Content Officer",
+    imageUrl: require("../../Assets/team/suvarna.jpg"),
+    linkedin: 'https://www.linkedin.com/in/suvarnasivadas/',
+},
+{
+    id: 9,
+    name: "Ashmi Fathima",
+    designation: "Chief Publicity Officer",
+    imageUrl: require("../../Assets/team/ashmi.jpg"),
+    linkedin: 'https://www.linkedin.com/in/ashmi-fathima/',
+}
+];
+
 export const webTeam = [{
     id: 1,
     name: "Nikita Menon",
@@ -219,6 +292,3 @@ export const webTeam = [{
 },
 ];
 
-
-export const secondYears = [
-]
