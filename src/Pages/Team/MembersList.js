@@ -154,7 +154,6 @@ export const ex_executiveMembers_2021 = [{
     designation: "Chief Executive Officer",
     imageUrl: require("../../Assets/team/allen.jpg"),
     linkedin: 'https://www.linkedin.com/in/allen-joseph-b72221124/',
-
 },
 {
     id: 2,
