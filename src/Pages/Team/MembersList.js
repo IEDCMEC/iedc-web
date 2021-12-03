@@ -134,7 +134,7 @@ export const executiveMembers = [{
 },
 {
     id: 15,
-    name: "Sharath Jacob Jacon",
+    name: "Sharat Jacob Jacob",
     designation: "Talks Manager",
     imageUrl: require("../../Assets/team/sharat.jpeg"),
     linkedin: 'https://www.linkedin.com/in/sharat-jacob-jacob-045aa219b',
