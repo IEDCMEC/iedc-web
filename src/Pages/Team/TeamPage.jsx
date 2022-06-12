@@ -53,7 +53,7 @@ const TeamPage = () => {
             </div>
             <br />
 
-            <h2 className="title center-align bold" style={{ color: "#BF2200" }}  >Ex-Executive Committee</h2>
+            <h2 className="title center-align bold" style={{ color: "#BF2200" }}  > Ex-Executive Committee</h2>
             <div className="faq-text">
             <Accordion preExpanded={[1, 2]} allowMultipleExpanded>
             <AccordionItem>
