@@ -67,7 +67,7 @@ export const executiveMembers = [{
     name: "Ashwin Girish",
     designation: "Chief Design Officer",
     imageUrl: require("../../Assets/team/ashwin_girish.jpeg"),
-    linkedin: 'https://www.linkedin.com/in/abhiram-anil-55b9211a7',
+    linkedin: 'https://www.linkedin.com/in/ashwin-girish-895276157',
 },
 {
     id: 6,
@@ -81,14 +81,14 @@ export const executiveMembers = [{
     name: "Gopika G ",
     designation: "Chief Social Media Officer",
     imageUrl: require("../../Assets/team/gopika_g.jpg"),
-    linkedin: 'https://www.linkedin.com/in/neetha-jayan-b271161b3',
+    linkedin: 'https://www.linkedin.com/in/gopika-gopi-02b204190',
 },
 {
     id: 8,
     name: "Zailesh A R",
     designation: "Chief Content Officer",
     imageUrl: require("../../Assets/team/Zailesh.jpeg"),
-    linkedin: 'https://www.linkedin.com/in/aswathy-s-menon',
+    linkedin: 'https://www.linkedin.com/in/zaileshar/',
 },
 {
     id: 9,
@@ -130,21 +130,21 @@ export const executiveMembers = [{
     name: "Annamma T Philip",
     designation: "Talks Manager",
     imageUrl: require("../../Assets/team/annamma_t_p.jpg"),
-    linkedin: 'https://www.linkedin.com/in/vishnumayasunni',
+    linkedin: 'https://www.linkedin.com/in/annamma-philip-929845202',
 },
 {
     id: 15,
     name: "Sudeep S",
     designation: "Talks Manager",
     imageUrl: require("../../Assets/team/sudeep_s.jpeg"),
-    linkedin: 'https://www.linkedin.com/in/sharat-jacob-jacob-045aa219b',
+    linkedin: 'https://www.linkedin.com/in/sudeep-s-65272b229',
 },
 {
     id: 16,
     name: "Anjana Sudevan",
     designation: "SIG Head",
     imageUrl: require("../../Assets/team/anjana_s.jpg"),
-    linkedin: 'https://www.linkedin.com/in/maria-rachel-joseph-4b80231a2/',
+    linkedin: 'https://www.linkedin.com/in/anjana-sudevan-7b54031aa',
 }
 ];
 
