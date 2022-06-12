@@ -148,6 +148,125 @@ export const executiveMembers = [{
 }
 ];
 
+
+
+export const ex_executiveMembers_2022 = [{
+    id: 1,
+    name: "Namith Krishnan",
+    designation: "Chief Executive Officer",
+    imageUrl: require("../../Assets/team/namith.jpeg"),
+    linkedin: 'https://www.linkedin.com/in/a-namith-krishnan-4589291a7',
+
+},
+{
+    id: 2,
+    name: "Niranjana",
+    designation: "Chief Operating Officer",
+    imageUrl: require("../../Assets/team/niranjana.jpg"),
+    linkedin: 'https://www.linkedin.com/in/niranjana-b-nair-48b976203',
+},
+{
+    id: 3,
+    name: "Amalraj K",
+    designation: "Chief Financial Officer",
+    imageUrl: require("../../Assets/team/amalraj.jpg"),
+    linkedin: 'https://www.linkedin.com/in/amalraj-k-ab30b71a1',
+},
+{
+    id: 4,
+    name: "Rindish Krishna",
+    designation: "Chief Technology Officer",
+    imageUrl: require("../../Assets/team/rindish.jpg"),
+    linkedin: 'https://www.linkedin.com/in/123vivekr/',
+},
+{
+    id: 5,
+    name: "Abhiram Anil",
+    designation: "Chief Design Officer",
+    imageUrl: require("../../Assets/team/Abhiram.jpeg"),
+    linkedin: 'https://www.linkedin.com/in/abhiram-anil-55b9211a7',
+},
+{
+    id: 6,
+    name: "Muhammed Razeen",
+    designation: "Chief Marketing Officer",
+    imageUrl: require("../../Assets/team/Raz.jpg"),
+    linkedin: 'https://www.linkedin.com/in/muhammed-razeen-298815190',
+},
+{
+    id: 7,
+    name: "Neetha Jayan",
+    designation: "Chief Social Media Officer",
+    imageUrl: require("../../Assets/team/neetha.jpeg"),
+    linkedin: 'https://www.linkedin.com/in/neetha-jayan-b271161b3',
+},
+{
+    id: 8,
+    name: "Aswathy S Menon",
+    designation: "Chief Content Officer",
+    imageUrl: require("../../Assets/team/aswathy.jpeg"),
+    linkedin: 'https://www.linkedin.com/in/aswathy-s-menon',
+},
+{
+    id: 9,
+    name: "Nikita Menon",
+    designation: "Chief Project Managament Officer",
+    imageUrl: require("../../Assets/team/nikita.jpg"),
+    linkedin: 'https://www.linkedin.com/in/nikita-menon-b2248079/',
+},
+{
+    id: 10,
+    name: "Denil Geo Daise",
+    designation: "Head of Outreach & Public Relations",
+    imageUrl: require("../../Assets/team/denil.jpg"),
+    linkedin: 'https://www.linkedin.com/in/denil-daise-3215521a7',
+},
+{
+    id: 11,
+    name: "Malavika R Vikraman",
+    designation: "Head of Social Responsibilty",
+    imageUrl: require("../../Assets/team/malavika.jpg"),
+    linkedin: 'https://www.linkedin.com/in/malavika-rajesh-vikraman',
+},
+{
+    id: 12,
+    name: "Adithya Anilkumar",
+    designation: "Chief Event Management Officer",
+    imageUrl: require("../../Assets/team/adithya.jpg"),
+    linkedin: 'https://www.linkedin.com/in/adithyaanilkumar/',
+},
+{
+    id: 13,
+    name: "Abhiram Vijayakumar",
+    designation: "Chief Community Officer",
+    imageUrl: require("../../Assets/team/abhiram.jpg"),
+    linkedin: 'https://www.linkedin.com/in/abhiram-vijayakumar-9b95381a7',
+},
+{
+    id: 14,
+    name: "Vishnumaya S Unni",
+    designation: "Talks Manager",
+    imageUrl: require("../../Assets/team/vishnumayaunni.jpeg"),
+    linkedin: 'https://www.linkedin.com/in/vishnumayasunni',
+},
+{
+    id: 15,
+    name: "Sharath Jacob Jacon",
+    designation: "Talks Manager",
+    imageUrl: require("../../Assets/team/sharat.jpeg"),
+    linkedin: 'https://www.linkedin.com/in/sharat-jacob-jacob-045aa219b',
+},
+{
+    id: 16,
+    name: "Maria Rachel Joseph",
+    designation: "SIG Head",
+    imageUrl: require("../../Assets/team/maria.jpeg"),
+    linkedin: 'https://www.linkedin.com/in/maria-rachel-joseph-4b80231a2/',
+}
+];
+
+
+
 export const ex_executiveMembers_2021 = [{
     id: 1,
     name: "Allen Joseph",
