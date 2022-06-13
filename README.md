@@ -1,7 +1,6 @@
-
 # The Front End of the IEDC-WEB
 
-### We request you if you are about to contribute, write clean and well documented code and also we expect you to follow undermentioned commit message format:
+### Please add commit messages using the following format:
 
     Build: A new feature or Feat: A new feature.
     Fix: A bug fix.
@@ -17,14 +16,17 @@
     git commit -m "Feat: Added UI component to add file" or git commit -m "Feat: Added UI component to add file",
     git commit -m "Fix: Bug in SomeView was fixed",
     etc.
-    
+
 The react app is dockerized.
+
 ## Setup docker image
+
 Run this just once for setting up the docker image. (or when the docker configuration changes)
 
 `docker build -t iedc-web-frontend .`
 
 ## Start docker container
+
 To see the app in action
 
 ` docker run iedc-web-frontend`
@@ -32,6 +34,7 @@ To see the app in action
 PS: the website port is 3000.
 
 ## For devlepment
+
 ### Install devDependencies
 
 `npm install --only=dev`
@@ -51,4 +54,3 @@ example
 example
 
 `./node_modules/.bin/eslint --fix src/components/*`
-
