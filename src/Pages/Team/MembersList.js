@@ -35,7 +35,7 @@ export const advisoryBoard = [{
 
 export const executiveMembers = [{
     id: 1,
-    name: "Muhammed Razeen V",
+    name: "Muhammed Razeen",
     designation: "Chief Executive Officer",
     imageUrl: require("../../Assets/team/Raz.jpg"),
     linkedin: 'https://www.linkedin.com/in/muhammed-razeen-298815190',
