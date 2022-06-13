@@ -35,6 +35,123 @@ export const advisoryBoard = [{
 
 export const executiveMembers = [{
     id: 1,
+    name: "Muhammed Razeen V",
+    designation: "Chief Executive Officer",
+    imageUrl: require("../../Assets/team/Raz.jpg"),
+    linkedin: 'https://www.linkedin.com/in/muhammed-razeen-298815190',
+
+},
+{
+    id: 2,
+    name: "Adithya A",
+    designation: "Chief Operating Officer",
+    imageUrl: require("../../Assets/team/adithya.jpg"),
+    linkedin: 'https://www.linkedin.com/in/adithyaanilkumar/',
+},
+{
+    id: 3,
+    name: "Maria Rachel Joseph ",
+    designation: "Chief Financial Officer",
+    imageUrl: require("../../Assets/team/maria_rachel.jpg"),
+    linkedin: 'https://www.linkedin.com/in/maria-rachel-joseph-4b80231a2/',
+},
+{
+    id: 4,
+    name: "Aldrin Jenson",
+    designation: "Chief Technology Officer",
+    imageUrl: require("../../Assets/team/aldrin.jpg"),
+    linkedin: 'https://www.linkedin.com/in/aldrinjenson/',
+},
+{
+    id: 5,
+    name: "Ashwin Girish",
+    designation: "Chief Design Officer",
+    imageUrl: require("../../Assets/team/ashwin_girish.jpeg"),
+    linkedin: 'https://www.linkedin.com/in/ashwin-girish-895276157',
+},
+{
+    id: 6,
+    name: "Sreehari Sreekumar",
+    designation: "Chief Marketing Officer",
+    imageUrl: require("../../Assets/team/sreehari_s.jpg"),
+    linkedin: 'https://www.linkedin.com/in/sreehari-sreekumar-596597200',
+},
+{
+    id: 7,
+    name: "Gopika G ",
+    designation: "Chief Social Media Officer",
+    imageUrl: require("../../Assets/team/gopika_g.jpg"),
+    linkedin: 'https://www.linkedin.com/in/gopika-gopi-02b204190',
+},
+{
+    id: 8,
+    name: "Zailesh A R",
+    designation: "Chief Content Officer",
+    imageUrl: require("../../Assets/team/Zailesh.jpeg"),
+    linkedin: 'https://www.linkedin.com/in/zaileshar/',
+},
+{
+    id: 9,
+    name: "Nikita Menon",
+    designation: "Chief Project Managament Officer",
+    imageUrl: require("../../Assets/team/nikita.jpg"),
+    linkedin: 'https://www.linkedin.com/in/nikita-menon-b2248079/',
+},
+{
+    id: 10,
+    name: "Femina P.A",
+    designation: "Chief Publicity Officer",
+    imageUrl: require("../../Assets/team/femina_p_a.jpg"),
+    linkedin: 'https://www.linkedin.com/in/femina-p-a-87b3631a6',
+},
+{
+    id: 11,
+    name: "Reva Pradeep",
+    designation: "Social Initiatives Manager",
+    imageUrl: require("../../Assets/team/reva_p.JPG"),
+    linkedin: 'https://www.linkedin.com/in/reva-pradeep-248546202',
+},
+{
+    id: 12,
+    name: "Ananya Daniel",
+    designation: "Chief Event Management Officer",
+    imageUrl: require("../../Assets/team/ananya_d.jpeg"),
+    linkedin: 'https://www.linkedin.com/in/ananya-daniel-918073230/',
+},
+{
+    id: 13,
+    name: "John Tharian",
+    designation: "Chief Community Officer",
+    imageUrl: require("../../Assets/team/john_t.jpg"),
+    linkedin: 'https://www.linkedin.com/in/johntharian',
+},
+{
+    id: 14,
+    name: "Annamma T Philip",
+    designation: "Talks Manager",
+    imageUrl: require("../../Assets/team/annamma_t_p.jpg"),
+    linkedin: 'https://www.linkedin.com/in/annamma-philip-929845202',
+},
+{
+    id: 15,
+    name: "Sudeep S",
+    designation: "Talks Manager",
+    imageUrl: require("../../Assets/team/sudeep_s.jpeg"),
+    linkedin: 'https://www.linkedin.com/in/sudeep-s-65272b229',
+},
+{
+    id: 16,
+    name: "Anjana Sudevan",
+    designation: "SIG Head",
+    imageUrl: require("../../Assets/team/anjana_s.jpg"),
+    linkedin: 'https://www.linkedin.com/in/anjana-sudevan-7b54031aa',
+}
+];
+
+
+
+export const ex_executiveMembers_2022 = [{
+    id: 1,
     name: "Namith Krishnan",
     designation: "Chief Executive Officer",
     imageUrl: require("../../Assets/team/namith.jpeg"),
@@ -147,6 +264,8 @@ export const executiveMembers = [{
     linkedin: 'https://www.linkedin.com/in/maria-rachel-joseph-4b80231a2/',
 }
 ];
+
+
 
 export const ex_executiveMembers_2021 = [{
     id: 1,
