@@ -118,7 +118,6 @@
 
 @media(max-width: 992px) {
     .offspace {
-        position: relative;
         top: 75px;
     }
 
