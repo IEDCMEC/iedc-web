@@ -9,7 +9,6 @@
     "axios": "^0.19.2",
     "firebase-tools": "^9.9.0",
     "materialize-css": "^1.0.0-rc.2",
-    "node": "^16.6.1",
     "react": "^16.13.0",
     "react-accessible-accordion": "^4.0.0",
     "react-carousel-slider": "^2.0.13",

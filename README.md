@@ -18,6 +18,8 @@
     etc.
 
 The react app is dockerized.
+However, it is not necessary that you need to have docker installed or running.
+Just do `npm start` from the root directory to start the app.
 
 ## Setup docker image
 
