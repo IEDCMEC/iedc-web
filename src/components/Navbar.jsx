@@ -68,6 +68,15 @@ const Navbar = () => {
                                     Projects
                                 </a>
                             </li>
+                            <li key="blog">
+                                <a
+                                    href="https://blog.iedcmec.in/"
+                                    className="black-text "
+                                    target="_blank" rel="noopener noreferrer"
+                                >
+                                    Blog
+                                </a>
+                            </li>
                         </ul>
                     </div>
                 </nav>
@@ -81,6 +90,16 @@ const Navbar = () => {
                         </HLink>
                     </li>
                 ))}
+                <li key="blog">
+                    <a
+                        href="https://blog.iedcmec.in/"
+                        className="black-text "
+                        style={{ textAlign: "center" }}
+                        target="_blank" rel="noopener noreferrer"
+                    >
+                        Blog
+                    </a>
+                </li>
             </ul>
         </div>
     );
