@@ -24,7 +24,7 @@ const Home = () => {
     <div className="container center" id='home'  >
       <div className="row" >
         <div className="col s12 m6 mr2" style={{ height: '60vh', display: 'flex', flexDirection: 'column', justifyContent: 'center' }} >
-          <img src={IEDC} className="iedc_img" alt="logo" />
+          <img src={IEDC} className="iedc_img" style={{pointerEvents:"none"}} alt="logo" />
           <div className="row" style={{ display: 'flex', 'justifyContent': 'space-evenly', marginTop: '20px' }} >
             <a href="https://www.instagram.com/iedcmec/" className='icon-link'><i class="fa fa-instagram" aria-hidden="true"></i></a>
             <a href="https://www.linkedin.com/company/iedcmec/" className='icon-link'><i class="fa fa-linkedin" aria-hidden="true"></i></a>
@@ -32,7 +32,7 @@ const Home = () => {
           </div>
         </div>
         <div className="col s12 m5 offset-m1" >
-          <img className='responsive-img illustration' src={HeaderImage} alt="headerImage" />
+          <img className='responsive-img illustration' style={{pointerEvents:"none"}} src={HeaderImage} alt="headerImage" />
         </div>
       </div>
 

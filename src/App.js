@@ -6,11 +6,14 @@ import CaseStudy from "./Pages/CaseStudy/CaseStudy";
 import Projects from "./Pages/Projects/Projects";
 import Navbar from "./components/Navbar";
 import Catalyst from "./Pages/Catalyst/Catalyst";
+import ScrollToTop from "./utils/ScrollToTop";
 
 const App = () => {
     return (
         <Router>
             <div className="App">
+
+            <ScrollToTop/>
                 <Navbar />
                 <Switch>
                     <Route exact path="/" component={Landing} />
