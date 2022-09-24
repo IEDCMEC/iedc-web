@@ -189,6 +189,7 @@ class Intro extends Component {
                                                 alt="about"
                                                 className="responsive-img"
                                                 id="about_img"
+                                                style={{pointerEvents:"none"}}
                                             />
                                         </a>
                                     </div>
