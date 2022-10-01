@@ -7,13 +7,13 @@ import Projects from "./Pages/Projects/Projects";
 import Navbar from "./components/Navbar";
 import Catalyst from "./Pages/Catalyst/Catalyst";
 import ScrollToTop from "./utils/ScrollToTop";
+import Leaderboard from "./Pages/Leaderboard/Leaderboard";
 
 const App = () => {
     return (
         <Router>
             <div className="App">
-
-            <ScrollToTop/>
+                <ScrollToTop />
                 <Navbar />
                 <Switch>
                     <Route exact path="/" component={Landing} />
@@ -21,6 +21,7 @@ const App = () => {
                     <Route path="/case-study" component={CaseStudy} />
                     <Route path="/projects" component={Projects} />
                     <Route path="/catalyst" component={Catalyst} />
+                    <Route path="/leaderboard" component={Leaderboard} />
                 </Switch>
             </div>
         </Router>
