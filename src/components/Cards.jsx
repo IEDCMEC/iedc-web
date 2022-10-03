@@ -5,10 +5,10 @@ export default function Cards(props){
         <div>
         {props.link ? 
                 <div> 
-                    <p>{props.summary}</p> 
+                    <p style={{wordWrap:'break-word'}}>{props.summary}</p> 
                     <p> For more details visit: <br/>
                         <a  href={props.link} 
-                            style={{fontSize: "1.1rem", color: mousehover ? "black" : "#BF2200"}}
+                            style={{fontSize: "1.1rem", color: mousehover ? "black" : "#BF2200", wordWrap:'break-word'}}
                             onMouseOut={()=>(setMouseHover(!mousehover))} 
                             onMouseEnter={() => (setMouseHover(!mousehover))}>
                              {props.link}
