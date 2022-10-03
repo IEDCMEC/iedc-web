@@ -20,6 +20,7 @@ const Navbar = () => {
         // { id: 4, Name: 'Case Study', to: '/case-study' },
         { id: 3, Name: "Team", to: "/team" },
         { id: 4, Name: "Catalyst", to: "/catalyst" },
+        { id: 5, Name: "Pre-Incubation", to:"/preIncubation"}
     ];
 
     const handleSideNavClick = () => {
@@ -64,6 +65,7 @@ const Navbar = () => {
                                 <a
                                     href="https://github.com/IEDCMEC/projects/blob/main/README.md"
                                     className="black-text "
+                                    target="_blank"
                                 >
                                     Projects
                                 </a>

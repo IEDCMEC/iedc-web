@@ -8,6 +8,7 @@ import Navbar from "./components/Navbar";
 import Catalyst from "./Pages/Catalyst/Catalyst";
 import ScrollToTop from "./utils/ScrollToTop";
 import Leaderboard from "./Pages/Leaderboard/Leaderboard";
+import PreIncubation from "./Pages/PreIncubation/preIncubation";
 
 const App = () => {
     return (
@@ -22,6 +23,7 @@ const App = () => {
                     <Route path="/projects" component={Projects} />
                     <Route path="/catalyst" component={Catalyst} />
                     <Route path="/leaderboard" component={Leaderboard} />
+                    <Route path="/PreIncubation" component={PreIncubation} />
                 </Switch>
             </div>
         </Router>
