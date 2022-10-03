@@ -15,7 +15,7 @@
 }
 .parent .title p{
     text-align: center;
-    font-size: 20px;
+    font-size: 22px;
 }
 .parent .title h3{
     color: red;
@@ -25,9 +25,15 @@
     .parent .title{
         max-width: 70vw;
     }
+    .parent .title p{
+        font-size: 16px;
+    }
 }
 @media only screen and (max-width: 600px) {
     .parent .title{
         max-width: 85vw;
+    }
+    .parent .title p{
+        font-size: 16px;
     }
 }

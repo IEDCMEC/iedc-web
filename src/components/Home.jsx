@@ -3,16 +3,9 @@ import IEDC from "../Assets/logo.png";
 import "materialize-css/dist/css/materialize.min.css";
 import HeaderImage from '../Assets/svgs/Frame1.png'
 import WaterHose from '../Assets/svgs/WaterHose.png'
-
+import {announcements} from "./data";
+import Announcements from "./Announcements";
 const Home = () => {
-  const [announcements, setAnnouncements] = useState([
-    { id: 1, title: 'ISRO Remote Sensing Outreach Programme', link: '/' },
-    { id: 2, title: 'ISRO Remote Sensing Outreach Programme', link: '/' },
-    { id: 3, title: 'ISRO Remote Sensing Outreach Programme', link: '/' },
-    { id: 4, title: 'ISRO Remote Sensing Outreach Programme', link: '/' },
-    { id: 5, title: 'ISRO Remote Sensing Outreach Programme', link: '/' },
-    { id: 6, title: 'ISRO Remote Sensing Outreach Programme', link: '/' },
-  ]);
 
   // useEffect(() => {
   //   fetch("https://raw.githubusercontent.com/IEDCMEC/data/master/data.json")
@@ -38,20 +31,22 @@ const Home = () => {
 
       {/*.....................Announcements Row .............*/}
 
-      {/* <h3 style={{ marginBottom: '45px', color: '#BF2200' }}  >Announcements</h3>
+      <h3 style={{ marginBottom: '45px', color: '#BF2200' }}  >Announcements</h3>
       <div className="row">
         <div className="col s12 l5 hide-on-med-and-down"  >
           <img src={WaterHose} style={{ height: '40vh' }} alt="logo" />
         </div>
         <div className="col s12 l7 announcements " style={{ height: '40vh' }}  >
-          {announcements.map(({ title, id, link }) => (
-            <div key={id} className=" announcement-box " style={{ display: "flex", justifyContent: 'space-between' }} >
-              <h5 className='left-align' >{title}</h5>
-              <a href={link} className='icon-link'><i class="fa fa-instagram medium" aria-hidden="true"></i></a>
-            </div>)
+          {announcements.map(({ title, id, link, summary }) => (
+            <Announcements
+              title={title}
+              link={link}
+              summary={summary}
+              id={id}
+            />)
           )}
         </div>
-      </div> */}
+      </div>
 
     </div >
   )
