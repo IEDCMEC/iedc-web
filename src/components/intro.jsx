@@ -51,8 +51,8 @@ class Intro extends Component {
                     id="startup_culture"
                     style={{
                         marginTop: -10,
-                        "background-color": "#122B42",
-                        "background-image": "",
+                        "backgroundColor": "#122B42",
+                        "backgroundImage": "",
                     }}
                 >
                     <div className="contentAlign mobile-text" style={{ color: "white", textAlign: "center" }}>
@@ -117,7 +117,7 @@ class Intro extends Component {
                 <section
                     className="section"
                     id="about"
-                    style={{ "background-color": "white", "padding-bottom": "5%", marginTop: -10 }}
+                    style={{ "backgroundColor": "white", "paddingBottom": "5%", marginTop: -10 }}
                 >
 
 
@@ -166,7 +166,7 @@ class Intro extends Component {
                 </div>
 
                 <section
-                    style={{ "background-color": "#BF2200", marginTop: -7 }}
+                    style={{ "backgroundColor": "#BF2200", marginTop: -7 }}
                 >
                     <div
                         style={{ textAlign: "center", paddingBottom: "50px" }}
@@ -201,7 +201,7 @@ class Intro extends Component {
                                             Bring us your ideas, and we'll help you unlock its true potential.
                                         </p>
                                         <br />
-                                        <a href="https://github.com/IEDCMEC/projects/blob/main/README.md" target="_blank" className="btn waves-effect " style={{ 'color': '#BF2200', 'background-color': 'white', 'font-weight': '500' }}>
+                                        <a href="https://github.com/IEDCMEC/projects/blob/main/README.md" target="_blank" className="btn waves-effect " style={{ 'color': '#BF2200', 'backgroundColor': 'white', 'fontWeight': '500' }}>
                                             <i className="material-icons right">arrow_forward</i>
 							                Read More
 			                            </a>
