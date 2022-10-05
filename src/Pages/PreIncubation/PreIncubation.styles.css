@@ -4,6 +4,7 @@
     justify-content:center;
     padding-top: 3rem;
     flex-wrap: wrap;
+    flex-direction: column;
 }
 .parent .title{
     padding: 0.7rem 0;
@@ -13,20 +14,32 @@
     align-items: center;
     flex-direction: column;
 }
-.parent .title p{
+p{
     text-align: center;
     font-size: 22px;
 }
-.parent .title h3{
+h3{
     color: red;
     text-align: center;
 }
+@media only screen and (min-width: 1000px){
+    #collab{
+        min-height: 60vh;
+        min-width: 60vw;
+        margin: 3rem 0;
+    }
+}
 @media only screen and (max-width: 1000px) and (min-width: 600px) {
     .parent .title{
-        max-width: 70vw;
+        min-width: 70vw;
     }
     .parent .title p{
         font-size: 16px;
+    }
+    #collab{
+        min-height: 50vh;
+        min-width: 90vw;
+        margin: 3rem 0;
     }
 }
 @media only screen and (max-width: 600px) {
@@ -35,5 +48,10 @@
     }
     .parent .title p{
         font-size: 16px;
+    }
+    #collab{
+        min-height: 50vh;
+        min-width: 90vw;
+        margin: 3rem 0;
     }
 }

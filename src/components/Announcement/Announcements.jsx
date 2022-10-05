@@ -14,11 +14,11 @@ export default function Announcements(props){
                                 padding: "0!important",
                                 cursor: "pointer",
                                 fontFamily: '"Quicksand", sans-serif',
-                                color: mousehover ? "black" : "#BF2200"}} 
-                        onClick={()=>{return(setBoolCheck(!boolCheck));}} 
-                        onMouseOut={()=>(setMouseHover(!mousehover))} 
-                        onMouseEnter={() => (setMouseHover(!mousehover))}>
-                                    <p>Read More!!</p> 
+                                color: mousehover ? "black" : "#BF2200"}}>
+                                    <p
+                                onClick={()=>{return(setBoolCheck(!boolCheck));}} 
+                                onMouseOut={()=>(setMouseHover(!mousehover))} 
+                                onMouseEnter={() => (setMouseHover(!mousehover))}>Read More!!</p> 
                             </button>
                         }
             </div>

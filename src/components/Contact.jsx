@@ -5,7 +5,7 @@ class Contact extends Component {
 
   render() {
     return (
-      <div id="top_margin" style={{ "background-color": "#122B42" }}>
+      <div id="top_margin" style={{ "backgroundColor": "#122B42" }}>
         <section className="main_img center">
           <div className="row" style={{ marginBottom: "0px", backgroundColor: "#122B42", color: "white" }} id="centre_mobile">
             <div
