@@ -1,6 +1,7 @@
 import React, { useEffect, useState, useRef } from "react";
 import M from "materialize-css/dist/js/materialize.min.js";
 import { HashLink as HLink } from "react-router-hash-link";
+import "../css/navbar.css"
 
 const Navbar = () => {
     const sidenavRef = useRef();
@@ -70,16 +71,14 @@ const Navbar = () => {
                                     Projects
                                 </a>
                             </li>
-                            <li key="blog">
-                                <a
+                        </ul>
+                        <a key="blog" id="red_blog"
                                     href="https://blog.iedcmec.in/"
                                     className="black-text "
                                     target="_blank" rel="noopener noreferrer"
                                 >
                                     Blog
                                 </a>
-                            </li>
-                        </ul>
                     </div>
                 </nav>
             </div>
@@ -92,8 +91,8 @@ const Navbar = () => {
                         </HLink>
                     </li>
                 ))}
-                <li key="blog">
-                    <a
+                </ul>
+                    <a  key="blog" id="mob_blog"
                         href="https://blog.iedcmec.in/"
                         className="black-text "
                         style={{ textAlign: "center" }}
@@ -101,8 +100,8 @@ const Navbar = () => {
                     >
                         Blog
                     </a>
-                </li>
-            </ul>
+                
+            
         </div>
     );
 };
