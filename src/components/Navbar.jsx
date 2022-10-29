@@ -74,7 +74,6 @@ const Navbar = () => {
                         </ul>
                         <a key="blog" id="red_blog"
                                     href="https://blog.iedcmec.in/"
-                                    className="black-text "
                                     target="_blank" rel="noopener noreferrer"
                                 >
                                     Blog
@@ -94,7 +93,6 @@ const Navbar = () => {
                 </ul>
                     <a  key="blog" id="mob_blog"
                         href="https://blog.iedcmec.in/"
-                        className="black-text "
                         style={{ textAlign: "center" }}
                         target="_blank" rel="noopener noreferrer"
                     >
