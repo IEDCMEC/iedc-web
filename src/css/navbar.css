@@ -1,0 +1,47 @@
+@media screen and (min-width: 993px) {
+    #red_blog {
+        color: white;
+        font-size: 16px;
+        background-color: #bf2200;
+        outline: none;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        height: 40px;
+        width: 80px;
+        margin-top: 10px;
+    }
+}
+@media screen and (max-width: 992px) {
+    #red_blog {
+        display: none;
+    }
+}
+@media screen and (max-width: 992px) {
+    #mob_blog {
+        position: absolute !important;
+        color: white;
+        font-size: 16px;
+        top: 0.7%;
+        right: 2.5%;
+        background-color: #bf2200;
+        outline: none;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        height: 38px;
+        width: 70px;
+        z-index: 997;
+        margin-top: 3px;
+    }
+}
+
+@media screen and (min-width: 993px) {
+    #mob_blog {
+        display: none;
+    }
+}
