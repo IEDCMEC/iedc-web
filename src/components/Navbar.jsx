@@ -71,13 +71,15 @@ const Navbar = () => {
                                     Projects
                                 </a>
                             </li>
-                        </ul>
-                        <a key="blog" id="red_blog"
+                            <li key="blog" >
+                            <a id="red_blog"
                                     href="https://blog.iedcmec.in/"
                                     target="_blank" rel="noopener noreferrer"
                                 >
                                     Blog
                                 </a>
+                            </li>
+                        </ul>
                     </div>
                 </nav>
             </div>
