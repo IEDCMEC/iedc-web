@@ -15,10 +15,11 @@ export default function PreIncubation(){
                     </div>
                 )
             )}
-            <div>
-                <h3>Projects under <br/> Pre-Incubation</h3>
-                <iframe id='collab' title='collab' src='https://collab.iedcmec.in/'/>
-            </div>
         </div>
     );
 }
+
+            {/* <div>
+                <h3>Projects under <br/> Pre-Incubation</h3>                                     //code to add iframe to collab
+                <iframe id='collab' title='collab' src='https://collab.iedcmec.in/'/>
+            </div> */}

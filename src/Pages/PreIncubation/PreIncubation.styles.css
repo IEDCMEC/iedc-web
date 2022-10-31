@@ -22,13 +22,6 @@ h3{
     color: red;
     text-align: center;
 }
-@media only screen and (min-width: 1000px){
-    #collab{
-        min-height: 75vh;
-        min-width: 75vw;
-        margin: 3rem 0;
-    }
-}
 @media only screen and (max-width: 1000px) and (min-width: 600px) {
     .parent .title{
         min-width: 70vw;
@@ -36,11 +29,7 @@ h3{
     .parent .title p{
         font-size: 16px;
     }
-    #collab{
-        min-height: 50vh;
-        min-width: 90vw;
-        margin: 3rem 0;
-    }
+
 }
 @media only screen and (max-width: 600px) {
     .parent .title{
@@ -49,9 +38,27 @@ h3{
     .parent .title p{
         font-size: 16px;
     }
+}
+
+
+
+
+/* COLLAB NOT NEEDED PROPERTIES*/
+
+/* @media only screen and (min-width: 1000px){
     #collab{
-        min-height: 80vh;
-        min-width: 90vw;
+        min-height: 75vh;
+        min-width: 75vw;
         margin: 3rem 0;
     }
-}
+} */
+    /* #collab{
+        min-height: 50vh;
+        min-width: 90vw;
+        margin: 3rem 0;           FOR MAX WIDTH 1000px MIN WIDTH 600px
+    } */
+    /* #collab{
+        min-height: 80vh;
+        min-width: 90vw;
+        margin: 3rem 0;           FOR MAX WIDTH 600px
+    } */

@@ -2,7 +2,7 @@ import React, { useEffect, useState, useRef } from "react";
 import M from "materialize-css/dist/js/materialize.min.js";
 import { HashLink as HLink } from "react-router-hash-link";
 import "../css/navbar.css"
-
+import linkpic from "../Assets/link_icon.svg";
 const Navbar = () => {
     const sidenavRef = useRef();
     const [sidenavInstance, setSidenavInstance] = useState(null);
@@ -71,6 +71,15 @@ const Navbar = () => {
                                     Projects
                                 </a>
                             </li>
+                            <li>
+                                <a
+                                    href="https://collab.iedcmec.in/"
+                                    className="black-text "
+                                    target="_blank"
+                                >
+                                    IEDC Collab <img src={linkpic} style={{width:"16px", height:"16px"}}/>
+                                </a>
+                            </li>
                             <li key="blog" >
                             <a id="red_blog"
                                     href="https://blog.iedcmec.in/"
@@ -92,6 +101,16 @@ const Navbar = () => {
                         </HLink>
                     </li>
                 ))}
+                <li>
+                                <a
+                                    href="https://collab.iedcmec.in/"
+                                    className="black-text "
+                                    target="_blank"
+                                    style={{textAlign: "center"}}
+                                >
+                                    IEDC Collab <img src={linkpic} style={{width:"15px", height:"15px"}}/>
+                                </a>
+                            </li>
                 </ul>
                     <a  key="blog" id="mob_blog"
                         href="https://blog.iedcmec.in/"
