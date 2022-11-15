@@ -1,7 +1,7 @@
 
 const announcements=[
   
-    {id:1, link:"https://www.instagram.com/p/CjIm0FKvrYQ/",title:"InSights: A series on Business, Economics, Technology, Finance",summary:'IEDCMEC presents Insights - a reel series where we breakdown tricky concepts from economics to business, finance and technology.'},
-    {id:2, link:"https://indiafoss.net/kochi/2022",title:"KochiFOSS: A Free and Open Source Conference held in Kochi, Kerala by the FOSS United Community",summary:'Go Deeper Into KochiFOSS: It is a Mini Conference organized with the aim to revive the FOSS community in Kochi and to bring everyone interested in FOSS together.'}
+    {id:1, link:"https://bit.ly/startupdeepdive",title:"Startup Deep Dive - Entrepreneurship Training Series",summary:'IEDC MEC presents you with the first two sessions of the Startup Deep Dive: The Entrepreneurship Training Series on the 17th and 18th, of November at 4:30 PM. Join us to hear Haroon Shahul, the founder and chairman at Solweartch Ecotech and Joseph Babu, Co-Founder, Director & CMO of Riafy Technologies speak about everything you need to keep in mind before you turn your project into a product and in decoding the market.Register Here: https://bit.ly/startupdeepdive'},
+   
   ];
 export {announcements};
