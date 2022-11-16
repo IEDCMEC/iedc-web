@@ -1,7 +1,0 @@
-
-const announcements=[
-  
-    {id:1, link:"https://bit.ly/startupdeepdive",title:"Startup Deep Dive - Entrepreneurship Training Series",summary:'IEDC MEC presents you with the first two sessions of the Startup Deep Dive: The Entrepreneurship Training Series on the 17th and 18th, of November at 4:30 PM. Join us to hear Haroon Shahul, the founder and chairman at Solweartch Ecotech and Joseph Babu, Co-Founder, Director & CMO of Riafy Technologies speak about everything you need to keep in mind before you turn your project into a product and in decoding the market.Register Here: https://bit.ly/startupdeepdive'},
-   
-  ];
-export {announcements};
