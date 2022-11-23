@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+*{
+    font-family: 'Roboto', sans-serif;
+}
+
+.eventcard{
+  background-color: rgb(29, 30, 30);
+  max-width: 35rem;
+  height: 12rem;
+  display: flex;
+  border-radius: 1rem;
+  margin: 2rem;
+}
+.details{
+    display:grid;
+    grid-template-columns: 12rem;
+}
+.eventcard img{
+    background-color: beige;
+    min-width: 130px;
+    min-height: 130px;
+    margin: .5rem;
+    border-radius: .5rem;
+
+}
+
+.Event-name{
+    font-size: 25px;  
+    margin: .5rem 1rem;  
+    font-weight: 700;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    color: white;
+}
+
+.Event-date{
+
+    font-size: 15px;  
+    margin:.2rem;  
+    color: white;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.Event-status{
+    font-size: 15px;  
+    margin:.2rem;  
+    color: white;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.Event-domain{
+
+    font-size: 15px;  
+    margin-top: 0.5rem;
+    margin-left: 3rem;
+    margin-right: .5rem;
+    width: 5rem;
+    background-color: antiquewhite; 
+    color: rgb(33, 33, 33);
+    border-radius: .5rem;
+    height:2rem;
+    text-align: center;
+    padding: .3rem;
+    
+}
+
+.eventcard button{
+    margin : 0rem 0rem 0rem 1rem;
+    background-color: rgb(212, 148, 64);
+    border: antiquewhite solid .5px;
+    border-radius: .5rem;
+    text-align: center;
+    font-weight: 600;
+    height: 2rem;
+    width: 6rem;
+    
+}
+
