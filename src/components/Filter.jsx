@@ -1,11 +1,12 @@
-import React from 'react'
+import React from 'react';
+import "../css/filter.css"
 
-const Filter = () => {
+const Filter = ({setButton}) => {
   return (
     <div className="filter-buttons">
-        <button>All</button>
-        <button>Past</button>
-        <button>Upcoming</button>
+        <button onClick={setButton(0)}>All</button>
+        <button onClick={setButton(1)}>Past</button>
+        <button onClick={setButton(2)}>Upcoming</button>
     </div>
   )
 }
