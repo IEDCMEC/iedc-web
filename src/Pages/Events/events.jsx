@@ -35,7 +35,7 @@ const events = () => {
 
   
   // const [filtered, setfiltered] = useState([]) ;
-   const [button, setButton] = useState(0) ;
+  //  const [button, setButton] = useState(0) ;
   //  useEffect(() => {
   //    first
    
@@ -43,12 +43,12 @@ const events = () => {
   //      second
   //    }
   //  }, [button])
-  console.log(button);
+  // console.log(button);
    
 
   return (
     <div className="events">
-      <Filter setButton = {setButton}/>
+      <Filter/>
       <div className="card-container">
      {
       events.map((events) => {
