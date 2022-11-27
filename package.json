@@ -13,6 +13,7 @@
     "react-accessible-accordion": "^4.0.0",
     "react-carousel-slider": "^2.0.13",
     "react-dom": "^16.13.0",
+    "react-icons": "^4.6.0",
     "react-modal": "^3.11.2",
     "react-router-dom": "^5.1.2",
     "react-router-hash-link": "^1.2.2",
