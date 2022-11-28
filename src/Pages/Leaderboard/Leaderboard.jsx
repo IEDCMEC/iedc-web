@@ -1,4 +1,6 @@
 import React, { useEffect, useState } from "react";
+import { FaTrophy } from "react-icons/fa";
+import "../../css/leaderboard.css";
 
 export default function Leaderboard() {
     //environment keys to be stored in .env
@@ -75,10 +77,25 @@ export default function Leaderboard() {
 
     return (
         <>
-            <h1>Leaderboard</h1>
-            {Object.entries(members).map(([key, value]) => {
-                return <p key={value[0]}>{value[1] + " " + memberNames[value[0]]}</p>;
-            })}
+            <div className="leaderboard-container">
+                <div className="leaderboard">
+                    <h2>
+                        <FaTrophy className="trophy" size="2rem" />
+                        Leaderboard
+                    </h2>
+                    <ol>
+                        {Object.entries(members).map(([key, value], index) => {
+                            return (
+                                <li>
+                                    <span className="rank">{index + 1}</span>
+                                    <span className="name">{memberNames[value[0]]}</span>
+                                    <span className="score">{value[1]}</span>
+                                </li>
+                            );
+                        })}
+                    </ol>
+                </div>
+            </div>
         </>
     );
 }
