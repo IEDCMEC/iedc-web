@@ -1,30 +1,44 @@
-name: Firebase Deploy
+name: Build and Deploy
 on:
-  push:
-    branches:
-      - master
+    push:
+        branches:
+            - master
+
 jobs:
-  build:
-    name: Build
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout Repo
-        uses: actions/checkout@v2.3.2
-        env:
-          CI: false
-      - name: Install Dependencies
-        run: npm install
-      - name: Build
-        env:
-          CI: false
-        run: npm run build
-      - name: Deploy to Firebase
-        uses: w9jds/firebase-action@master
-        with:
-          args: deploy --only hosting
-        env:
-          FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
-          REACT_APP_BOARD_ID: ${{secrets.REACT_APP_BOARD_ID}}
-          REACT_APP_LIST_ID: ${{secrets.REACT_APP_LIST_ID}}
-          REACT_APP_KEY: ${{secrets.REACT_APP_KEY}}
-          REACT_APP_TOKEN: ${{secrets.REACT_APP_TOKEN}}
+    build:
+        name: Build
+        runs-on: ubuntu-latest
+        steps:
+            - name: Checkout Repo
+              uses: actions/checkout@master
+            - name: Install Dependencies
+              run: npm install
+            - name: Build
+              run: npm run build-prod
+            - name: Archive Production Artifact
+              uses: actions/upload-artifact@master
+              with:
+                  name: dist
+                  path: dist
+    deploy:
+        name: Deploy
+        needs: build
+        runs-on: ubuntu-latest
+        steps:
+            - name: Checkout Repo
+              uses: actions/checkout@master
+            - name: Download Artifact
+              uses: actions/download-artifact@master
+              with:
+                  name: dist
+                  path: dist
+            - name: Deploy to Firebase
+              uses: w9jds/firebase-action@master
+              with:
+                  args: deploy --only hosting
+              env:
+                  FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
+                  REACT_APP_BOARD_ID: ${{secrets.REACT_APP_BOARD_ID}}
+                  REACT_APP_LIST_ID: ${{secrets.REACT_APP_LIST_ID}}
+                  REACT_APP_KEY: ${{secrets.REACT_APP_KEY}}
+                  REACT_APP_TOKEN: ${{secrets.REACT_APP_TOKEN}}
