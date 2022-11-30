@@ -4,11 +4,11 @@
     justify-content: center;
 }
 .leaderboard {
-   
+    flex:1;
+    margin: 4%;
     margin-top: 10px;
     background-color: #BF2200;
     color: #eee;
-    width: 60%;
     border-radius: 10px;
     top: 20%;
     box-shadow: 2px 5px 15px #122B42;
@@ -76,4 +76,10 @@
 .leaderboard ol:hover li:not(:hover) {
     opacity: .3; 
 	
+}
+
+@media (min-width:768px) {
+    .leaderboard {
+        max-width: 70%;
+    }
 }
