@@ -1,10 +1,10 @@
 import React from 'react';
 import "../css/filter.css"
 
-const Filter = () => {
+const Filter = ({selected,setselected}) => {
   return (
     <div className="filter-buttons">
-        <button >All</button>
+        <button on>All</button>
         <button >Past</button>
         <button >Upcoming</button>
     </div>
