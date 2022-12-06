@@ -1,4 +1,12 @@
 import React, { useEffect, useState } from "react";
+import { FaTrophy } from "react-icons/fa";
+import "../../css/leaderboard.css";
+
+const membersToIgnore = [
+    "5e6f24eabbc33a4577ea263a",
+    "627148d6438a494887a0e0d8",
+    "61b4ac8c2c9e0c7f5d7ed2fc",
+];
 
 export default function Leaderboard() {
     //environment keys to be stored in .env
@@ -32,7 +40,10 @@ export default function Leaderboard() {
             })
             .then((text) => {
                 text.map((member) => {
-                    memberNames2[member.id] = member.fullName;
+                    memberNames2[member.id] = {
+                        fullName: member.fullName,
+                        userName: member.username,
+                    };
                 });
 
                 setMemberNames(memberNames2);
@@ -63,8 +74,11 @@ export default function Leaderboard() {
                 });
 
                 sortedMembers = Object.entries(members2).sort((a, b) => b[1] - a[1]);
+                const filteredMembers = sortedMembers.filter(([memberId]) => {
+                    return !membersToIgnore.includes(memberId);
+                });
 
-                setMembers(sortedMembers);
+                setMembers(filteredMembers);
             })
             .catch((err) => console.error(err));
     };
@@ -75,10 +89,55 @@ export default function Leaderboard() {
 
     return (
         <>
-            <h1>Leaderboard</h1>
-            {Object.entries(members).map(([key, value]) => {
-                return <p key={value[0]}>{value[1] + " " + memberNames[value[0]]}</p>;
-            })}
+            <div className="leaderboard-container">
+                <div className="leaderboard">
+                    <h2>
+                        <FaTrophy className="trophy" size="2rem" />
+                        Leaderboard
+                    </h2>
+                    <ol>
+                        {Object.entries(members)?.length ? (
+                            Object.entries(members).map(([key, value], index) => {
+                                return (
+                                    <a
+                                        className="white-text"
+                                        key={index}
+                                        target={"_blank"}
+                                        href={
+                                            "https://trello.com/b/yHzSIoBK/tech-team?filter=member:" +
+                                            memberNames[value[0]]?.userName
+                                        }
+                                    >
+                                        <li>
+                                            <span className="rank">{index + 1}</span>
+                                            <span className="name">
+                                                {memberNames[value[0]]?.fullName}
+                                            </span>
+                                            <span className="score">{value[1]}</span>
+                                        </li>
+                                    </a>
+                                );
+                            })
+                        ) : (
+                            <div className="center-align" style={{margin: 50}}>
+                                <div className="preloader-wrapper active">
+                                    <div className="spinner-layer spinner-blue-only">
+                                        <div className="circle-clipper left">
+                                            <div className="circle"></div>
+                                        </div>
+                                        <div className="gap-patch">
+                                            <div className="circle"></div>
+                                        </div>
+                                        <div className="circle-clipper right">
+                                            <div className="circle"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        )}
+                    </ol>
+                </div>
+            </div>
         </>
     );
 }
