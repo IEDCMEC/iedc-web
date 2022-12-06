@@ -5,12 +5,14 @@
 }
 
 .eventcard{
-  background-color: rgb(29, 30, 30);
+  background-color: rgb(255, 255, 255);
+  color: rgb(170, 33, 33);
   max-width: 35rem;
   height: 12rem;
   display: flex;
   border-radius: 1rem;
   margin: 2rem;
+  box-shadow: 5px 5px 30px 1px rgba(0, 0, 0, 0.11);
 }
 .details{
     display:grid;
@@ -32,6 +34,7 @@
     grid-column-start: 1;
     grid-column-end: 3;
     color: white;
+    color: rgb(170, 33, 33);
 }
 
 .Event-date{
@@ -42,6 +45,7 @@
     margin-left: 1rem;
     margin-bottom: 1rem;
     font-weight: 600;
+    color: rgb(170, 33, 33);
 }
 
 .Event-status{
@@ -51,6 +55,7 @@
     margin-left: 1rem;
     margin-bottom: 1rem;
     font-weight: 600;
+    color: rgb(170, 33, 33);
 }
 
 .Event-domain{
@@ -66,18 +71,33 @@
     height:2rem;
     text-align: center;
     padding: .3rem;
+    color: rgb(170, 33, 33);
     
 }
 
-.eventcard button{
+.eventcard button:hover{
     margin : 0rem 0rem 0rem 1rem;
-    background-color: rgb(212, 148, 64);
+    background-color: rgb(170, 33, 33);
     border: antiquewhite solid .5px;
     border-radius: .5rem;
     text-align: center;
     font-weight: 600;
     height: 2rem;
     width: 6rem;
+    color: white;
+}
+
+.eventcard button{
+   
+    margin : 0rem 0rem 0rem 1rem;
+    background-color: white;
+    border: rgb(170, 33, 33) solid .5px;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: 600;
+    height: 2rem;
+    width: 6rem;
+    color: rgb(170, 33, 33);
     
 }
 

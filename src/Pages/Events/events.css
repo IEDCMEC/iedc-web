@@ -12,3 +12,33 @@
     align-items: center;
     justify-content: center;
 }
+
+.filter-buttons{
+    display: flex;
+    margin : 1rem 0rem;
+    justify-content: center;
+}
+
+.filter-buttons button:hover{
+    color: white;
+    background-color: rgb(170, 33, 33);
+}
+
+.filter-buttons button {
+    margin : 0rem 0rem 0rem 1rem;
+    color: rgb(170, 33, 33);
+    background-color: white;
+    border: antiquewhite solid .5px;
+    border-radius: 1rem;
+    text-align: center;
+    font-weight: 600;
+    height: 2.5rem;
+    width: 6rem;
+}
+
+.filter-buttons button:active{
+    color: white;
+    background-color: rgb(170, 33, 33);
+}
+
+
