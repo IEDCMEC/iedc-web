@@ -1,6 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Landing from "./Pages/Landing";
+import Events from "./Pages/Events/events";
 import TeamPage from "./Pages/Team/TeamPage";
 import CaseStudy from "./Pages/CaseStudy/CaseStudy";
 import Projects from "./Pages/Projects/Projects";
@@ -24,6 +25,7 @@ const App = () => {
                     <Route path="/catalyst" component={Catalyst} />
                     <Route path="/leaderboard" component={Leaderboard} />
                     <Route path="/PreIncubation" component={PreIncubation} />
+                    <Route path="/events" component={Events} />
                 </Switch>
             </div>
         </Router>
