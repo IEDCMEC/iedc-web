@@ -93,7 +93,7 @@ export default function Leaderboard() {
                 <div className="leaderboard">
                     <h2>
                         <FaTrophy className="trophy" size="2rem" />
-                        Leaderboard
+                        Leaderboard - Tech Team
                     </h2>
                     <ol>
                         {Object.entries(members)?.length ? (
