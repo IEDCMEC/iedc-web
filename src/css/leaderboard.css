@@ -36,6 +36,7 @@
 }
 .leaderboard .name {
     padding-left: 30px;
+    text-transform: capitalize;
 }
 .leaderboard ol {
     list-style-type: none;
