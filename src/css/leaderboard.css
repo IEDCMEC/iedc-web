@@ -1,84 +1,78 @@
-
-.leaderboard-container{
+.leaderboard-container {
     display: flex;
     justify-content: center;
 }
 .leaderboard {
-    flex:1;
+    flex: 1;
     margin: 4%;
     margin-top: 10px;
-    background-color: #BF2200;
+    background-color: #bf2200;
     color: #eee;
     border-radius: 10px;
     top: 20%;
-    box-shadow: 2px 5px 15px #122B42;
+    box-shadow: 2px 5px 15px #122b42;
     text-align: left;
     display: inline-block;
-    vertical-align: middle; 
-    font-family: 'Ubuntu', 'Microsoft JhengHei', Arial, sans-serif;
+    vertical-align: middle;
+    font-family: "Ubuntu", "Microsoft JhengHei", Arial, sans-serif;
     letter-spacing: 1px;
     margin-bottom: 20px;
-  
 }
 .leaderboard h2 {
-    border-radius:10px 10px 0 0 ;
-	background-color: #122B42;
+    border-radius: 10px 10px 0 0;
+    background-color: #122b42;
     padding: 15px 0;
     margin: 0;
-    text-align: center; 
+    text-align: center;
     font-size: 25px;
 }
-.trophy{
-	margin-right:14px;
-	margin-bottom: -5px;
-	
-  }
-.leaderboard .rank{
-	position: absolute;
-    left: 30px; 
+.trophy {
+    margin-right: 14px;
+    margin-bottom: -5px;
 }
-.leaderboard .name{
+.leaderboard .rank {
+    position: absolute;
+    left: 30px;
+}
+.leaderboard .name {
     padding-left: 30px;
 }
 .leaderboard ol {
     list-style-type: none;
     margin: 0;
-    padding: 0; 
+    padding: 0;
 }
 .leaderboard ol li {
-    
-    background-color: #9F0000;
+    background-color: #9f0000;
     padding: 15px 50px;
     position: relative;
-    transition-duration: .3s; 
+    transition-duration: 0.3s;
 }
 
 .leaderboard ol li::before {
-        
     display: block;
     border-radius: 50%;
     width: 20px;
     height: 20px;
     background-color: white;
-    color: #BF2200;
+    color: #bf2200;
     text-align: center;
     position: absolute;
-    left: 15px; 
+    left: 15px;
 }
 
 .leaderboard ol li .score {
     position: absolute;
-    right: 30px; 
+    right: 30px;
 }
 .leaderboard ol li:hover {
-    transform: scale(1.1);
+    transform: scale(1.2);
 }
 .leaderboard ol:hover li:not(:hover) {
-    opacity: .3; 
-	
+    opacity: 0.5;
 }
 
-@media (min-width:768px) {
+@media (min-width: 768px) {
     .leaderboard {
         max-width: 70%;
     }
