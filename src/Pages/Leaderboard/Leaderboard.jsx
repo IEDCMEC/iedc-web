@@ -6,6 +6,7 @@ const membersToIgnore = [
     "5e6f24eabbc33a4577ea263a",
     "627148d6438a494887a0e0d8",
     "61b4ac8c2c9e0c7f5d7ed2fc",
+    "5ed759123b6ec761f20b6f0e", // Adi
 ];
 
 export default function Leaderboard() {
@@ -39,6 +40,7 @@ export default function Leaderboard() {
                 return response.json();
             })
             .then((text) => {
+                console.log(text);
                 text.map((member) => {
                     memberNames2[member.id] = {
                         fullName: member.fullName,
@@ -67,6 +69,7 @@ export default function Leaderboard() {
                 return response.json();
             })
             .then((text) => {
+                console.log(text);
                 text.map((item) => {
                     item.idMembers.map((id) => {
                         members2[id] ? (members2[id] = members2[id] + 5) : (members2[id] = 5);
@@ -111,7 +114,7 @@ export default function Leaderboard() {
                                         <li>
                                             <span className="rank">{index + 1}</span>
                                             <span className="name">
-                                                {memberNames[value[0]]?.fullName}
+                                                {memberNames[value[0]]?.fullName?.toLowerCase()}
                                             </span>
                                             <span className="score">{value[1]}</span>
                                         </li>
@@ -119,7 +122,7 @@ export default function Leaderboard() {
                                 );
                             })
                         ) : (
-                            <div className="center-align" style={{margin: 50}}>
+                            <div className="center-align" style={{ margin: 50 }}>
                                 <div className="preloader-wrapper active">
                                     <div className="spinner-layer spinner-blue-only">
                                         <div className="circle-clipper left">

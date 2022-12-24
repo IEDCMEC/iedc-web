@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Cards from "./Cards";
 import "../../css/announcements.css";
+
 export default function Announcements(props) {
     const [boolCheck, setBoolCheck] = useState(false);
     var viewport_width = window.innerWidth;
@@ -13,19 +14,19 @@ export default function Announcements(props) {
                 margin: viewport_width < 600 ? "1.5rem 0" : null,
             }}
         >
-            <div style={{ display: "flex", justifyContent: "space-between" }}>
+            <div
+                style={{ display: "flex", justifyContent: "space-between" }}
+                onClick={() => setBoolCheck((currState) => !currState)}
+            >
                 <h5 className="left-align">{props.title}</h5>
-                {
-                    <button
-                        id="announcement_dropdown_icon"
-                        style={{
-                            transform: boolCheck ? "rotate(180deg)" : "none",
-                        }}
-                        onClick={() => setBoolCheck(!boolCheck)}
-                    >
-                        <i className="medium material-icons">keyboard_arrow_down</i>
-                    </button>
-                }
+                <button
+                    id="announcement_dropdown_icon"
+                    style={{
+                        transform: boolCheck ? "rotate(180deg)" : "none",
+                    }}
+                >
+                    <i className="medium material-icons">keyboard_arrow_down</i>
+                </button>
             </div>
             <div>{boolCheck ? <Cards summary={props.summary} link={props.link} /> : null}</div>
         </div>
