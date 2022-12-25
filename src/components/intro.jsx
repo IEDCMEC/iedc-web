@@ -59,28 +59,23 @@ class Intro extends Component {
                         {/* <img src={BGImageGlobe} className='responsive-img' style={{ marginBottom: '20px' }} alt="About us image" /> */}
                         <h3>The Startup Culture</h3><br />
                         <p style={{ color: "white" }}>
-                            MEC has a wide network of students passionate about technology
-                            and learning and we nurture a system of guidance and support for
-                            those intending to bring their ideas into fruition. We
-                            consistently host technically stimulating workshops, talk
-                            sessions by accomplished entrepreneurs, design thinking
-                            workshops, exposure to business case studies, to hone the skill
-                            sets of our students as we are committed to the utopian dream of
-                            seeing each MECian live up to his/her true capabilities. We
-                            promote our startup culture by giving counsel and direction
-                            along with technical support and provide platforms to develop
-                            their entrepreneurial skills.
+                        MEC is a community of tech-focused students who are supported and 
+                        guided in their entrepreneurial pursuits. IEDCMEC hosts technically
+                        stimulating workshops, talk sessions by accomplished entrepreneurs, 
+                        design thinking workshops, exposure to business case studies, to 
+                        enhance students' skills. We also promote a startup culture by 
+                        giving counsel and direction along with technical support and platforms 
+                        for entrepreneurial development.
+
                                     <br />
                             <br />
-                                    Through its flagship annual symposium- ‘Technopreneur’, we have
-                                    managed to scale our activities on a national level as well,
-                                    having attracted the best minds in India for the symposium over
-                                    the years. Dr. K. Radhakrishnan, former ISRO chairman, Mr. Kris
-                                    Gopakrishnan, founder and former chairman of Infosys, etc to
-                                    name a few from an elite legacy. Technopreneur has been a
-                                    flagship event for MEC over the years and has lived up to the
-                                    hype whenever it was organized garnering national attention.
-                                    This year will be the 12th edition of Technopreneur.
+                            Our annual symposium, Technopreneur, attracts top minds in India
+                            and has gained national attention over the years. Dr. K. Radhakrishnan, 
+                            former ISRO chairman, Mr. Kris Gopakrishnan, founder and former chairman
+                            of Infosys, etc to name a few from an elite legacy. Technopreneur has 
+                            been a flagship event for MEC over the years and has lived up to the hype
+                            whenever it was organized garnering national attention. This year marks
+                            the 12th edition of Technopreneur.
                                 </p>
                         {/* <div className="col s12 m6 offset-m1"> */}
                         <br />
