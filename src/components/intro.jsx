@@ -168,7 +168,7 @@ class Intro extends Component {
                     >
                         <div>
                             <div className="col s12 m5" style={{ color: "white", paddingTop: "10vh" }}>
-                                <h3>Incubation</h3>
+                                <h3 style={{ color : "white" }}>Incubation</h3>
                             </div>
 
                             <div className="container" style={{ marginTop: "50px" }}>
