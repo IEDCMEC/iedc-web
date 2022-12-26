@@ -39,9 +39,8 @@ export default function Leaderboard() {
             .then((response) => {
                 return response.json();
             })
-            .then((text) => {
-                console.log(text);
-                text.map((member) => {
+            .then((members) => {
+                members.map((member) => {
                     memberNames2[member.id] = {
                         fullName: member.fullName,
                         userName: member.username,
@@ -58,7 +57,12 @@ export default function Leaderboard() {
         getMemberNames();
 
         const url =
-            "https://api.trello.com/1/lists/" + listId + "/cards?key=" + key + "&token=" + token;
+            "https://api.trello.com/1/lists/" +
+            listId +
+            "/cards?members=true&member_fields=avatarHash&key=" +
+            key +
+            "&token=" +
+            token;
         fetch(url, {
             method: "GET",
             headers: {
@@ -68,10 +72,10 @@ export default function Leaderboard() {
             .then((response) => {
                 return response.json();
             })
-            .then((text) => {
-                console.log(text);
-                text.map((item) => {
-                    item.idMembers.map((id) => {
+            .then((cards) => {
+                cards.map((card) => {
+                    card.members.map(({ id, avatarHash }) => {
+                        memberNames2[id].avatarHash = avatarHash;
                         members2[id] ? (members2[id] = members2[id] + 5) : (members2[id] = 5);
                     });
                 });
@@ -82,6 +86,7 @@ export default function Leaderboard() {
                 });
 
                 setMembers(filteredMembers);
+                setMemberNames(memberNames2);
             })
             .catch((err) => console.error(err));
     };
@@ -101,6 +106,7 @@ export default function Leaderboard() {
                     <ol>
                         {Object.entries(members)?.length ? (
                             Object.entries(members).map(([key, value], index) => {
+                                //     console.log(memberNames[value[0]].avatarHash);
                                 return (
                                     <a
                                         className="white-text"
