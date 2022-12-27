@@ -42,6 +42,7 @@ export default function Leaderboard() {
             .then((members) => {
                 members.map((member) => {
                     memberNames2[member.id] = {
+                        id: member.id,
                         fullName: member.fullName,
                         userName: member.username,
                     };
@@ -90,7 +91,6 @@ export default function Leaderboard() {
             })
             .catch((err) => console.error(err));
     };
-
     useEffect(() => {
         getPoints();
     }, []);
@@ -106,7 +106,6 @@ export default function Leaderboard() {
                     <ol>
                         {Object.entries(members)?.length ? (
                             Object.entries(members).map(([key, value], index) => {
-                                //     console.log(memberNames[value[0]].avatarHash);
                                 return (
                                     <a
                                         className="white-text"
@@ -117,10 +116,18 @@ export default function Leaderboard() {
                                             memberNames[value[0]]?.userName
                                         }
                                     >
-                                        <li>
+                                        <li className="leaderboard-list">
                                             <span className="rank">{index + 1}</span>
+
+                                            <img
+                                                className="leaderboard-avatar"
+                                                src={`https://trello-members.s3.amazonaws.com/${
+                                                    memberNames[value[0]]?.id
+                                                }/${memberNames[value[0]]?.avatarHash}/50.png`}
+                                            />
+
                                             <span className="name">
-                                                {memberNames[value[0]]?.fullName?.toLowerCase()}
+                                                {(memberNames[value[0]]?.fullName).toLowerCase()}
                                             </span>
                                             <span className="score">{value[1]}</span>
                                         </li>
