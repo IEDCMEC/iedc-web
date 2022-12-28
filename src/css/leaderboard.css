@@ -3,6 +3,7 @@
     justify-content: center;
 }
 .leaderboard {
+    
     margin: 4%;
     width:50%;
     margin-top: 10px;
@@ -81,6 +82,7 @@
 .leaderboard ol li .score {
     position: absolute;
     right: 30px;
+    top:28px;
 }
 .leaderboard ol li:hover {
     transform: scale(1.2);
@@ -93,4 +95,18 @@
     .leaderboard {
         max-width: 70%;
     }
+}
+
+@media (max-width: 590px) {
+    .leaderboard{
+        flex: 1;
+        margin: 25px;
+       
+
+    }
+    .leaderboard h2{
+        padding: 20px;
+    }
+
+  
 }
