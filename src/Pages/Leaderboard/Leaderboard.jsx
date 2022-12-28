@@ -100,8 +100,11 @@ export default function Leaderboard() {
             <div className="leaderboard-container">
                 <div className="leaderboard">
                     <h2>
-                        <FaTrophy className="trophy" size="2rem" />
-                        Leaderboard - Tech Team
+                        <div className="leaderboard-heading">
+                            <FaTrophy className="trophy" size="2rem" />
+                            Leaderboard
+                        </div>
+                        <span>Tech Team</span>
                     </h2>
                     <ol>
                         {Object.entries(members)?.length ? (
