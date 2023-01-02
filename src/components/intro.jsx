@@ -59,13 +59,13 @@ class Intro extends Component {
                         {/* <img src={BGImageGlobe} className='responsive-img' style={{ marginBottom: '20px' }} alt="About us image" /> */}
                         <h3>The Startup Culture</h3><br />
                         <p style={{ color: "white" }}>
-                        MEC is a community of tech-focused students who are supported and 
-                        guided in their entrepreneurial pursuits. IEDCMEC hosts technically
-                        stimulating workshops, talk sessions by accomplished entrepreneurs, 
-                        design thinking workshops, exposure to business case studies, to 
-                        enhance students' skills. We also promote a startup culture by 
-                        giving counsel and direction along with technical support and platforms 
-                        for entrepreneurial development.
+                         MEC has a wide network of inquisitive, tech-focused students who are supported 
+                         and guided in their entrepreneurial pursuits by IEDCMEC. We host technically
+                         stimulating workshops, talk sessions by accomplished entrepreneurs, 
+                         design thinking workshops, exposure to business case studies, to 
+                         enhance students' skills. We also promote a startup culture by 
+                         giving counsel and direction along with technical support and platforms 
+                         for entrepreneurial development.
 
                                     <br />
                             <br />
