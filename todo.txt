@@ -1,0 +1,7 @@
+- fix all warnings
+- replace all image files with webp format
+- add proper alt text for all image tags
+- replace materialize sidenav with something else
+- elimiate jquery cdn
+- replace all class based components to hooks
+- delete unnecessary/unused files
