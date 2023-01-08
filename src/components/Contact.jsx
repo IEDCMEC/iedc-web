@@ -13,13 +13,13 @@ const Contact = () => {
                     <div className="col s12 m12 l12 margin_top_mobile" id="contact">
                         <h4 id="bottom_margin">Follow Us</h4>
                         <div className="col s12 m12 l12" id="icons">
-                            <div>
+                            <div id="icon_space" >
                                 <a
                                     href="https://twitter.com/iedc_mec"
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     style={{ color: "white" }}
-                                    id="icon_space"
+                                    
                                 >
                                     <i className="fab circle fa-twitter fa-2x" />
                                 </a>
@@ -28,7 +28,7 @@ const Contact = () => {
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     style={{ color: "white" }}
-                                    id="icon_space"
+                               
                                 >
                                     <i className="fab circle fa-linkedin fa-2x" />
                                 </a>
@@ -37,7 +37,7 @@ const Contact = () => {
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     style={{ color: "white" }}
-                                    id="icon_space"
+                        
                                 >
                                     <i className="fab circle fa-instagram fa-2x" />
                                 </a>
