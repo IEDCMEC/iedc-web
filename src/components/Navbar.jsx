@@ -109,7 +109,7 @@ const Navbar = () => {
                                     target="_blank"
                                     style={{textAlign: "center"}}
                                 >
-                                    IEDC Collab < src={linkpic} style={{width:"15px", height:"15px"}}/>
+                                    IEDC Collab <img src={linkpic} alt="IEDC COLLAB" style={{width:"15px", height:"15px"}}/>
                                 </a>
                             </li>
                 </ul>
