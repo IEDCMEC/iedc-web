@@ -19,6 +19,7 @@ const Contact = () => {
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     style={{ color: "white" }}
+                                    aria-label="twitter"
                                     
                                 >
                                     <i className="fab circle fa-twitter fa-2x" />
@@ -28,6 +29,7 @@ const Contact = () => {
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     style={{ color: "white" }}
+                                    aria-label="linkedin"
                                
                                 >
                                     <i className="fab circle fa-linkedin fa-2x" />
@@ -37,6 +39,7 @@ const Contact = () => {
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     style={{ color: "white" }}
+                                    aria-label="instagram"
                         
                                 >
                                     <i className="fab circle fa-instagram fa-2x" />
