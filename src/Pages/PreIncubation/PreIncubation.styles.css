@@ -19,7 +19,7 @@ p{
     font-size: 22px;
 }
 h3{
-    color: #BF2200;
+/*    color: #BF2200; */
     text-align: center;
 }
 @media only screen and (max-width: 1000px) and (min-width: 600px) {
