@@ -78,10 +78,14 @@ export default function Leaderboard() {
                 cards.map((card) => {
                     card.members.map(({ id, avatarHash }) => {
                         memberNames2[id].avatarHash = avatarHash;
+
                         members2[id] ? (members2[id] = members2[id] + 5) : (members2[id] = 5);
                         card.labels.map(({ color, name }) => {
                             memberNames2[id].color = color;
                             memberNames2[id].label = name;
+                            if (memberNames2[id].label[0] == "+") {
+                                members2[id] += parseInt(memberNames2[id].label.slice(1));
+                            }
                         });
                     });
                 });
