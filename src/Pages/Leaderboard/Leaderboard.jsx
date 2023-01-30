@@ -73,11 +73,20 @@ export default function Leaderboard() {
             .then((response) => {
                 return response.json();
             })
+
             .then((cards) => {
                 cards.map((card) => {
                     card.members.map(({ id, avatarHash }) => {
                         memberNames2[id].avatarHash = avatarHash;
+
                         members2[id] ? (members2[id] = members2[id] + 5) : (members2[id] = 5);
+                        card.labels.map(({ color, name }) => {
+                            memberNames2[id].color = color;
+                            memberNames2[id].label = name;
+                            if (memberNames2[id].label[0] == "+") {
+                                members2[id] += parseInt(memberNames2[id].label.slice(1));
+                            }
+                        });
                     });
                 });
 
@@ -91,6 +100,7 @@ export default function Leaderboard() {
             })
             .catch((err) => console.error(err));
     };
+
     useEffect(() => {
         getPoints();
     }, []);
@@ -128,7 +138,6 @@ export default function Leaderboard() {
                                                     memberNames[value[0]]?.id
                                                 }/${memberNames[value[0]]?.avatarHash}/50.png`}
                                             />
-
                                             <span className="name">
                                                 {(memberNames[value[0]]?.fullName).toLowerCase()}
                                             </span>
