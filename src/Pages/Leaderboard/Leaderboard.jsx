@@ -83,8 +83,9 @@ export default function Leaderboard() {
                         card.labels.map(({ color, name }) => {
                             memberNames2[id].color = color;
                             memberNames2[id].label = name;
+
                             if (memberNames2[id].label[0] == "+") {
-                                members2[id] += parseInt(memberNames2[id].label.slice(1));
+                                members2[id] += parseInt(memberNames2[id].label.slice(1)) - 5;
                             }
                         });
                     });
