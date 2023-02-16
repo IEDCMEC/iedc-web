@@ -32,7 +32,7 @@ body {
 }
 
 .icon-link {
-    color: #BF2200;
+    color: #bf2200;
     margin: 5px;
 }
 
@@ -51,7 +51,7 @@ body {
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-    background: #BF2200;
+    background: #bf2200;
     border-radius: 10px;
 }
 
@@ -75,7 +75,7 @@ p {
 .nav_img {
     background-color: #ffffffaa;
 }
-#home{
+#home {
     margin-top: 1.5em;
     padding-bottom: 2em;
 }
@@ -84,24 +84,25 @@ p {
     margin-left: 22px;
 }
 .about-section {
-    background-color: #BF2200;
+    background-color: #bf2200;
     border-radius: 170px 170px 0 0;
     margin-top: 60px;
     padding-bottom: 40px;
 }
 
-#icon_space {
-    padding-right: 1rem;
+#icon_space a {
+    margin-right: 1rem;
+    margin-top: 1rem;
 }
 
 #icons {
     flex: 1;
-    
 }
 
 #bottom_margin {
-    margin-bottom: 1em;
+    margin-bottom: 1rem;
 }
+
 
 #top_margin_inverted {
     color: white;
@@ -132,7 +133,7 @@ p {
 }
 
 .extra_bottom {
-    background-color: #BF2200;
+    background-color: #bf2200;
     height: 30px;
 }
 
@@ -143,7 +144,7 @@ p {
     flex-direction: row;
     padding-bottom: 3rem;
 }
-#footerContact{
+#footerContact {
     flex: 1;
 }
 
@@ -164,11 +165,11 @@ form input[type="submit"]:active {
 .modal-container {
     padding-bottom: 20px;
 }
-.modal-container li{
+.modal-container li {
     text-align: left;
 }
 .modal-content {
-    border: 2px solid #BF2200;
+    border: 2px solid #bf2200;
     margin: 20px;
     width: auto !important;
     border-radius: 15px;
@@ -178,7 +179,7 @@ form input[type="submit"]:active {
     body {
         overflow-x: hidden;
     }
-    h3{
+    h3 {
         font-size: 39px !important;
     }
     #home {
@@ -189,29 +190,29 @@ form input[type="submit"]:active {
         width: 15em;
         height: auto;
     }
-    .icon-link{
+    .icon-link {
         font-size: 2.5rem;
     }
-    .illustration{
+    .illustration {
         object-fit: cover;
         margin-top: -6em;
     }
-    #home>h2{
+    #home > h2 {
         font-size: 39px;
     }
-    .officer-content>h3{
+    .officer-content > h3 {
         text-align: center;
         font-size: 25px !important;
     }
-    .officer-content>h4 {
+    .officer-content > h4 {
         text-align: center;
         font-size: 19px !important;
     }
-    .officer-img{
+    .officer-img {
         height: 250px !important;
         width: 250px !important;
     }
-    .mobile-text>p{
+    .mobile-text > p {
         font-size: 15px;
     }
     #box_curve_bottom {
@@ -225,7 +226,7 @@ form input[type="submit"]:active {
     }
     #centre_mobile {
         text-align: left;
-        margin-left: 30%;
+        
     }
     .mobile_space {
         margin-bottom: 0px;
@@ -240,13 +241,13 @@ form input[type="submit"]:active {
         box-shadow: none;
         flex-direction: column;
     }
-    /* #follow-us {
-        padding-left: 0;
-        margin-top: 0;
-    } */
-    #icons {
-        margin-left: -20px;
-    }
+    #icons, #footerContact {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+    
 
     .about-section {
         border-radius: 50px 50px 0 0;

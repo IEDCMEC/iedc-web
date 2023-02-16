@@ -13,9 +13,10 @@ const Contact = () => {
                     <div className="col s12 m12 l12 margin_top_mobile" id="contact">
                        
                         <div className="col s12 m12 l12" id="icons">
+                        <h4 id="bottom_margin">Follow Us</h4>
                        
                             <div id="icon_space" >
-                            <h4 id="bottom_margin">Follow Us</h4>
+                           
                                 <a
                                     href="https://twitter.com/iedc_mec"
                                     target="_blank"
@@ -49,15 +50,14 @@ const Contact = () => {
                             </div>
                         </div>
                         <div
-                            // style={{
-                            //     paddingTop: "3rem",
-                            //     paddingBottom: "3rem",
-                               
-                            // }} 
                             id="footerContact"
                         >
+                            <div>
                             <h4>Contact</h4>
+                            <div>
                             <h6>iedc@mec.ac.in</h6>
+                            </div>
+                            </div>
                         </div>
                     </div>
                 </div>
