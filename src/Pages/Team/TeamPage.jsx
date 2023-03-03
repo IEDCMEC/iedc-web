@@ -29,7 +29,7 @@ const TeamPage = () => {
                </div>
                <div className="col m12 l7 black-text officer-content">
                   <h3>Prof. Dr. Sreenivas P</h3>
-                  <h4>Dept of Mechanical Engineering</h4>
+                  <h4 className='text-center'>Dept of Mechanical Engineering</h4>
                </div>
             </div>
             <div className="black-text message text-center">
