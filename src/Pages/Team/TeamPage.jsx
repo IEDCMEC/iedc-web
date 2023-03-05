@@ -23,13 +23,13 @@ const TeamPage = () => {
             </div>
 
             <h2 className="title center-align bold" style={{ color: "#BF2200" }} >Nodal Officer</h2>
-            <div className="row valign-wrapper" style="flex-wrap:wrap;">
+            <div className="row valign-wrapper" style={{flexWrap:"wrap"}}>
                <div className="col s12 m12 l5 text-center">
                   <img className="officer-img" src={require("../../Assets/team/srinivas.jpg")} alt="member" />
                </div>
                <div className="col m12 l7 black-text officer-content">
                   <h3>Prof. Dr. Sreenivas P</h3>
-                  <h4 className='text-center'>Dept of Mechanical Engineering</h4>
+                  <h4 className="text-center">Dept of Mechanical Engineering</h4>
                </div>
             </div>
             <div className="black-text message text-center">
