@@ -12,7 +12,7 @@ class Catalyst extends Component {
     render() {
         return (
             <div className="catalyst-card">
-                    <img src={Catalyst2021} className="catalyst-image"/>
+                    <img src={Catalyst2021} alt=" " className="catalyst-image"/>
 
                 <div className="catalyst-content">
                     <div className="catalyst-headings">

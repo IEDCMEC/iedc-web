@@ -1,7 +1,5 @@
 import React, { Component } from "react";
 import Wave from "react-wavify";
-import BGImageStar from '../Assets/svgs/Vector.svg'
-import BGImageGlobe from '../Assets/svgs/2.svg'
 import ThereForYou from '../Assets/home/ThereForYou.svg'
 import Rocket from '../Assets/svgs/Group 3.svg'
 import '../css/intro.css'
@@ -201,7 +199,7 @@ class Intro extends Component {
                                             Bring us your ideas, and we'll help you unlock its true potential.
                                         </p>
                                         <br />
-                                        <a href="https://github.com/IEDCMEC/projects/blob/main/README.md" target="_blank" className="btn waves-effect " style={{ 'color': '#BF2200', 'backgroundColor': 'white', 'fontWeight': '500' }}>
+                                        <a href="https://github.com/IEDCMEC/projects/blob/main/README.md" target="_blank" rel="noopener noreferrer" className="btn waves-effect " style={{ 'color': '#BF2200', 'backgroundColor': 'white', 'fontWeight': '500' }}>
                                             <i className="material-icons right">arrow_forward</i>
 							                Read More
 			                            </a>

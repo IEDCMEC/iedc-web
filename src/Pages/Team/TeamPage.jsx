@@ -1,5 +1,5 @@
 import React from 'react'
-import { executiveMembers, webTeam, advisoryBoard,ex_executiveMembers_2021,ex_executiveMembers_2022 } from './MembersList'
+import { executiveMembers, advisoryBoard,ex_executiveMembers_2021,ex_executiveMembers_2022 } from './MembersList'
 import './TeamPage.styles.css'
 import Card from './Card'
 import {
