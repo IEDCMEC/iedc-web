@@ -37,13 +37,13 @@ const Home = () => {
                             marginTop: "20px",
                         }}
                     >
-                        <a href="https://www.instagram.com/iedcmec/" className="icon-link">
+                        <a href="https://www.instagram.com/iedcmec/" className="icon-link" aria-label="Read more about IEDC instagram">
                             <i className="fa fa-instagram" aria-hidden="true"></i>
                         </a>
-                        <a href="https://www.linkedin.com/company/iedcmec/" className="icon-link">
+                        <a href="https://www.linkedin.com/company/iedcmec/" className="icon-link" aria-label="Read more about IEDC Linkedin">
                             <i className="fa fa-linkedin" aria-hidden="true"></i>
                         </a>
-                        <a href="https://twitter.com/iedc_mec" className="icon-link">
+                        <a href="https://twitter.com/iedc_mec" className="icon-link" aria-label="Read more about IEDC Twitter">
                             <i className="fa fa-twitter" aria-hidden="true"></i>
                         </a>
                     </div>
