@@ -93,7 +93,7 @@ export const executiveMembers = [{
 {
     id: 9,
     name: "Nikita Menon",
-    designation: "Chief Project Managament Officer",
+    designation: "Chief Project Management Officer",
     imageUrl: require("../../Assets/team/nikita.jpg"),
     linkedin: 'https://www.linkedin.com/in/nikita-menon-b2248079/',
 },
