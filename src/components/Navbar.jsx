@@ -21,7 +21,8 @@ const Navbar = () => {
         // { id: 4, Name: 'Case Study', to: '/case-study' },
         { id: 3, Name: "Team", to: "/team" },
         { id: 4, Name: "Catalyst", to: "/catalyst" },
-        { id: 5, Name: "Pre-Incubation", to:"/preIncubation"}
+        { id: 5, Name: "Pre-Incubation", to: "/preIncubation" },
+        { id: 6, Name: "Leaderboard", to:"/leaderboard"}
     ];
 
     const handleSideNavClick = () => {
@@ -77,7 +78,7 @@ const Navbar = () => {
                                     className="black-text "
                                     target="_blank"
                                 >
-                                    IEDC Collab <img src={linkpic} style={{width:"16px", height:"16px"}}/>
+                                    IEDC Collab <img src={linkpic} alt="IEDC COLLAB" style={{width:"16px", height:"16px"}}/>
                                 </a>
                             </li>
                             <li key="blog" >
@@ -108,7 +109,7 @@ const Navbar = () => {
                                     target="_blank"
                                     style={{textAlign: "center"}}
                                 >
-                                    IEDC Collab <img src={linkpic} style={{width:"15px", height:"15px"}}/>
+                                    IEDC Collab <img src={linkpic} alt="IEDC COLLAB" style={{width:"15px", height:"15px"}}/>
                                 </a>
                             </li>
                 </ul>
