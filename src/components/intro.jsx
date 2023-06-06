@@ -207,6 +207,7 @@ const Intro = () => {
                                         <i className="material-icons right">arrow_forward</i>
                                         Read More
                                     </a>
+>>>>>>> f6ab8c5257c5ee92d1e04897cdb03b2d2f6323d3
                                 </div>
                             </div>
                         </div>

@@ -9,9 +9,9 @@ const Events = () => {
   const [filtered, setfiltered] = useState([]);
   useEffect(() => {
 
-    if (selected == 0)
+    if (selected === 0)
       setfiltered(events);
-    else if (selected == 1)
+    else if (selected === 1)
       setfiltered(events.filter((event) => event.Status === "Finished"));
     else
       setfiltered(events.filter((event) => event.Status === "Upcoming"));

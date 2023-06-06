@@ -7,6 +7,7 @@ const Catalyst = () => {
         <div className="catalyst-card">
             <img src={Catalyst2021} className="catalyst-image" />
 
+
             <div className="catalyst-content">
                 <div className="catalyst-headings">
                     <div className="catalyst-heading1">CATALYST 2021</div>

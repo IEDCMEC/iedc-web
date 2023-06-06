@@ -135,6 +135,7 @@ export default function Leaderboard() {
 
                                             <img
                                                 className="leaderboard-avatar"
+                                                alt=" "
                                                 src={`https://trello-members.s3.amazonaws.com/${
                                                     memberNames[value[0]]?.id
                                                 }/${memberNames[value[0]]?.avatarHash}/50.png`}

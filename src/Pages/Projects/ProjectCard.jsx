@@ -6,7 +6,7 @@ const ProjectCard = ({ image, title, description, link }) => {
          <div>
             <div className="card project-card">
                <div className="card-image">
-                  <img src={image} style={{ "height": '15em' }} />
+                  <img src={image} alt="" style={{ "height": '15em' }} />
                </div>
                <div className="project-card-content case_study_content center" >
                   <p className="project-title">{title}</p>
