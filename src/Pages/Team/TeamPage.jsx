@@ -1,5 +1,5 @@
 import React from 'react'
-import { executiveMembers, webTeam, advisoryBoard,ex_executiveMembers_2021,ex_executiveMembers_2022 } from './MembersList'
+import { executiveMembers, webTeam, advisoryBoard,ex_executiveMembers_2021,ex_executiveMembers_2022,ex_executiveMembers_2023 } from './MembersList'
 import './TeamPage.styles.css'
 import Card from './Card'
 import {
@@ -55,19 +55,36 @@ const TeamPage = () => {
 
             <h2 className="title center-align bold" style={{ color: "#BF2200" }}  > Ex-Executive Committee</h2>
             <div className="faq-text">
-            <Accordion preExpanded={[1, 2]} allowMultipleExpanded>
+            <Accordion preExpanded={[1, 2, 3]} allowMultipleExpanded>
             <AccordionItem>
                 <AccordionItemHeading>
                     <AccordionItemButton>
-                        2021-22
+                        2022-23
                     </AccordionItemButton>
                 </AccordionItemHeading>
                 <AccordionItemPanel>
                 <div className="row" id="executive-members-list">
          
-         {ex_executiveMembers_2022.map(({ id, ...otherProps }) => (
+         {ex_executiveMembers_2023.map(({ id, ...otherProps }) => (
             <Card key={id} spacingId={id} {...otherProps} />
          ))}
+
+      </div>
+      <br /> 
+                </AccordionItemPanel>
+            </AccordionItem>
+            <AccordionItem>
+                <AccordionItemHeading>
+                    <AccordionItemButton>
+                        2020-21
+                    </AccordionItemButton>
+                </AccordionItemHeading>
+                <AccordionItemPanel>
+                <div className="row" id="executive-members-list">
+         
+         {ex_executiveMembers_2021.map(({ id, ...otherProps }) => (
+            <Card key={id} spacingId={id} {...otherProps} />
+         ))}   
 
       </div>
       <br /> 
