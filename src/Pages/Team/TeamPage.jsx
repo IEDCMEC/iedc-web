@@ -76,13 +76,13 @@ const TeamPage = () => {
             <AccordionItem>
                 <AccordionItemHeading>
                     <AccordionItemButton>
-                        2020-21
+                        2021-22
                     </AccordionItemButton>
                 </AccordionItemHeading>
                 <AccordionItemPanel>
                 <div className="row" id="executive-members-list">
          
-         {ex_executiveMembers_2021.map(({ id, ...otherProps }) => (
+         {ex_executiveMembers_2022.map(({ id, ...otherProps }) => (
             <Card key={id} spacingId={id} {...otherProps} />
          ))}   
 
