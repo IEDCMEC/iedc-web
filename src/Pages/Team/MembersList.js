@@ -128,6 +128,13 @@ export const executiveMembers = [{
 },
 {
     id: 14,
+    name: "Merin Vinoth ",
+    designation: "Talks Managers",
+    imageUrl: require("../../Assets/team/executives23-24/merin.webp"),
+    linkedin: 'https://www.linkedin.com/in/merin-vinoth-3800b4258/',
+},
+{
+    id: 15,
     name:  "Vishnu C R",
     designation: "Maker head",
     imageUrl: require("../../Assets/team/executives23-24/vishnu.webp"),
