@@ -32,8 +32,114 @@ export const advisoryBoard = [{
 },
 ];
 
-
 export const executiveMembers = [{
+    id: 1,
+    name: "Mrinalini Nair Ani",
+    designation: "Chief Executive Officer",
+    imageUrl: require("../../Assets/team/executives23-24/mrinalini.webp"),
+    linkedin: 'https://www.linkedin.com/in/muhammed-razeen-298815190',
+
+},
+{
+    id: 2,
+    name: "Lakshmi Sajilal",
+    designation: "Chief Operating Officer",
+    imageUrl: require("../../Assets/team/executives23-24/lakshmi.webp"),
+    linkedin: 'https://www.linkedin.com/in/adithyaanilkumar/',
+},
+{
+    id: 3,
+    name: "Mohammed Arshad",
+    designation: "Chief Financial Officer",
+    imageUrl: require("../../Assets/team/executives24-25/879383(1).png"),
+    linkedin: 'https://www.linkedin.com/in/maria-rachel-joseph-4b80231a2/',
+},
+{
+    id: 4,
+    name: "Subramani E",
+    designation: "Chief Technology Officer",
+    imageUrl: require("../../Assets/team/executives24-25/Subramani E.png"),
+    linkedin: 'https://www.linkedin.com/in/aldrinjenson/',
+},
+{
+    id: 6,
+    name: "Jerry B Mathew",
+    designation: "Chief Marketing Officer",
+    imageUrl: require("../../Assets/team/executives24-25/879383(1).png"),
+    linkedin: 'https://www.linkedin.com/in/sreehari-sreekumar-596597200',
+},
+{
+    id: 7,
+    name: "Anagh R",
+    designation: "Chief Social Media Officer",
+    imageUrl: require("../../Assets/team/executives24-25/ANAGH R.jpg"),
+    linkedin: 'https://www.linkedin.com/in/gopika-gopi-02b204190',
+},
+{
+    id: 8,
+    name: "Shreya C H",
+    designation: "Chief Content Officer",
+    imageUrl: require("../../Assets/team/executives24-25/SHREYA C H.jpg"),
+    linkedin: 'https://www.linkedin.com/in/zaileshar/',
+},
+{
+    id: 9,
+    name: "Srilakshmi R",
+    designation: "Chief Project Management Officer",
+    imageUrl: require("../../Assets/team/executives24-25/879383(1).png"),
+    linkedin: 'https://www.linkedin.com/in/nikita-menon-b2248079/',
+},
+{
+    id: 10,
+    name: "Ann Sara John",
+    designation: "Chief Publicity Officer",
+    imageUrl: require("../../Assets/team/executives24-25/879383(1).png"),
+    linkedin: 'https://www.linkedin.com/in/femina-p-a-87b3631a6',
+},
+{
+    id: 11,
+    name: "Amith Krishna A",
+    designation: "Social Initiatives Manager",
+    imageUrl: require("../../Assets/team/executives24-25/AMITH KRISHNA A.jpg"),
+    linkedin: 'https://www.linkedin.com/in/reva-pradeep-248546202',
+},
+{
+    id: 12,
+    name: "Devadath K S,",
+    designation: "Chief Event Management Officer",
+    imageUrl: require("../../Assets/team/executives24-25/879383(1).png"),
+    linkedin: 'https://www.linkedin.com/in/ananya-daniel-918073230/',
+},
+{
+    id: 13,
+    name: "Devika Padmakumar Menon",
+    designation: "Chief Community Officer",
+    imageUrl: require("../../Assets/team/executives24-25/879383(1).png"),
+    linkedin: 'https://www.linkedin.com/in/johntharian',
+},
+{
+    id: 14,
+    name: "Samasya P Pramod",
+    designation: "Talks Manager",
+    imageUrl: require("../../Assets/team/executives24-25/Samasya P Pramod_.jpg"),
+    linkedin: 'https://www.linkedin.com/in/annamma-philip-929845202',
+},
+{
+    id: 15,
+    name: "Hanna Ansar Koloth",
+    designation: "Talks Manager",
+    imageUrl: require("../../Assets/team/executives24-25/Hanna Ansar Koloth.jpg"),
+    linkedin: 'https://www.linkedin.com/in/sudeep-s-65272b229',
+},
+{
+    id: 16,
+    name: "Mathew Kurian",
+    designation: "Operations Sub Head",
+    imageUrl: require("../../Assets/team/executives24-25/879383(1).png"),
+    linkedin: 'https://www.linkedin.com/in/anjana-sudevan-7b54031aa',
+}
+];
+export const ex_executiveMembers_2024 = [{
 
     id: 1,
     name: "Ananya Daniel",
@@ -135,14 +241,13 @@ export const executiveMembers = [{
 },
 {
     id: 15,
-    name:  "Vishnu C R",
+    name: "Vishnu C R",
     designation: "Maker head",
     imageUrl: require("../../Assets/team/executives23-24/vishnu.webp"),
     linkedin: 'https://www.linkedin.com/in/vishnu-c-r/',
 }
 
 ];
-
 export const ex_executiveMembers_2023 = [{
     id: 1,
     name: "Muhammed Razeen",
