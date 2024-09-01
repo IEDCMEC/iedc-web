@@ -32,8 +32,121 @@ export const advisoryBoard = [{
 },
 ];
 
-
 export const executiveMembers = [{
+    id: 1,
+    name: "Mrinalini Nair Ani",
+    designation: "Chief Executive Officer",
+    imageUrl: require("../../Assets/team/executives24-25/Mrinalini5.jpg"),
+    linkedin: 'https://www.linkedin.com/in/mrinalini-nair-ani/',
+
+},
+{
+    id: 2,
+    name: "Lakshmi Sajilal",
+    designation: "Chief Operating Officer",
+    imageUrl: require("../../Assets/team/executives24-25/Lakshmi Sajilal - no background.png"),
+    linkedin: 'https://www.linkedin.com/in/lakshmisajilal/',
+},
+{
+    id: 3,
+    name: "Mohammed Arshad",
+    designation: "Chief Financial Officer",
+    imageUrl: require("../../Assets/team/executives24-25/Mohammed Arshad .jpeg"),
+    linkedin: 'https://www.linkedin.com/in/mohammed-arshad-developer/',
+},
+{
+    id: 4,
+    name: "Subramani E",
+    designation: "Chief Technology Officer",
+    imageUrl: require("../../Assets/team/executives24-25/Subramani E.png"),
+    linkedin: 'https://www.linkedin.com/in/subramani-e/',
+},
+{
+    id: 6,
+    name: "Jerry B Mathew",
+    designation: "Chief Marketing Officer",
+    imageUrl: require("../../Assets/team/executives24-25/Jerry B Mathew .jpg"),
+    linkedin: 'https://www.linkedin.com/in/jerrybmathew/',
+},
+{
+    id: 7,
+    name: "Anagh R",
+    designation: "Chief Social Media Officer",
+    imageUrl: require("../../Assets/team/executives24-25/ANAGH R.jpg"),
+    linkedin: 'https://www.linkedin.com/in/anaghrajeev/',
+},
+{
+    id: 8,
+    name: "Shreya C H",
+    designation: "Chief Content Officer",
+    imageUrl: require("../../Assets/team/executives24-25/SHREYA C H.jpg"),
+    linkedin: 'https://www.linkedin.com/in/shreya-c-h-96078822a/',
+},
+{
+    id: 9,
+    name: "Srilakshmi R",
+    designation: "Chief Project Management Officer",
+    imageUrl: require("../../Assets/team/executives24-25/Srilakshmi R.jpg"),
+    linkedin: 'https://www.linkedin.com/in/srilakshmi-ranganath-8b513923a',
+},
+{
+    id: 10,
+    name: "Ann Sara John",
+    designation: "Chief Publicity Officer",
+    imageUrl: require("../../Assets/team/executives24-25/Ann_Sara_John.jpg"),
+    linkedin: 'https://www.linkedin.com/in/ann-sara-john-aa630b256/',
+},
+{
+    id: 11,
+    name: "Amith Krishna A",
+    designation: "Social Initiatives Manager",
+    imageUrl: require("../../Assets/team/executives24-25/AMITH KRISHNA A.jpg"),
+    linkedin: 'https://www.linkedin.com/in/amith-krishna-6a2730227/',
+},
+{
+    id: 12,
+    name: "Devadath K S,",
+    designation: "Chief Event Management Officer",
+    imageUrl: require("../../Assets/team/executives24-25/devadath_ks.jpg"),
+    linkedin: 'https://www.linkedin.com/in/devadathks/',
+},
+{
+    id: 13,
+    name: "Devika Padmakumar Menon",
+    designation: "Chief Community Officer",
+    imageUrl: require("../../Assets/team/executives24-25/Devika.jpg"),
+    linkedin: 'https://www.linkedin.com/in/devika-padmakumar-menon-525246230/',
+},
+{
+    id: 14,
+    name: "Samasya P Pramod",
+    designation: "Talks Manager",
+    imageUrl: require("../../Assets/team/executives24-25/Samasya P Pramod_.jpg"),
+    linkedin: 'https://www.linkedin.com/in/samasya-p-pramod-a6a011220/',
+},
+{
+    id: 15,
+    name: "Hanna Ansar Koloth",
+    designation: "Talks Manager",
+    imageUrl: require("../../Assets/team/executives24-25/Hanna Ansar Koloth.jpg"),
+    linkedin: 'https://www.linkedin.com/in/hanna-ansar-koloth-0a6523255/',
+},
+{
+    id: 16,
+    name: "Mathew Kurian",
+    designation: "Operations Sub Head",
+    imageUrl: require("../../Assets/team/executives24-25/Mathew kurian.jpg"),
+    linkedin: 'https://www.linkedin.com/in/mathew-kurian-9ba07b25b/',
+},
+{
+    id: 17,
+    name: "Anavadya N Lakshmi",
+    designation: "Chief Design Officer",
+    imageUrl: require("../../Assets/team/executives24-25/Anavadya N Lakshmi.jpg"),
+    linkedin: 'https://www.linkedin.com/in/anavadya-n-lakshmi-8a3475255/',
+}
+];
+export const ex_executiveMembers_2024 = [{
 
     id: 1,
     name: "Ananya Daniel",
@@ -81,7 +194,7 @@ export const executiveMembers = [{
     id: 7,
     name: "Lakshmi Sajilal",
     designation: "Chief Digital Marketing Officer",
-    imageUrl: require("../../Assets/team/executives23-24/lakshmi.webp"),
+    imageUrl: require("../../Assets/team/executives24-25/Lakshmi Sajilal - no background.png"),
     linkedin: 'https://www.linkedin.com/in/lakshmisajilal/',
 },
 {
@@ -135,14 +248,13 @@ export const executiveMembers = [{
 },
 {
     id: 15,
-    name:  "Vishnu C R",
+    name: "Vishnu C R",
     designation: "Maker head",
     imageUrl: require("../../Assets/team/executives23-24/vishnu.webp"),
     linkedin: 'https://www.linkedin.com/in/vishnu-c-r/',
 }
 
 ];
-
 export const ex_executiveMembers_2023 = [{
     id: 1,
     name: "Muhammed Razeen",
