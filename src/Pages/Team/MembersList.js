@@ -63,7 +63,7 @@ export const executiveMembers = [{
 },
 {
     id: 6,
-    name: "Jerry B Mathew",
+    name: "Jerry Biji Mathew",
     designation: "Chief Marketing Officer",
     imageUrl: require("../../Assets/team/executives24-25/Jerry B Mathew .jpg"),
     linkedin: 'https://www.linkedin.com/in/jerrybmathew/',
@@ -99,13 +99,13 @@ export const executiveMembers = [{
 {
     id: 11,
     name: "Amith Krishna A",
-    designation: "Social Initiatives Manager",
+    designation: "Chief Social Responsibility Manager",
     imageUrl: require("../../Assets/team/executives24-25/AMITH KRISHNA A.jpg"),
     linkedin: 'https://www.linkedin.com/in/amith-krishna-6a2730227/',
 },
 {
     id: 12,
-    name: "Devadath K S,",
+    name: "Devadath K S",
     designation: "Chief Event Management Officer",
     imageUrl: require("../../Assets/team/executives24-25/devadath_ks.jpg"),
     linkedin: 'https://www.linkedin.com/in/devadathks/',
