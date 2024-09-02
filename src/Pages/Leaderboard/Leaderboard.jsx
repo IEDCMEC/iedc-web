@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { FaTrophy } from "react-icons/fa";
+import { FaBookmark } from "react-icons/fa";
 import "../../css/leaderboard.css";
 
 const membersToIgnore = [
@@ -131,17 +132,56 @@ export default function Leaderboard() {
                                         }
                                     >
                                         <li className="leaderboard-list">
-                                            <span className="rank">{index + 1}</span>
+                                            <div className="leaderboard-inner-one">
+                                                <span className="rank">{index + 1}</span>
 
-                                            <img
-                                                className="leaderboard-avatar"
-                                                src={`https://trello-members.s3.amazonaws.com/${
-                                                    memberNames[value[0]]?.id
-                                                }/${memberNames[value[0]]?.avatarHash}/50.png`}
-                                            />
-                                            <span className="name">
-                                                {(memberNames[value[0]]?.fullName).toLowerCase()}
-                                            </span>
+                                                <img
+                                                    className="leaderboard-avatar"
+                                                    src={`https://trello-members.s3.amazonaws.com/${
+                                                        memberNames[value[0]]?.id
+                                                    }/${memberNames[value[0]]?.avatarHash}/50.png`}
+                                                />
+                                                <span className="name">
+                                                    {(memberNames[
+                                                        value[0]
+                                                    ]?.fullName).toLowerCase()}
+                                                </span>
+                                            </div>
+
+                                            {memberNames[value[0]]?.label &&
+                                                memberNames[value[0]]?.label.charAt(0) != "+" && (
+                                                    <div className="leaderboard-inner-two">
+                                                        <FaBookmark
+                                                            className="label-icon"
+                                                            style={{
+                                                                color:
+                                                                    memberNames[value[0]]?.color ==
+                                                                    "green_dark"
+                                                                        ? "darkgreen"
+                                                                        : memberNames[value[0]]
+                                                                              ?.color,
+                                                            }}
+                                                        />
+
+                                                        <h4
+                                                            data-tooltip={
+                                                                memberNames[value[0]]?.label
+                                                            }
+                                                            data-flow="top"
+                                                            className="label-first-letter"
+                                                            style={{
+                                                                right:
+                                                                    memberNames[
+                                                                        value[0]
+                                                                    ]?.label.charAt(0) == "I"
+                                                                        ? "162px"
+                                                                        : "158px",
+                                                            }}
+                                                        >
+                                                            {memberNames[value[0]]?.label.charAt(0)}
+                                                        </h4>
+                                                    </div>
+                                                )}
                                             <span className="score">{value[1]}</span>
                                         </li>
                                     </a>
