@@ -1,11 +1,11 @@
 import React from "react";
 import "./Catalyst.styles.css";
-import Catalyst2021 from "../../Assets/catalyst2021.jpg";
+import Catalyst2022 from "../../Assets/Catalyst_2022_page-0001.jpg";
 
 const Catalyst = () => {
     return (
         <div className="catalyst-card">
-            <img src={Catalyst2021} className="catalyst-image" />
+            <img src={Catalyst2022} className="catalyst-image" />
 
             <div className="catalyst-content">
                 <div className="catalyst-headings">
@@ -18,7 +18,7 @@ const Catalyst = () => {
 
                 <div className="catalyst-buttons">
                     <a
-                        href="https://issuu.com/iedcmec/docs/catalyst_2021_min_"
+                        href="https://issuu.com/iedcmec/docs/first_merged_compressed"
                         target="_blank"
                         rel="noopener noreferrer"
                     >
