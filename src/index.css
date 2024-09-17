@@ -203,13 +203,22 @@ p {
 #submitBtn:hover {
     background-color: #981e02;
 }
+.loadingIcon {
+    display: none;
+}
+
+.loadingBtn.loading .loadingIcon {
+    display: inline-block;
+}
 textarea {
     width: 25rem;
     height: 10rem;
     color: white;
     box-sizing: border-box;
 }
-
+form input[type="text"]:focus, form textarea:focus {
+    border-color: #bf2200;
+}
 form input[type="submit"]:hover {
     background-color: rgb(223, 72, 59);
 }
