@@ -10,5 +10,11 @@
         "link": "https://bit.ly/IEDCTTS",
         "title": "Technical Training Series",
         "summary": "IEDC MEC, in collaboration with the Training Cell, proudly presents the Understanding C++ - an exclusive opportunity for 4th year students as part of our Technical Training Series. Date: 12th & 13th August 2024 Time: 4:30 PM to 6:30 PMMastery begins with the basics. Don’t miss this chance to enhance your skills!"
+    },
+    {
+        "id": 3,
+        "link": "https://www.technopreneur.co.in/",
+        "title": "Technopreneur 2023 | Navigating The Unknown",
+        "summary": "Technopreneur is an annual e-summit organized by the Innovation and Entrepreneurship Development Cell of Govt. Model Engineering College. It brings together entrepreneurs, students, and professionals to network, collaborate, and learn from one another through workshops, speaker sessions, competitions, and a startup expo. This year's theme is \"Navigating the Unknown\" focusing on learning from failures and using them as opportunities to grow and improve to build successful businesses."
     }
 ]
