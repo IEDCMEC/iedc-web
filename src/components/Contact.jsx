@@ -3,7 +3,6 @@ import "../index.css";
 import accIcon from "../Assets/person_.png";
 import mailIcon from "../Assets/mail_.png";
 import messageIcon from "../Assets/chat_.png";
-import submitIcon from "../Assets/send_.png";
 
 const Contact = () => {
     
@@ -23,6 +22,8 @@ const Contact = () => {
         return () => window.removeEventListener("resize", handleResize);
     }, []);
 
+    
+    const currentYear = new Date().getFullYear(); 
 
     const textareaStyle = {
         height: "10rem",
@@ -245,7 +246,7 @@ const Contact = () => {
                         paddingBottom: "1rem",
                     }}
                 >
-                    <h4 id="CopyrightText">Copyright © 2024 IEDC MEC</h4>
+                    <h4 id="CopyrightText">Copyright © {currentYear} IEDC MEC</h4>
                 </div>
             </section>
         </div>
