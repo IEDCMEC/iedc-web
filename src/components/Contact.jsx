@@ -49,7 +49,7 @@ const Contact = () => {
                                 <h4>Our Products</h4>
                                 <div id="footerOurProductsItems">
                                     <a
-                                        href="https://techno-event-management.vercel.app/"
+                                        href="https://github.com/IEDCMEC/techno-event-management"
                                         target="_blank"
                                         rel="noopener noreferrer"
                                         style={{ color: "white" }}
