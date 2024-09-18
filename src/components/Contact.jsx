@@ -32,6 +32,7 @@ const Contact = () => {
         padding: " 1rem 0 0.1rem 3rem",
         borderRadius: "0.7rem",
         backgroundColor: "#1c466de1",
+        fontFamily: "Poppins",
     };
 
     return (
@@ -53,7 +54,7 @@ const Contact = () => {
                                         rel="noopener noreferrer"
                                         style={{ color: "white" }}
                                     >
-                                        <h6>EVENTSYNC</h6>
+                                        <h6>EventSync</h6>
                                     </a>
                                     <a
                                         href="https://collab.iedcmec.in/"
@@ -61,7 +62,7 @@ const Contact = () => {
                                         rel="noopener noreferrer"
                                         style={{ color: "white" }}
                                     >
-                                        <h6>IEDC MEC COLLAB</h6>
+                                        <h6>IEDC Collab</h6>
                                     </a>
                                     <a
                                         href="https://blog.iedcmec.in/"
@@ -69,7 +70,7 @@ const Contact = () => {
                                         rel="noopener noreferrer"
                                         style={{ color: "white" }}
                                     >
-                                        <h6>IEDC MEC BLOG</h6>
+                                        <h6>IEDC Blog</h6>
                                     </a>
                                 </div>
                             </div>
@@ -113,7 +114,14 @@ const Contact = () => {
                                 <div id="contactForm">
                                     <form onSubmit={handleSubmit}>
                                         <div style={{ position: "relative" }}>
-                                            <label id="lname" htmlFor="name">
+                                            <label
+                                                id="lname"
+                                                htmlFor="name"
+                                                style={{
+                                                    color: "white",
+                                                    fontFamily: "Poppins",
+                                                }}
+                                            >
                                                 Name:
                                             </label>
                                             <img
@@ -139,11 +147,16 @@ const Contact = () => {
                                                     borderRadius: "0.7rem",
                                                     backgroundColor: "#1c466de1",
                                                     maxWidth: "22rem",
+                                                    fontFamily: "Poppins",
                                                 }}
                                             />
                                         </div>
                                         <div style={{ position: "relative" }}>
-                                            <label id="lemail" htmlFor="email">
+                                            <label
+                                                id="lemail"
+                                                htmlFor="email"
+                                                style={{ color: "white", fontFamily: "Poppins" }}
+                                            >
                                                 Email:
                                             </label>
                                             <img
@@ -169,11 +182,16 @@ const Contact = () => {
                                                     borderRadius: "0.7rem",
                                                     backgroundColor: "#1c466de1",
                                                     maxWidth: "22rem",
+                                                    fontFamily: "Poppins",
                                                 }}
                                             />
                                         </div>
                                         <div style={{ position: "relative" }}>
-                                            <label id="lmessage" htmlFor="message">
+                                            <label
+                                                id="lmessage"
+                                                htmlFor="message"
+                                                style={{ color: "white", fontFamily: "Poppins" }}
+                                            >
                                                 Message:
                                             </label>
                                             <img
@@ -199,7 +217,6 @@ const Contact = () => {
                                                 id="submitBtn"
                                                 type="submit"
                                                 style={{
-                                                    position: "relative",
                                                     color: "white",
                                                     fontWeight: "600",
                                                     width: "fit-content",
@@ -207,26 +224,28 @@ const Contact = () => {
                                                 }}
                                             >
                                                 Submit
-                                                <img
-                                                    src={submitIcon}
-                                                    alt="submitIcon"
-                                                    style={{
-                                                        position: "absolute",
-                                                        left: "88px",
-                                                        top: "6px",
-                                                        width: "22px",
-                                                    }}
-                                                />
                                             </button>
                                         </div>
                                     </form>
                                     <h6>
-                                        Email: <a href="mailto:iedc@mec.ac.in">iedc@mec.ac.in</a>
+                                        Email:{" "}
+                                        <a href="mailto:iedc@mec.ac.in" style={{ color: "white" }}>
+                                            iedc@mec.ac.in
+                                        </a>
                                     </h6>
                                 </div>
                             </div>
                         </div>
                     </div>
+                </div>
+                <div
+                    id="Copyright"
+                    style={{
+                        backgroundColor: "rgb(18, 43, 66);",
+                        paddingBottom: "1rem",
+                    }}
+                >
+                    <h4 id="CopyrightText">Copyright © 2024 IEDC MEC</h4>
                 </div>
             </section>
         </div>

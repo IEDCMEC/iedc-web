@@ -215,6 +215,17 @@ textarea {
     height: 10rem;
     color: white;
     box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+form ::placeholder{
+    color: white;
+    font-family: "Poppins", sans-serif;
+}
+#icon_space{
+    margin-bottom: 9rem;
+}
+form input[type="text"]{
+    font-family: "Poppins", sans-serif;
 }
 form input[type="text"]:focus, form textarea:focus {
     border-color: #bf2200;
@@ -224,6 +235,12 @@ form input[type="submit"]:hover {
 }
 form input[type="submit"]:active {
     width: 6.5em;
+}
+#CopyrightText {
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    margin: 0;
+    color: white;
 }
 
 /* #follow-us {
@@ -245,6 +262,9 @@ form input[type="submit"]:active {
     width: auto !important;
     border-radius: 15px;
 }
+#footerOurProductsItems a h6{
+    font-size: 18px;
+}
 
 @media only screen and (max-width: 600px) {
     body {
@@ -260,6 +280,10 @@ form input[type="submit"]:active {
         margin: 0 auto;
         width: 15em;
         height: auto;
+    }
+    #icon_space {
+        margin-bottom: 1rem;
+        margin-right: 1rem;
     }
     .icon-link {
         font-size: 2.5rem;
@@ -344,5 +368,11 @@ form input[type="submit"]:active {
     .about-section {
         border-radius: 50px 50px 0 0;
         padding-bottom: 10px;
+    }
+    #CopyrightText {
+        font-family: "Poppins", sans-serif;
+        font-size: 12px;
+        margin: 0;
+        color: white;
     }
 }
