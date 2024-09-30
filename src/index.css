@@ -136,23 +136,112 @@ p {
     background-color: #bf2200;
     height: 30px;
 }
-
 #contact {
     margin-top: 3em;
     border-radius: 24px;
     display: flex;
     flex-direction: row;
     padding-bottom: 3rem;
-}
-#footerContact {
-    flex: 1;
+    justify-content: center;
+    align-items: center;
 }
 
+#footerContact {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    width: 100%;
+    padding-left: 5rem;
+    max-width: 30rem;
+}
+
+#ourProductsAndFollowUS{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 35rem;
+    padding-right: 5rem;
+}
+
+#footerOurProducts {
+    flex: 1;
+    margin-bottom: 5rem;
+}
+
+#footerOurProductsItems {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 1.5rem;
+}
+
+#lname,#lemail,#lmessage {
+    font-size: .9rem;
+    margin-top: 6px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+#contactForm{
+    width: 100%;
+}
+
+#submitBtn{
+    margin-top: 1rem;
+    width: 100%;
+    background-color: #bf2200;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+#submitBtn:hover {
+    background-color: #981e02;
+}
+.loadingIcon {
+    display: none;
+}
+
+.loadingBtn.loading .loadingIcon {
+    display: inline-block;
+}
+textarea {
+    width: 25rem;
+    height: 10rem;
+    color: white;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+form ::placeholder{
+    color: white;
+    font-family: "Poppins", sans-serif;
+}
+#icon_space{
+    margin-bottom: 9rem;
+}
+form input[type="text"]{
+    font-family: "Poppins", sans-serif;
+}
+form input[type="text"]:focus, form textarea:focus {
+    border-color: #bf2200;
+}
 form input[type="submit"]:hover {
     background-color: rgb(223, 72, 59);
 }
 form input[type="submit"]:active {
     width: 6.5em;
+}
+#CopyrightText {
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    margin: 0;
+    color: white;
 }
 
 /* #follow-us {
@@ -174,6 +263,9 @@ form input[type="submit"]:active {
     width: auto !important;
     border-radius: 15px;
 }
+#footerOurProductsItems a h6{
+    font-size: 18px;
+}
 
 @media only screen and (max-width: 600px) {
     body {
@@ -189,6 +281,10 @@ form input[type="submit"]:active {
         margin: 0 auto;
         width: 15em;
         height: auto;
+    }
+    #icon_space {
+        margin-bottom: 1rem;
+        margin-right: 1rem;
     }
     .icon-link {
         font-size: 2.5rem;
@@ -248,9 +344,36 @@ form input[type="submit"]:active {
         align-items: center;
       }
     
-
+    #contactForm {
+        max-width: 20rem;
+    }
+    textarea{
+        width: 100%;
+        max-width: none;
+    }
+    #footerContact{
+        padding-left: 0;
+    }
+    #ourProductsAndFollowUS{
+        padding-right: 0;
+    }
+    #footerOurProductsItems {
+        padding-left: 2.3rem;
+    }
+    #footerOurProducts{
+        margin-bottom: 2rem;
+    }
+    #icons{
+        margin-bottom: 2rem;
+    }
     .about-section {
         border-radius: 50px 50px 0 0;
         padding-bottom: 10px;
+    }
+    #CopyrightText {
+        font-family: "Poppins", sans-serif;
+        font-size: 12px;
+        margin: 0;
+        color: white;
     }
 }
