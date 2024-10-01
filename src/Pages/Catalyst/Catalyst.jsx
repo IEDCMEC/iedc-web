@@ -9,7 +9,7 @@ const Catalyst = () => {
 
             <div className="catalyst-content">
                 <div className="catalyst-headings">
-                    <div className="catalyst-heading1">CATALYST 2021</div>
+                    <div className="catalyst-heading1">CATALYST 2022</div>
                     <div className="catalyst-heading2">
                         <span style={{ color: "grey" }}>Chief editor</span>
                         <span style={{ fontWeight: "500" }}> Aswathy S Menon</span>
