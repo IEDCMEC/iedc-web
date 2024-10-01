@@ -25,7 +25,7 @@ const Catalyst = () => {
                         <div className="catalyst-button">READ ONLINE</div>
                     </a>
                     <a
-                        href="https://drive.google.com/file/d/1B0W1ni6bTOPspthYkTZsTovY6M7doK1y/view?usp=sharing"
+                        href="https://drive.google.com/file/d/1R3Sf5V8WMoyGsNNpehYIfnaLwrcq-kd0/view?usp=sharing"
                         target="_blank"
                         rel="noopener noreferrer"
                     >
