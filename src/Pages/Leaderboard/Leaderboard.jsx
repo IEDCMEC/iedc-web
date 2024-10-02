@@ -36,7 +36,7 @@ export default function Leaderboard() {
                     });
                 l.push({
                     username: member.username,
-                    name: member.name,
+                    name: member.name ? member.name : member.username,
                     points: points,
                     avatar: member.avatar_url,
                 });
