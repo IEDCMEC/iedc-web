@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { FaTrophy } from "react-icons/fa";
 import "../../css/leaderboard.css";
+import { supabase } from "../../lib/supabaseClient";
 
 const membersToIgnore = [
     "5e6f24eabbc33a4577ea263a",
@@ -16,94 +17,68 @@ export default function Leaderboard() {
     const listId = process.env.REACT_APP_LIST_ID;
     const boardId = process.env.REACT_APP_BOARD_ID;
     //state to store map linking memberId to memberName and points
-    const [members, setMembers] = useState({});
-    const [memberNames, setMemberNames] = useState({});
+    const [leaderboard, setLeaderboard] = useState();
 
-    //temporary variables to set states
-    let members2 = {};
-    let memberNames2 = {};
-    let sortedMembers;
+    // Function to populate leaderboard data
+    const fetchLeaderboardData = async () => {
+        try {
+            const members = await fetchMembers();
+            const issues = await fetchIssues();
 
-    //function to make mapping from member_id to member_name
-    const getMemberNames = () => {
-        const url =
-            "https://api.trello.com/1/boards/" +
-            boardId +
-            "/members?key=" +
-            key +
-            "&token=" +
-            token;
-        fetch(url, {
-            method: "GET",
-        })
-            .then((response) => {
-                return response.json();
-            })
-            .then((members) => {
-                members.map((member) => {
-                    memberNames2[member.id] = {
-                        id: member.id,
-                        fullName: member.fullName,
-                        userName: member.username,
-                    };
+            let l = [];
+
+            for (let member of members) {
+                let points = 0;
+                issues
+                    .filter((issue) => issue.issue_assignee === member.username)
+                    .forEach((issue) => {
+                        points += issue.issue_points;
+                    });
+                l.push({
+                    username: member.username,
+                    name: member.name,
+                    points: points,
+                    avatar: member.avatar_url,
                 });
+            }
+            l.sort((a, b) => b.points - a.points);
 
-                setMemberNames(memberNames2);
-            })
-            .catch((err) => console.error(err));
+            setLeaderboard(l);
+        } catch (err) {
+            console.error(err);
+        }
     };
 
-    //function to map each member_id to leaderboard points
-    const getPoints = () => {
-        getMemberNames();
+    const fetchMembers = async () => {
+        try {
+            const { data, error } = await supabase.from("Users").select();
 
-        const url =
-            "https://api.trello.com/1/lists/" +
-            listId +
-            "/cards?members=true&member_fields=avatarHash&key=" +
-            key +
-            "&token=" +
-            token;
-        fetch(url, {
-            method: "GET",
-            headers: {
-                Accept: "application/json",
-            },
-        })
-            .then((response) => {
-                return response.json();
-            })
+            if (error) {
+                throw error;
+            }
 
-            .then((cards) => {
-                cards.map((card) => {
-                    card.members.map(({ id, avatarHash }) => {
-                        memberNames2[id].avatarHash = avatarHash;
+            return data;
+        } catch (err) {
+            console.error(err);
+        }
+    };
 
-                        members2[id] ? (members2[id] = members2[id] + 5) : (members2[id] = 5);
-                        card.labels.map(({ color, name }) => {
-                            memberNames2[id].color = color;
-                            memberNames2[id].label = name;
+    const fetchIssues = async () => {
+        try {
+            const { data, error } = await supabase.from("Issues").select();
 
-                            if (memberNames2[id].label[0] == "+") {
-                                members2[id] += parseInt(memberNames2[id].label.slice(1)) - 5;
-                            }
-                        });
-                    });
-                });
+            if (error) {
+                throw error;
+            }
 
-                sortedMembers = Object.entries(members2).sort((a, b) => b[1] - a[1]);
-                const filteredMembers = sortedMembers.filter(([memberId]) => {
-                    return !membersToIgnore.includes(memberId);
-                });
-
-                setMembers(filteredMembers);
-                setMemberNames(memberNames2);
-            })
-            .catch((err) => console.error(err));
+            return data;
+        } catch (err) {
+            console.error(err);
+        }
     };
 
     useEffect(() => {
-        getPoints();
+        fetchLeaderboardData();
     }, []);
 
     return (
@@ -118,31 +93,24 @@ export default function Leaderboard() {
                         <span>Tech Team</span>
                     </h2>
                     <ol>
-                        {Object.entries(members)?.length ? (
-                            Object.entries(members).map(([key, value], index) => {
+                        {leaderboard ? (
+                            leaderboard.map((member, index) => {
                                 return (
                                     <a
                                         className="white-text"
                                         key={index}
                                         target={"_blank"}
-                                        href={
-                                            "https://trello.com/b/yHzSIoBK/tech-team?filter=member:" +
-                                            memberNames[value[0]]?.userName
-                                        }
+                                        href={`https://github.com/${member.username}`}
                                     >
                                         <li className="leaderboard-list">
                                             <span className="rank">{index + 1}</span>
 
                                             <img
                                                 className="leaderboard-avatar"
-                                                src={`https://trello-members.s3.amazonaws.com/${
-                                                    memberNames[value[0]]?.id
-                                                }/${memberNames[value[0]]?.avatarHash}/50.png`}
+                                                src={member.avatar}
                                             />
-                                            <span className="name">
-                                                {(memberNames[value[0]]?.fullName).toLowerCase()}
-                                            </span>
-                                            <span className="score">{value[1]}</span>
+                                            <span className="name">{member.name}</span>
+                                            <span className="score">{member.points}</span>
                                         </li>
                                     </a>
                                 );
