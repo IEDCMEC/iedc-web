@@ -4,6 +4,7 @@ import "materialize-css/dist/css/materialize.min.css";
 import HeaderImage from "../Assets/svgs/Frame1.png";
 import announcementsData from "../announcement_data.json";
 import Announcements from "./Announcement/Announcements";
+import Events from "./Events";
 const Home = () => {
     // useEffect(() => {
     //   fetch("https://raw.githubusercontent.com/IEDCMEC/data/master/data.json")
@@ -65,6 +66,7 @@ const Home = () => {
                 {announcementsData.map(({ title, id, link, summary }) => (
                     <Announcements key={id} title={title} link={link} summary={summary} id={id} />
                 ))}
+                <Events/>
             </div>
         </div>
     );
