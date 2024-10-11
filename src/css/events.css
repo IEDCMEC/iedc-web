@@ -1,0 +1,76 @@
+h1
+{
+  color: #BF2200;
+  font-size: 50px;
+  font-weight: bold;
+}
+h2
+{
+  color: #BF2200;
+  font-size: x-large;
+  font-weight: bold;
+}
+*
+{
+  margin: 0;
+  padding: 0;
+  font-family: poppins;
+  box-sizing: border-box;
+}
+.card-container
+{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 50px;
+}
+.card
+{
+  width: 200px;
+  height: 450px;
+  background-color: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0px 2px 4px rgba(207, 6, 6, 0.5);
+  margin: 10px;
+}
+.card img
+{
+  width: 100%;
+  height: 250px;
+}
+.card-content
+{
+  padding: 16px;
+}
+.card-content h3
+{
+font-size: 20px;
+margin-bottom: 8px;
+font-family: 'Lilita One', cursive;
+}
+.card-content p
+{
+  color:black;
+  font-size: 15px;
+  font-weight: light;
+  line-height: 1.3;
+}
+.card-content button
+{
+  display: inline-block;
+  padding: 8px 16px;
+  background-color:  #BF2200;
+  color: white;
+  text-decoration: none;
+  border-radius: 4;
+  margin-top: 10px;
+  border: none;
+  cursor: pointer;
+}
+@media only screen and  (max-width: 600px) {
+  .card-content h3 {
+    font-size: 20px; /* Adjust the font size as needed */
+  }
+}
+
