@@ -62,7 +62,7 @@ const Home = () => {
             {/*.....................Announcements Row .............*/}
 
             <h3 style={{ marginBottom: "45px", color: "#BF2200" }}>Announcements</h3>
-            <div className="col s12 l7 announcements " style={{ height: "40vh" }}>
+            <div className="col s12 l7 announcements " style={{ maxHeight:"100%", overflowY:"auto" }}>
                 {announcementsData.map(({ title, id, link, summary }) => (
                     <Announcements key={id} title={title} link={link} summary={summary} id={id} />
                 ))}
