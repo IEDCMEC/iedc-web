@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import "../../css/events.css";
+import "./events.css";
 import { getImageSize } from 'react-image-size';
 import event1 from '../../Assets/events/event1.jpg';
 import event2 from "../../Assets/events/event2.jpg";
@@ -44,15 +44,15 @@ const events = [
 function Events() {
  return (
     <div>
-      <h1>EVENTS</h1>
+      <h1>Events</h1>
       <p>Stay tuned for official announcements about our upcoming events, which will be shared right here.</p>
-      <h2>PAST EVENTS</h2>
+      <h2>Past Events</h2>
       <div className='card-container'>
         {events.map((e,index) => (
           <div key={index} className='card'>
             <img src={e.image} alt=""/>
             <div className='card-content'>
-              <h3>{e.date}</h3>
+              <h4 className='date'>{e.date}</h4>
               <p>{e.description}</p>
               <button >Read More</button>
             </div>

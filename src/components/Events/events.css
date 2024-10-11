@@ -14,7 +14,6 @@ h2
 {
   margin: 0;
   padding: 0;
-  font-family: poppins;
   box-sizing: border-box;
 }
 .card-container
@@ -43,7 +42,7 @@ h2
 {
   padding: 16px;
 }
-.card-content h3
+.date
 {
 font-size: 20px;
 margin-bottom: 8px;
@@ -69,7 +68,8 @@ font-family: 'Lilita One', cursive;
   cursor: pointer;
 }
 @media only screen and  (max-width: 600px) {
-  .card-content h3 {
+  .date
+   {
     font-size: 20px; /* Adjust the font size as needed */
   }
 }
