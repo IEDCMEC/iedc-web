@@ -23,20 +23,20 @@ h2
   flex-wrap: wrap;
   margin-top: 50px;
 }
-.card
-{
-  width: 200px;
-  height: 450px;
+.card {
+  width: 300px;
+  height: auto;
+  min-height: 450px;
   background-color: white;
   border-radius: 8px;
   overflow: hidden;
   box-shadow: 0px 2px 4px rgba(207, 6, 6, 0.5);
   margin: 10px;
 }
-.card img
-{
+
+.card img {
   width: 100%;
-  height: 250px;
+  height: 200px;
 }
 .card-content
 {
@@ -67,10 +67,17 @@ font-family: 'Lilita One', cursive;
   border: none;
   cursor: pointer;
 }
-@media only screen and  (max-width: 600px) {
-  .date
-   {
-    font-size: 20px; /* Adjust the font size as needed */
+@media only screen and (max-width: 600px) {
+  .card {
+    width: 90%;
+    margin: 10px auto;
+  }
+  
+  .card img {
+    height: 250px;
+  }
+  
+  .card-content {
+    padding: 12px;
   }
 }
-
