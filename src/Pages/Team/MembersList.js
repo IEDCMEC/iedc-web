@@ -56,38 +56,45 @@ export const executiveMembers = [{
 },
 {
     id: 4,
+    name: "Devadath K S",
+    designation: "Chief Event Management Officer",
+    imageUrl: require("../../Assets/team/executives24-25/devadath_ks.jpg"),
+    linkedin: 'https://www.linkedin.com/in/devadathks/',
+},
+{
+    id: 5,
+    name: "Jerry Biji Mathew",
+    designation: "Chief Marketing Officer",
+    imageUrl: require("../../Assets/team/executives24-25/Jerry B Mathew .jpg"),
+    linkedin: 'https://www.linkedin.com/in/jerrybmathew/',
+},
+{
+    id: 6,
     name: "Subramani E",
     designation: "Chief Technology Officer",
     imageUrl: require("../../Assets/team/executives24-25/Subramani E.png"),
     linkedin: 'https://www.linkedin.com/in/subramani-e/',
 },
 {
-    id: 6,
-    name: "Jerry B Mathew",
-    designation: "Chief Marketing Officer",
-    imageUrl: require("../../Assets/team/executives24-25/Jerry B Mathew .jpg"),
-    linkedin: 'https://www.linkedin.com/in/jerrybmathew/',
-},
-{
     id: 7,
-    name: "Anagh R",
-    designation: "Chief Social Media Officer",
-    imageUrl: require("../../Assets/team/executives24-25/ANAGH R.jpg"),
-    linkedin: 'https://www.linkedin.com/in/anaghrajeev/',
-},
-{
-    id: 8,
     name: "Shreya C H",
     designation: "Chief Content Officer",
     imageUrl: require("../../Assets/team/executives24-25/SHREYA C H.jpg"),
     linkedin: 'https://www.linkedin.com/in/shreya-c-h-96078822a/',
 },
 {
+    id: 8,
+    name: "Anavadya N Lakshmi",
+    designation: "Chief Design Officer",
+    imageUrl: require("../../Assets/team/executives24-25/Anavadya N Lakshmi.jpg"),
+    linkedin: 'https://www.linkedin.com/in/anavadya-n-lakshmi-8a3475255/',
+},
+{
     id: 9,
-    name: "Srilakshmi R",
-    designation: "Chief Project Management Officer",
-    imageUrl: require("../../Assets/team/executives24-25/Srilakshmi R.jpg"),
-    linkedin: 'https://www.linkedin.com/in/srilakshmi-ranganath-8b513923a',
+    name: "Anagh R",
+    designation: "Chief Social Media Officer",
+    imageUrl: require("../../Assets/team/executives24-25/ANAGH R.jpg"),
+    linkedin: 'https://www.linkedin.com/in/anaghrajeev/',
 },
 {
     id: 10,
@@ -98,17 +105,17 @@ export const executiveMembers = [{
 },
 {
     id: 11,
-    name: "Amith Krishna A",
-    designation: "Social Initiatives Manager",
-    imageUrl: require("../../Assets/team/executives24-25/AMITH KRISHNA A.jpg"),
-    linkedin: 'https://www.linkedin.com/in/amith-krishna-6a2730227/',
+    name: "Srilakshmi R",
+    designation: "Chief Project Management Officer",
+    imageUrl: require("../../Assets/team/executives24-25/Srilakshmi R.jpg"),
+    linkedin: 'https://www.linkedin.com/in/srilakshmi-ranganath-8b513923a',
 },
 {
     id: 12,
-    name: "Devadath K S,",
-    designation: "Chief Event Management Officer",
-    imageUrl: require("../../Assets/team/executives24-25/devadath_ks.jpg"),
-    linkedin: 'https://www.linkedin.com/in/devadathks/',
+    name: "Amith Krishna A",
+    designation: "Chief Social Responsibility Officer",
+    imageUrl: require("../../Assets/team/executives24-25/AMITH KRISHNA A.jpg"),
+    linkedin: 'https://www.linkedin.com/in/amith-krishna-6a2730227/',
 },
 {
     id: 13,
@@ -145,6 +152,13 @@ export const executiveMembers = [{
     imageUrl: require("../../Assets/team/executives24-25/Anavadya.jpg"),
     linkedin: 'https://www.linkedin.com/in/anavadya-n-lakshmi-8a3475255/',
 }
+// {
+//     id: 16,
+//     name: "Mathew Kurian",
+//     designation: "Operations Sub Head",
+//     imageUrl: require("../../Assets/team/executives24-25/Mathew kurian.jpg"),
+//     linkedin: 'https://www.linkedin.com/in/mathew-kurian-9ba07b25b/',
+// }
 ];
 export const ex_executiveMembers_2024 = [{
 
