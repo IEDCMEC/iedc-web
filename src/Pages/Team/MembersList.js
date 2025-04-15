@@ -142,7 +142,7 @@ export const executiveMembers = [{
     id: 17,
     name: "Anavadya N Lakshmi",
     designation: "Chief Design Officer",
-    imageUrl: require("../../Assets/team/executives24-25/Anavadya N Lakshmi.jpg"),
+    imageUrl: require("../../Assets/team/executives24-25/Anavadya.jpg"),
     linkedin: 'https://www.linkedin.com/in/anavadya-n-lakshmi-8a3475255/',
 }
 ];

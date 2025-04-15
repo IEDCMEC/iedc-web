@@ -76,3 +76,4 @@ package-lock.json
 
 /.firebase
 .env
+.qodo
