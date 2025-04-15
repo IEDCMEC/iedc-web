@@ -138,13 +138,27 @@ export const executiveMembers = [{
     imageUrl: require("../../Assets/team/executives24-25/Hanna Ansar Koloth.jpg"),
     linkedin: 'https://www.linkedin.com/in/hanna-ansar-koloth-0a6523255/',
 },
+{
+    id: 16,
+    name: "Mathew Kurian",
+    designation: "Operations Sub Head",
+    imageUrl: require("../../Assets/team/executives24-25/Mathew kurian.jpg"),
+    linkedin: 'https://www.linkedin.com/in/mathew-kurian-9ba07b25b/',
+},
+{
+    id: 17,
+    name: "Anavadya N Lakshmi",
+    designation: "Chief Design Officer",
+    imageUrl: require("../../Assets/team/executives24-25/Anavadya.jpg"),
+    linkedin: 'https://www.linkedin.com/in/anavadya-n-lakshmi-8a3475255/',
+}
 // {
 //     id: 16,
 //     name: "Mathew Kurian",
 //     designation: "Operations Sub Head",
 //     imageUrl: require("../../Assets/team/executives24-25/Mathew kurian.jpg"),
 //     linkedin: 'https://www.linkedin.com/in/mathew-kurian-9ba07b25b/',
-// },
+// }
 ];
 export const ex_executiveMembers_2024 = [{
 
