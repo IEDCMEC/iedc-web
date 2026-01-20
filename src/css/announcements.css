@@ -1,0 +1,13 @@
+#announcement_dropdown_icon {
+    background: none;
+    border: none;
+    padding: 0 !important;
+    cursor: pointer;
+    font-family: Quicksand, sans-serif;
+    color: #bf2200;
+    transition: transform 0.15s ease-in-out;
+}
+
+#announcement_dropdown_icon:hover {
+    color: black;
+}
