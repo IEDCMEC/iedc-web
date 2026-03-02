@@ -4,8 +4,22 @@
     font-size: large;
   }
   
+  @media (max-width: 1448px) {
+    .faq-text {
+      font-size: medium;
+    }
+    
+    .accordion__button {
+      padding: 15px;
+      font-size: 18px;
+    }
+    
+    .accordion__panel {
+      padding: 18px;
+    }
+  }
+  
   @media (max-width: 600px) {
-
     .faq-text {
       padding: 20px;
       text-align: center;

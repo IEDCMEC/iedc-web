@@ -101,10 +101,131 @@
     text-align: center;
 }
 
-@media(max-width: 1200px) {
+@media(max-width: 1500px) {
+    .container .title {
+        font-size: 45px;
+    }
+    
+    .officer-content {
+        padding: 15px;
+    }
+    
+    .message {
+        margin-left: 2em;
+        margin-right: 2em;
+    }
+}
+
+@media(max-width: 1448px) {
+    .container .title {
+        font-size: 42px;
+        margin-top: 40px;
+        padding-top: 15px;
+    }
+    
     .circle-icon {
         width: 200px;
         height: 200px;
+    }
+
+    .team-member-name {
+        font-size: 22px;
+    }
+
+    .team-member-designation {
+        font-size: 18px;
+    }
+    
+    .officer-img {
+        width: 280px;
+        height: 280px;
+    }
+    
+    .officer-content {
+        padding: 20px;
+        margin-top: 15px;
+    }
+    
+    .officer-content h3 {
+        font-size: 2.8rem;
+    }
+    
+    .officer-content h4 {
+        font-size: 1.8rem;
+    }
+    
+    /* Officer section specific fixes */
+    .valign-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+    }
+    
+    .valign-wrapper .col {
+        flex: 1;
+        min-width: 280px;
+    }
+    
+    .valign-wrapper .col.l5 {
+        flex: 0 0 40%;
+        max-width: 40%;
+    }
+    
+    .valign-wrapper .col.l7 {
+        flex: 0 0 60%;
+        max-width: 60%;
+    }
+    
+    .message {
+        margin-left: 1.5em;
+        margin-right: 1.5em;
+        font-size: 16px;
+    }
+    
+    /* Ensure proper spacing for accordion sections */
+    .accordion__button {
+        padding: 15px;
+        font-size: 18px;
+    }
+    
+    .accordion__panel {
+        padding: 18px;
+    }
+    
+    /* Grid layout adjustments */
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 -0.5rem;
+    }
+    
+    .row .col {
+        padding: 0 0.5rem;
+    }
+    
+    /* Ensure proper spacing for team member cards */
+    .team-member-block {
+        margin-bottom: 30px;
+        padding: 10px;
+    }
+    
+    /* Specific layout for executive members at this breakpoint */
+    #executive-members-list .col {
+        flex: 0 0 33.333333%;
+        max-width: 33.333333%;
+    }
+    
+    #web-team-list .col {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+}
+
+@media(max-width: 1200px) {
+    .circle-icon {
+        width: 190px;
+        height: 190px;
     }
 
     .team-member-name {
@@ -124,6 +245,30 @@
     .officer-content {
         margin-top: 70px;
     }
+    
+    /* 2 cards per row on medium/small screens */
+    #executive-members-list .col,
+    #web-team-list .col {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+    
+    .row .col.l4,
+    .row .col.l6 {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+}
+
+@media(max-width: 768px) {
+    /* 2 cards per row on tablets and small screens */
+    #executive-members-list .col,
+    #web-team-list .col,
+    .row .col.l4,
+    .row .col.l6 {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
 }
 
 @media(max-width: 500px) {
@@ -138,6 +283,20 @@
     .core-team>h3 {
         font-size: 2.62rem;
         margin: -0.6em 0 0 1em;
+    }
+    
+    /* 1 card per row on very small screens */
+    #executive-members-list .col,
+    #web-team-list .col,
+    .row .col.l4,
+    .row .col.l6,
+    .row .col.m6 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    
+    .team-member-block {
+        margin-bottom: 20px;
     }
 }
 
