@@ -27,21 +27,23 @@ export default function Leaderboard() {
 
             let l = [];
 
-            for (let member of members) {
-                let points = 0;
-                issues
-                    .filter((issue) => issue.issue_assignee === member.username)
-                    .forEach((issue) => {
-                        points += issue.issue_points;
+            if (members && issues) {
+                for (let member of members) {
+                    let points = 0;
+                    issues
+                        .filter((issue) => issue.issue_assignee === member.username)
+                        .forEach((issue) => {
+                            points += issue.issue_points;
+                        });
+                    l.push({
+                        username: member.username,
+                        name: member.name ? member.name : member.username,
+                        points: points,
+                        avatar: member.avatar_url,
                     });
-                l.push({
-                    username: member.username,
-                    name: member.name ? member.name : member.username,
-                    points: points,
-                    avatar: member.avatar_url,
-                });
+                }
+                l.sort((a, b) => b.points - a.points);
             }
-            l.sort((a, b) => b.points - a.points);
 
             setLeaderboard(l);
         } catch (err) {
@@ -51,29 +53,37 @@ export default function Leaderboard() {
 
     const fetchMembers = async () => {
         try {
+            if (!supabase) {
+                return [];
+            }
             const { data, error } = await supabase.from("Users").select();
 
             if (error) {
                 throw error;
             }
 
-            return data;
+            return data || [];
         } catch (err) {
             console.error(err);
+            return [];
         }
     };
 
     const fetchIssues = async () => {
         try {
+            if (!supabase) {
+                return [];
+            }
             const { data, error } = await supabase.from("Issues").select();
 
             if (error) {
                 throw error;
             }
 
-            return data;
+            return data || [];
         } catch (err) {
             console.error(err);
+            return [];
         }
     };
 
