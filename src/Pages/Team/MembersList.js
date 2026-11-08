@@ -33,107 +33,101 @@ export const advisoryBoard = [{
 ];
 
 
+
 export const executiveMembers = [
     {
         id: 1,
-        name: "Jerry Biji Mathew",
+        name: "Athul Krishnan Pankeri",
         designation: "Chief Executive Officer",
-        imageUrl: require("../../Assets/team/executives25-26/Jerry Biji Mathew.jpg"),
-        linkedin: "https://www.linkedin.com/in/jerrybmathew/",
+        imageUrl: require("../../Assets/team/executives26-27/Athul_Krishnan.jpg"),
+        linkedin: "https://www.linkedin.com/in/athulkrishnanpankeri",
     },
     {
         id: 2,
-        name: "Mathew Kurian",
+        name: "Adithyan Sajeev",
         designation: "Chief Operating Officer",
-        imageUrl: require("../../Assets/team/executives25-26/Mathew Kurian .jpg"),
-        linkedin: "https://www.linkedin.com/in/mathew-kurian-9ba07b25b/",
+        imageUrl: require("../../Assets/team/executives26-27/Adithyan_Sajeev.jpg"),
+        linkedin: "https://www.linkedin.com/in/adithyan-sajeev-ev",
     },
     {
         id: 3,
-        name: "ATHULRAJ K",
+        name: "Meera Lakshman Rao",
         designation: "SUB - COO",
-        imageUrl: require("../../Assets/team/executives25-26/Athulraj k.jpg"),
-        linkedin: "https://www.linkedin.com/in/athulrajk9847/",
+        imageUrl: require("../../Assets/team/executives26-27/Meera_Lakshman_Rao.jpg"),
+        linkedin: "https://www.linkedin.com/in/meera-lakshman-rao/",
     },
     {
         id: 4,
-        name: "VIDHU P VINOD",
+        name: "Azmil Mohammed",
         designation: "Chief Financial Officer",
-        imageUrl: require("../../Assets/team/executives25-26/VidhuPVinod.jpg"),
-        linkedin: "https://www.linkedin.com/in/vidhu-p-vinod",
+        imageUrl: require("../../Assets/team/executives26-27/Azmil_Mohammed.PNG"),
+        linkedin: "https://www.linkedin.com/in/azmil-mohammed/",
     },
     {
         id: 5,
-        name: "ABHINDRA KRISHNA K M",
+        name: "Lakshmi Pradeep",
         designation: "Chief Project Management Officer",
-        imageUrl: require("../../Assets/team/executives25-26/abhindrakrishna.jpg"),
-        linkedin: "https://www.linkedin.com/in/abhindra-krishna/",
+        imageUrl: require("../../Assets/team/executives26-27/Lakshmi_Pradeep.webp"),
+        linkedin: "https://www.linkedin.com/in/lakshmi-pradeep/",
     },
     {
         id: 6,
-        name: "Niya Shajee",
+        name: "Mahadev V Menon",
         designation: "Chief Marketing Officer",
-        imageUrl: require("../../Assets/team/executives25-26/Niya Shajee.jpg"),
-        linkedin: "https://www.linkedin.com/in/niya-shajee-739a42290/",
+        imageUrl: require("../../Assets/team/executives26-27/Mahadev_V_Menon.jpg"),
+        linkedin: "https://www.linkedin.com/in/mahadev-menon-41a465318",
     },
     {
         id: 7,
-        name: "Lamiya Yasmin A S",
+        name: "Ramkumar Menon I",
         designation: "Chief Social Media Officer",
-        imageUrl: require("../../Assets/team/executives25-26/Lamiya Yasmin A S.jpg"),
-        linkedin:
-            "https://www.linkedin.com/in/lamiyayasminas?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+        imageUrl: require("../../Assets/team/executives26-27/Ramkumar_Menon.jpeg"),
+        linkedin: "https://www.linkedin.com/in/ramkumar-menon-i-60087131a",
     },
     {
         id: 8,
-        name: "Diya Martin",
+        name: "Diya Meharin S",
         designation: "Talks Manager",
-        imageUrl: require("../../Assets/team/executives25-26/Diya Martin.jpg"),
-        linkedin: "https://www.linkedin.com/in/diya-martin-735b1b316/",
+        imageUrl: require("../../Assets/team/executives26-27/Diya_Meharin.jpg"),
+        linkedin: "http://www.linkedin.com/in/diya-meharin-s-403706292",
     },
     {
         id: 9,
-        name: "Aaron George Abraham",
+        name: "Ajay Krishna D",
         designation: "Chief Technology Officer",
-        imageUrl: require("../../Assets/team/executives25-26/AaronGeorgeAbraham.jpg"),
-        linkedin: "https://www.linkedin.com/in/aarongeorgeabraham/",
+        imageUrl: require("../../Assets/team/executives26-27/Ajay_Krishna_D.jpg"),
+        linkedin: "https://www.linkedin.com/in/ajay-krishna-d",
     },
     {
         id: 10,
-        name: "Hanna Ansar Koloth",
-        designation: "Chief Content Officer",
-        imageUrl: require("../../Assets/team/executives25-26/Hanna Ansar Koloth.jpg"),
-        linkedin: "https://www.linkedin.com/in/hanna-ansar-koloth-0a6523255/",
+        name: "Jemshiya Amar",
+        designation: "Chief Event Management Officer",
+        imageUrl: require("../../Assets/team/executives26-27/Jemshiya Sulfikkar-Events Lead.png"),
+        linkedin: "https://www.linkedin.com/in/jemshiya-amar",
     },
     {
         id: 11,
-        name: "AADIL A",
-        designation: "Visual Media Head",
-        imageUrl: require("../../Assets/team/executives25-26/AADIL A.PNG"),
-        linkedin:
-            "https://www.linkedin.com/in/aadil-a-bb95711a1?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
+        name: "Yesswanth Hari",
+        designation: "Chief Publicity Officer (External)",
+        imageUrl: require("../../Assets/team/executives26-27/Yesswanth_Hari.jpg"),
+        linkedin: "https://www.linkedin.com/in/yesswanth-hari/",
     },
     {
         id: 12,
-        name: "Asil Mehabob",
-        designation: "Chief Event Management Officer",
-        imageUrl: require("../../Assets/team/executives25-26/Asil.jpg"),
-        linkedin: "https://www.linkedin.com/in/asilmehaboob/",
+        name: "Joanne George",
+        designation: "Chief Publicity Officer (Internal)",
+        imageUrl: require("../../Assets/team/executives26-27/Joanne_George.jpg"),
+        linkedin: "https://www.linkedin.com/in/joanne-george-8959991b4",
     },
     {
         id: 13,
-        name: "Ajay P Shaji",
-        designation: "Talks Manager",
-        imageUrl: require("../../Assets/team/executives25-26/Ajay p shaji.jpg"),
-        linkedin: "https://www.linkedin.com/in/ajay-p-shaji-35219125a",
+        name: "Niya Shajee",
+        designation: "WIE",
+        imageUrl: require("../../Assets/team/executives26-27/Niya_Shajee.png"),
+        linkedin: "https://www.linkedin.com/in/niya-shajee-739a42290",
     },
-    {
-        id: 14,
-        name: "Shahin Ali",
-        designation: "Chief Publicity Officer",
-        imageUrl: require("../../Assets/team/executives25-26/Shahin Ali.jpg"),
-        linkedin: "https://www.linkedin.com/in/shahin-ali-tp/",
-    },
+];
+
     /*{
     id: 15,
     name: "Fidha F S",
@@ -141,13 +135,7 @@ export const executiveMembers = [
     imageUrl: require("../../Assets/team/executives25-26/FidhaFS.jpg"),
     linkedin: "https://www.linkedin.com/in/fidha-f-s-862076293?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
   },*/
-    {
-        id: 16,
-        name: "Aparna R",
-        designation: "Content Head",
-        imageUrl: require("../../Assets/team/executives25-26/Aparna R.jpg"),
-        linkedin: "https://www.linkedin.com/in/aparnaramachandran934/",
-    },
+    
     /*{
     id: 17,
     name: "Anagha V Nair",
@@ -211,7 +199,7 @@ export const executiveMembers = [
     imageUrl: require("../../Assets/team/placeholder.jpg"),
     linkedin: "https://www.linkedin.com/in/mohammed-shaddaad?utm_source=share_via&utm_content=profile&utm_medium=member_ios",
   },*/
-];
+
 
 export const ex_executiveMembers_2025 = [
     {
