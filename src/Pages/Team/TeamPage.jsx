@@ -30,7 +30,7 @@ const TeamPage = () => {
                   <img className="officer-img" src={require("../../Assets/team/Dr.Murali.jpeg")} alt="member" />
                </div>
                <div className="col m12 l7 black-text officer-content">
-                  <h3>Assoc. Prof. Dr. Murali Mohanan</h3>
+                  <h3>Associate. Prof. Dr. Murali Mohanan</h3>
                   <h4 className="text-center">Dept of Computer Science and Engineering</h4>
                </div>
             </div>
