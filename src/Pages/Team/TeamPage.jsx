@@ -1,5 +1,6 @@
+
 import React from 'react'
-import { executiveMembers, advisoryBoard,ex_executiveMembers_2021,ex_executiveMembers_2022,ex_executiveMembers_2023,ex_executiveMembers_2024, ex_executiveMembers_2025 } from './MembersList'
+import { executiveMembers, advisoryBoard,ex_executiveMembers_2021,ex_executiveMembers_2022,ex_executiveMembers_2023,ex_executiveMembers_2024, ex_executiveMembers_2025, ex_executiveMembers_2026 } from './MembersList'
 import './TeamPage.styles.css'
 import Card from './Card'
 import {
@@ -10,6 +11,7 @@ import {
    AccordionItemPanel,
  } from "react-accessible-accordion";
  import "./accordionStyles.css"
+
 const TeamPage = () => {
    return (
       <div id='team-page' >
@@ -25,11 +27,11 @@ const TeamPage = () => {
             <h2 className="title center-align bold" style={{ color: "#BF2200" }} >Nodal Officer</h2>
             <div className="row valign-wrapper" style={{flexWrap:"wrap"}}>
                <div className="col s12 m12 l5 text-center">
-                  <img className="officer-img" src={require("../../Assets/team/srinivas.jpg")} alt="member" />
+                  <img className="officer-img" src={require("../../Assets/team/Dr.Murali.jpeg")} alt="member" />
                </div>
                <div className="col m12 l7 black-text officer-content">
-                  <h3>Prof. Dr. Sreenivas P</h3>
-                  <h4 className="text-center">Dept of Mechanical Engineering</h4>
+                  <h3>Associate Prof. Dr. Murali Mohanan</h3>
+                  <h4 className="text-center">Dept of Computer Science and Engineering</h4>
                </div>
             </div>
             <div className="black-text message text-center">
@@ -58,6 +60,22 @@ const TeamPage = () => {
             
             
             <Accordion preExpanded={[1, 2, 3]} allowMultipleExpanded>
+               <AccordionItem>
+                <AccordionItemHeading>
+                    <AccordionItemButton>
+                        2025-26
+                    </AccordionItemButton>
+                </AccordionItemHeading>
+                <AccordionItemPanel>
+                <div className="row" id="executive-members-list">
+         {ex_executiveMembers_2026.map(({ id, ...otherProps }) => (
+            <Card key={id} spacingId={id} {...otherProps} />
+         ))}
+
+      </div>
+      <br />
+                </AccordionItemPanel>
+            </AccordionItem>
                <AccordionItem>
                 <AccordionItemHeading>
                     <AccordionItemButton>
@@ -178,7 +196,7 @@ const TeamPage = () => {
                <h5>Karthik Suresh, Adil Rafeek</h5>
             </div>
             <div className="core-team">
-               <h3>Marketing</h3 >
+               <h3>Marketing</h3>
                <h5>Niranjana, Denil Geo Daise, Neetha Jayan, Razeen Muhammed, Nandakrishnan R</h5>
             </div> */}
          </div >
