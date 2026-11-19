@@ -2,11 +2,43 @@
     margin-bottom: 3em;
 }
 
+
+
 .container .title {
     margin-top: 50px;
     padding-top: 20px;
     font-size: 50px;
 }
+
+
+.team-members-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+}
+
+.team-member-column {
+    flex: 0 0 33.3333%;
+    max-width: 33.3333%;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+@media (max-width: 992px) {
+    .team-member-column {
+        flex-basis: 50%;
+        max-width: 50%;
+    }
+}
+
+@media (max-width: 600px) {
+    .team-member-column {
+        flex-basis: 100%;
+        max-width: 100%;
+    }
+}
+
 
 .message {
     margin-left: 1em;

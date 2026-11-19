@@ -18,9 +18,9 @@ const TeamPage = () => {
             <div className="container">
 
             <h2 className="title center-align bold" style={{ color: "#BF2200" }} >Advisory Board</h2>
-            <div className="row  " id="web-team-list">
+            <div className="team-members-grid" id="web-team-list">
                {advisoryBoard.map(({ id, ...otherProps }) => (
-                  <Card key={id+50} spacingId={id} {...otherProps} />
+                  <Card key={id+50} {...otherProps} />
                ))}
             </div>
 
@@ -46,10 +46,10 @@ const TeamPage = () => {
             </div>
 
             <h2 className="title center-align bold" style={{ color: "#BF2200" }}  >Executive Committee</h2>
-            <div className="row" id="executive-members-list">
+            <div className="team-members-grid">
 
                {executiveMembers.map(({ id, ...otherProps }) => (
-                  <Card key={id} spacingId={id} {...otherProps} />
+                  <Card key={id}  {...otherProps} />
                ))}
 
             </div>
@@ -67,9 +67,9 @@ const TeamPage = () => {
                     </AccordionItemButton>
                 </AccordionItemHeading>
                 <AccordionItemPanel>
-                <div className="row" id="executive-members-list">
+                <div className="team-members-grid">
          {ex_executiveMembers_2026.map(({ id, ...otherProps }) => (
-            <Card key={id} spacingId={id} {...otherProps} />
+            <Card key={id} {...otherProps} />
          ))}
 
       </div>
@@ -83,10 +83,10 @@ const TeamPage = () => {
                     </AccordionItemButton>
                 </AccordionItemHeading>
                 <AccordionItemPanel>
-                <div className="row" id="executive-members-list">
+                <div className="team-members-grid" >
          
          {ex_executiveMembers_2025.map(({ id, ...otherProps }) => (
-            <Card key={id} spacingId={id} {...otherProps} />
+            <Card key={id}{...otherProps} />
          ))}
 
       </div>
@@ -100,10 +100,10 @@ const TeamPage = () => {
                     </AccordionItemButton>
                 </AccordionItemHeading>
                 <AccordionItemPanel>
-                <div className="row" id="executive-members-list">
+                <div className="team-members-grid" >
          
          {ex_executiveMembers_2024.map(({ id, ...otherProps }) => (
-            <Card key={id} spacingId={id} {...otherProps} />
+            <Card key={id}  {...otherProps} />
          ))}
 
       </div>
@@ -117,10 +117,10 @@ const TeamPage = () => {
                     </AccordionItemButton>
                 </AccordionItemHeading>
                 <AccordionItemPanel>
-                <div className="row" id="executive-members-list">
+                <div className="team-members-grid" >
          
          {ex_executiveMembers_2023.map(({ id, ...otherProps }) => (
-            <Card key={id} spacingId={id} {...otherProps} />
+            <Card key={id}  {...otherProps} />
          ))}
       
       </div>
@@ -134,10 +134,10 @@ const TeamPage = () => {
                     </AccordionItemButton>
                 </AccordionItemHeading>
                 <AccordionItemPanel>
-                <div className="row" id="executive-members-list">
+                <div className="team-members-grid" >
          
          {ex_executiveMembers_2022.map(({ id, ...otherProps }) => (
-            <Card key={id} spacingId={id} {...otherProps} />
+            <Card key={id}  {...otherProps} />
          ))}   
 
       </div>
@@ -151,10 +151,10 @@ const TeamPage = () => {
                     </AccordionItemButton>
                 </AccordionItemHeading>
                 <AccordionItemPanel>
-                <div className="row" id="executive-members-list">
+                <div className="team-members-grid" >
          
          {ex_executiveMembers_2021.map(({ id, ...otherProps }) => (
-            <Card key={id} spacingId={id} {...otherProps} />
+            <Card key={id} {...otherProps} />
          ))}
 
       </div>
