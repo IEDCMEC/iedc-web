@@ -21,7 +21,7 @@
 }
 @media screen and (max-width: 992px) {
     #mob_blog {
-        position: absolute !important;
+        position: fixed !important;
         color: white;
         font-size: 16px;
         top: 0.7%;
@@ -44,4 +44,22 @@
     #mob_blog {
         display: none;
     }
+}
+
+
+
+.navbar nav ul a {
+    white-space: nowrap;
+}
+
+
+@media screen and (min-width: 993px) and (max-width: 1280px) {
+    .navbar nav .container {
+        width: 95%;
+    }
+}
+
+
+.navbar .nav_img {
+    background-color: #ffffff;
 }
